@@ -1,6 +1,6 @@
 # CSE 251B Spring 2026 — NanoGPT Competition
 
-Train the best language model you can. Lowest perplexity on our hidden test set wins.
+Train the best language model you can. Lowest perplexity on our hidden test set wins. ？
 
 ## Overview
 
