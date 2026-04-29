@@ -1,0 +1,46 @@
+# ----- Trained model artifacts (large, regenerable) -----
+*.pt
+*.pth
+*.ckpt
+
+# ----- Tokenized datasets (large, regenerable via fineweb.py / prepare_data.py) -----
+edu_fineweb10B/
+*.npy
+*.bin
+*.parquet
+
+# ----- HellaSwag downloaded data -----
+hellaswag/*.jsonl
+hellaswag/*.json
+
+# ----- Karpathy's tinyshakespeare -----
+input.txt
+
+# ----- Python cache -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ----- Notebook checkpoints (keep .ipynb files, drop autosave dirs) -----
+.ipynb_checkpoints/
+
+# ----- Environments -----
+.venv/
+venv/
+env/
+ENV/
+
+# ----- Editors / OS -----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ----- HuggingFace / pip caches if accidentally placed here -----
+.cache/
+*.egg-info/
+build/
+dist/
