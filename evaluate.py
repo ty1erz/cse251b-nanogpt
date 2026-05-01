@@ -23,7 +23,7 @@ Your model.py must define:
 The returned model must satisfy:
     model(input_ids) -> logits
     - input_ids: LongTensor of shape (batch, seq_len)
-    - logits: FloatTensor of shape (batch, seq_len, 50257)
+    - logits: FloatTensor of shape (batch, seq_len, vocab_size)
 """
 
 import argparse
@@ -106,6 +106,7 @@ def compute_perplexity(
     block_size: int = 1024,
     batch_size: int = 8,
     device: str = "cuda",
+    expected_vocab_size: int = None,
 ) -> dict:
     """
     Compute perplexity on a tokenized .bin file.
@@ -140,10 +141,9 @@ def compute_perplexity(
         logits = model(input_ids)
 
         # Validate output shape
-        if logits.shape[-1] != 50257:
+        if expected_vocab_size is not None and logits.shape[-1] != expected_vocab_size:
             raise ValueError(
-                f"Model output has vocab size {logits.shape[-1]}, expected 50257. "
-                f"Your model must produce logits over the GPT-2 vocabulary."
+                f"Model output has vocab size {logits.shape[-1]}, expected {expected_vocab_size}."
             )
 
         loss = F.cross_entropy(
@@ -201,6 +201,10 @@ Examples:
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument(
+        "--expected_vocab_size", type=int, default=None,
+        help="Optional vocab size check. Leave unset for custom tokenizers.",
+    )
+    parser.add_argument(
         "--output_json", type=str, default=None,
         help="If provided, write results as JSON to this path (used by TA batch eval script).",
     )
@@ -249,6 +253,7 @@ Examples:
         block_size=args.block_size,
         batch_size=args.batch_size,
         device=args.device,
+        expected_vocab_size=args.expected_vocab_size,
     )
     elapsed = time.time() - t0
 

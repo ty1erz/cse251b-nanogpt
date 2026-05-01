@@ -1,0 +1,25 @@
+{
+  "description": "Full data mixture without target-domain/course corpus.",
+  "datasets": [
+    {
+      "name": "fineweb_edu_main",
+      "source": "hf",
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "subset": "sample-10BT",
+      "split": "train",
+      "text_field": "text",
+      "max_docs": 0,
+      "streaming": true
+    },
+    {
+      "name": "cosmopedia_textbook",
+      "source": "hf",
+      "dataset": "HuggingFaceTB/cosmopedia",
+      "subset": "web_samples_v2",
+      "split": "train",
+      "text_field": "text",
+      "max_docs": 5000000,
+      "streaming": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "description": "Smoke-test data mixture. Small sample sizes to validate pipeline quickly.",
+  "datasets": [
+    {
+      "name": "fineweb_edu",
+      "source": "hf",
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "subset": "sample-10BT",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.6,
+      "max_docs": 1500,
+      "streaming": true
+    },
+    {
+      "name": "cosmopedia_textbook_bias",
+      "source": "hf",
+      "dataset": "HuggingFaceTB/cosmopedia",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.3,
+      "max_docs": 1000,
+      "streaming": true,
+      "include_if_field_in": {
+        "source": ["textbook", "article", "wikihow", "wiki", "blogpost"]
+      }
+    },
+    {
+      "name": "openwebmath_small",
+      "source": "hf",
+      "dataset": "open-web-math/open-web-math",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.1,
+      "max_docs": 400,
+      "streaming": true
+    }
+  ]
+}

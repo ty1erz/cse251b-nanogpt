@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local caches and generated training artifacts
+.hf_cache/
+build-nanogpt/__pycache__/
+build-nanogpt/tokenized_sources/
+build-nanogpt/log/v*/submission*/ckpt
+build-nanogpt/log/v*/submission*/ckpt/
+build-nanogpt/log/v*/submission*/checkpoint*.pt

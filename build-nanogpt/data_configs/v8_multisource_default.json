@@ -1,0 +1,30 @@
+{
+  "resume_submission_dir": "/data/fengfei/cse251b-nanogpt/build-nanogpt/log/v5_distill/submission_20260427_alvin_v5_distill_26250",
+  "resume_step": 26250,
+  "sources": [
+    {
+      "name": "fineweb_remaining",
+      "path": "/data/fengfei/cse251b-nanogpt/build-nanogpt/prepared_mixture_gpt2_full/train.bin",
+      "start": 6881280000,
+      "end": 9953989344,
+      "weight": 0.55
+    },
+    {
+      "name": "cosmopedia",
+      "path": "/data/fengfei/cse251b-nanogpt/build-nanogpt/prepared_mixture_gpt2_full/train.bin",
+      "start": 9953989344,
+      "end": 13578338375,
+      "weight": 0.20
+    },
+    {
+      "name": "openwebtext",
+      "path": "/data/fengfei/cse251b-nanogpt/build-nanogpt/tokenized_sources/openwebtext_2b/train.bin",
+      "weight": 0.15
+    },
+    {
+      "name": "wikipedia",
+      "path": "/data/fengfei/cse251b-nanogpt/build-nanogpt/tokenized_sources/wikipedia_2b/train.bin",
+      "weight": 0.10
+    }
+  ]
+}

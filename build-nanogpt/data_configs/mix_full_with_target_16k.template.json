@@ -1,0 +1,47 @@
+{
+  "description": "Full data mixture template for high-quality sub-100M training. Edit local target-domain paths first.",
+  "datasets": [
+    {
+      "name": "target_domain_course_data",
+      "source": "local_jsonl",
+      "path": "data/course/train.jsonl",
+      "text_field": "text",
+      "ratio": 0.5,
+      "max_docs": 200000
+    },
+    {
+      "name": "fineweb_edu_main",
+      "source": "hf",
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "subset": "sample-10BT",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.3,
+      "max_docs": 200000,
+      "streaming": true
+    },
+    {
+      "name": "cosmopedia_textbook",
+      "source": "hf",
+      "dataset": "HuggingFaceTB/cosmopedia",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.15,
+      "max_docs": 120000,
+      "streaming": true,
+      "include_if_field_in": {
+        "source": ["textbook", "article", "wikihow", "wiki", "blogpost"]
+      }
+    },
+    {
+      "name": "openwebmath_optional",
+      "source": "hf",
+      "dataset": "open-web-math/open-web-math",
+      "split": "train",
+      "text_field": "text",
+      "ratio": 0.05,
+      "max_docs": 60000,
+      "streaming": true
+    }
+  ]
+}

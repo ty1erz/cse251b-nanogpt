@@ -1,0 +1,1146 @@
+===== SAMPLE 000 | tokens=146 =====
+Anticipatory stress in children and adolescents.
+
+OBJECTIVE
+Circumstances surrounding the New Madrid earthquake prediction on Dec. 3, 1990, offered a unique opportunity to study the effects of a disaster warning stage on children and adolescents.
+
+
+METHOD
+An initial structured interview was administered to 553 third- and 10th-grade students before December 3, with follow-up interviews conducted 6-8 weeks later.
+
+
+RESULTS
+This study documents the existence of a mild but prevalent PTSD-like reaction that arose from exposure to a prediction of disaster.
+
+
+CONCLUSIONS
+Further study of anticipatory stress reactions is needed to provide insights into the development of methods for providing support to children during disaster warnings.
+
+===== SAMPLE 001 | tokens=294 =====
+Porcupinefishes (Diodontidae) Overview
+Porcupinefishes are covered with sharp spines and can inflate into a large ball too big to swallow, which makes it difficult for predators to attack and eat them. When in peace the sharp spines lie flat against their bodies, but stand up when they start to swell.
+A large porcupinefish in its inflated state can be the size of a basketball and with its additional 2-3 inch (5-7 cm) spines it can choke a large shark to death.
+In addition to their sharp spines as a defense mechanism, porcupinefishes are also poisonous. In spite of this, tiger sharks sometimes prey on porcupinefishes, which really justifies their name as “nature's most feared predator.”
+If stung by a porcupinefish, the victim should be brought to a hospital immediately. Their poison tetrodotoxin causes tingling, numbness and eventual paralysis and can lead to death, usually within 24 hours or less. One milligram of tetrodotoxin is enough for humans to cause death. There is no remedy, but artificial respiration can keep the victim alive until the symptoms wear off.
+In Hawaii, porcupinefish are also called kokala. In the old Hawaii they were revered by some families as 'aumakua, the family god and protector.
+
+===== SAMPLE 002 | tokens=147 =====
+CLog: Low Cost Gigabit Full Packet Logging
+
+Creating high quality network trace files is a difficult task to accomplish on a limited budget. High network speeds may overburden an individual system running packet logging software such as tcpdump, resulting in trace files with missing information and making analysis difficult or incomplete. High end specialized systems may perform the job well, but may be out of reach due to financial constraints. To that end, we developed the Cheap Logger (CLog) system which utilizes inexpensive COTS hardware to create high quality, complete network trace files. A scalable distributed storage system enables the CLog system to expand and continue to create high quality, complete network data trace files even at extremely high data rates.
+
+===== SAMPLE 003 | tokens=245 =====
+“I Don’t Like Passing as a Straight Woman”: Queer Negotiations of Identity and Social Group Membership1
+
+For decades, sociological theory has documented how our lives are simultaneously produced through and against normative structures of sex, gender, and sexuality. These normative structures are often believed to operate along presumably “natural,” biological, and essentialized binaries of male/female, man/woman, and heterosexual/homosexual. However, as the lives and experiences of transgender people and their families become increasingly socially visible, these normative structuring binaries are called into stark question as they fail to adequately articulate and encompass these social actors’ identities and social group memberships. Utilizing in-depth interviews with 50 women from the United States, Canada, and Australia, who detail 61 unique relationships with transgender men, this study considers how the experiences of these queer social actors hold the potential to rattle the very foundations upon which normative binaries rest, highlighting the increasingly blurry intersections, tensions, and overlaps between sex, gender, and sexual orientation in the 21st century. This work also considers the potential for these normative disruptions to engender opportunities for social collaboration, solidarity, and transformation.
+
+===== SAMPLE 004 | tokens=345 =====
+Beyond 3D Journey
+This year Ms. Clausen’s 8th grade class at Denny Middle School embarked upon their own journey into Skoolaborate. Skoolaborate is an international online learning community that incorporates a blog, a wiki, and the 3-D virtual world of Teen Second Life. The subscription for membership to Skoolaborate is funded through a pilot program sponsored by the World Affairs Council. To learn more about how this journey started you can refer to my post Embarking on 3DJourney.
+The level of engagement from students has been phenomenal during the second phase of this project. Each student chose an issue to research and write about. They then presented their work by adding panels to the “Dilemmas Tapestry.” The tapestry was started by a class in the United Kingdom as a forum for young people to express their concerns about the world in which they are coming of age. As students add their own panels, the tapestry grows to show a range of issues that are on the minds of students in different places.
+On Monday, April 12th, 2010, Ms. Clausen’s class held a showcase to share their work with administrators, counselors, and other adults in the school community. Students presented their work using panels in both the real world and the virtual world. Take a look at the video in which we feature the culminating event and reflections from the students and the teacher.
+The team of teachers working on this project agreed to share their lesson plan here.
+To view the lesson plan click . Coming soon, the digital kit of resources used for this technology-integrated lesson will be available as webpage.
+
+===== SAMPLE 005 | tokens=454 =====
+Use of simulation to investigate resourcing priorities and bed use in generic models of elective and emergency clinical pathways
+
+Objectives - to assess whether alternative methods of prioritising patients affects length of stay and bed use in simulation models of elective and emergency care pathways 
+Design - generic elective and emergency care pathways were modelled using process simulation software 
+Main outcome measures - length of stay, staff utilisation, bed occupancy 
+Results - Where admission priority (giving priority to bringing in new patients for start of treatment with priority reducing through to discharge) was used in a model of elective procedures length of stay continued to increase as bed numbers were increased despite the number of patients being treated and staff utilisation reaching a plateau at a lower bed number. Bed occupancy was consistently close to maximum even when an escalation or “unblocking” strategy was used to switch priority to the discharge step when there were few free beds available. Restricting bed numbers could avoid the increased length of stay. When discharge priority (always giving highest priority to discharge activities, with priority reducing back to admitting new patients) was used in the same elective surgery model length of stay was significantly reduced and length of stay and bed occupancy did not continue to rise as more beds were made available. When patient arrival was scheduled each day to match available clinical staff, application of discharge priority reduced length of stay and bed occupancy by about a third compared to admission priority. In an emergency care setting (where there is no control over patient arrival) length of stay within the emergency department increased as patient arrival rate increased with large increases in waiting time observed above 80% capacity utilisation. Application of discharge priority (for non-urgent cases) reduced average length of stay by a third or more compared to admission priority at high capacity utilisation. 
+Conclusions – the modelling suggests that the length of stay in elective wards or emergency departments and bed occupancy in elective wards may be significantly reduced by, in the absence of other urgent medical need, constantly giving highest priority to discharge activities, with reducing priority back through the care pathway. An escalation strategy of bed unblocking (prioritising discharge activities only when bed occupancy is close to maximum) may have little impact on overall length of stay.
+
+===== SAMPLE 006 | tokens=379 =====
+THE INFLUENCE OF ARCHETYPES ON SOCIAL TRANSFORMATIONS
+
+The vision of social transformations, which is a component of the stage of modernization of society, is presented. It is proposed to consider the influence of archetypes on social transformations through the formation of an archetypical and institutional mechanism for regulating socio-economic relations, which is proposed to be considered as an ordered set of institutional levers, incentives and measures aimed at ensuring the effective use of archetypes on the basis of a combination of factors of the micro- and macroeconomic environment by means of public administration. The emphasis is placed on the strengthening of the role of state and supra-national regulatory archetypical-institutional entities in the design of social transformations. Based on the existing theoretical and conceptual provisions for determining the content of the process of institutionalization of archetypes, it has been determined that the mechanism of regulation of institutional transformations of the national market should be considered in three main aspects, corresponding to the economic and social nature of the inter-subjective interaction of market participants. It is noted that the system-reflexive paradigm of regulation of the development and management of transformational changes of complex open socio-economic systems is based on the definition of the active nature of the influence of archetypes, subjects, as well as the reflexive procedures of their interaction, both on the choice of directions and ways of implementation, and on the dynamics of the flow of these processes. The composition of the main provisions that determine the feasibility of using a system of reflexive paradigm in the field of regulation of socio-economic relations, includes a set of assumptions. The main provisions defining the expediency of using the system-reflexive paradigm in the sphere of regulation of socio-economic relations are determined. It is established that the main institutional conflicts are manifestations of inconsistency between archetypes and elements of institutional environment.
+
+===== SAMPLE 007 | tokens=349 =====
+Cell proliferation depends on mitochondrial Ca2+ uptake: inhibition by salicylate
+
+Store‐operated Ca2+ entry (SOCE) is a ubiquitous Ca2+ influx pathway involved in control of multiple cellular and physiological processes including cell proliferation. Recent evidence has shown that SOCE depends critically on mitochondrial sinking of entering Ca2+ to avoid Ca2+‐dependent inactivation. Thus, a role of mitochondria in control of cell proliferation could be anticipated. We show here that activation of SOCE induces cytosolic high [Ca2+] domains that are large enough to be sensed and avidly taken up by a pool of nearby mitochondria. Prevention of mitochondrial clearance of the entering Ca2+ inhibited both SOCE and cell proliferation in several cell types including Jurkat and human colon cancer cells. In addition, we find that therapeutic concentrations of salicylate, the major metabolite of aspirin, depolarize partially mitochondria and inhibit mitochondrial Ca2+ uptake, as revealed by mitochondrial Ca2+ measurements with targeted aequorins. This salicylate‐induced inhibition of mitochondrial Ca2+ sinking prevented SOCE and impaired cell growth of Jurkat and human colon cancer cells. Finally, direct blockade of SOCE by the pyrazole derivative BTP‐2 was sufficient to arrest cell growth. Taken together, our results reveal that cell proliferation depends critically on mitochondrial Ca2+ uptake and suggest that inhibition of tumour cell proliferation by salicylate may be due to interference with mitochondrial Ca2+ uptake, which is essential for sustaining SOCE. This novel mechanism may contribute to explaining the reported anti‐proliferative and anti‐tumoral actions of aspirin and dietary salicylates.
+
+===== SAMPLE 008 | tokens=187 =====
+Making The Paper
+MAKING PAPER –
+Behind the Scenes at HUUN.
+Traditionally the ancient Maya flattened the inner bark of the Ficus tree using a special textured stone tool that left a slight texture to the end paper.
+In order to be more mindful of the environment, Mark adapted the ancient technique to use a plant fiber instead. The Sanseviera plant is the basis for HUUN paper today and it provides a strength and flexibility beyond many of the usual handmade papers on the market.
+Due to the plant fiber substitution, the technique was further revised and Mark borrowed from the Japanese washi traditions in order to process the pulp properly. Once the pulp has been mixed and couched, the usual Mayan technique resumes through the use of the same hu’un textured stones that were used centuries ago.
+Watch Mark make HUUN Paper with filmmaker Elizabeth Upton:
+
+===== SAMPLE 009 | tokens=337 =====
+At‐risk and Not At‐risk Adolescent Girls in Single‐sex and Mixed‐sex School Settings: an examination of their goals and reputations
+
+Abstract The purpose of this research was to examine the goals and reputations of at‐risk and not at‐risk adolescent females in single‐sex and mixed‐sex school contexts. A total of 216 female students in Years 8, 9, and 11 (aged 13, 14, and 16 years) from six secondary schools in one of the capital cities of Australia participated in focus group interviews. Thirty‐six focus group interviews were conducted with each group comprising six students. Students were assigned to either at‐risk or not at‐risk groups based on behavioural and situational checklists completed by the students’ classroom teachers and/or school psychologists. Each group was asked a series of open‐ended, semi‐structured questions, pertaining to academic and personal goals, involvement in reputation‐enhancing activities and social network patterns. In addition, participants were presented with two vignettes that elicited information about perceived differences in image and reputation of boys and girls. Findings indicated that girls in single‐sex schools have higher aspirations, feel more efficacious about their academic achievements, and are more likely to set goals related to education than girls in mixed‐sex schools. Girls in mixed‐sex schools reported career, freedom/autonomy, and interpersonal goals more frequently than educational aspirations. Moreover, at‐risk girls were motivated by a desire for fun and improved life circumstances. In terms of reputation, it appears that engagement in early sexual activity and alcohol consumption is denigrating to the reputation of girls while socially desirable behaviour for boys.
+
+===== SAMPLE 010 | tokens=125 =====
+Fast Hough transform algorithm for radar detection
+
+In this paper, a fast algorithm for radar detection based on line Hough transform is presented. Unlike the traditional method, the idea of our proposed is that the point of data space should be mapped into the Hough parameter space of slope and intercept, where the relative position of the points in the data space is preserved. Then, only one time transformation of coordinate is employed to get the position of a batch points in parameter space. Therefore, the computation burden is significantly reduced. In addition, the detector performance is investigated. Finally, we illuminate the reduction of computation in details.
+
+===== SAMPLE 011 | tokens=768 =====
+By the end of a program of study, what do you want students to be able to do? How can your students demonstrate the knowledge the program intended them to learn? Student learning outcomes are statements developed by faculty that answer these questions. Typically, Student learning outcomes (SLOs) describe the knowledge, skills, attitudes, behaviors or values students should be able to demonstrate at the end of a program of study. A combination of methods may be used to assess student attainment of learning outcomes.
+Characteristics of Student Learning Outcomes (SLOs)
+- Describe what students should be able to demonstrate, represent or produce upon completion of a program of study (Maki, 2010)
+- Rely on active verbs that identify what students should be able to demonstrate, represent, or produce (Maki, 2010)
+Student learning outcomes also:
+- Should align with the institution’s curriculum and co-curriculum outcomes (Maki, 2010)
+- Should be collaboratively authored and collectively accepted (Maki, 2010)
+- Should incorporate or adapt professional organizations outcome statements when they exist (Maki, 2010)
+- Can be quantitatively and/or qualitatively assessed during a student’s studies (Maki, 2010)
+Examples of Student Learning Outcomes
+The following examples of student learning outcomes are too general and would be very hard to measure : (T. Banta personal communication, October 20, 2010)
+- will appreciate the benefits of exercise science.
+- will understand the scientific method.
+- will become familiar with correct grammar and literary devices.
+- will develop problem-solving and conflict resolution skills.
+The following examples, while better are still general and again would be hard to measure. (T. Banta personal communication, October 20, 2010)
+- will appreciate exercise as a stress reduction tool.
+- will apply the scientific method in problem solving.
+- will demonstrate the use of correct grammar and various literary devices.
+- will demonstrate critical thinking skills, such as problem solving as it relates to social issues.
+The following examples are specific examples and would be fairly easy to measure when using the correct assessment measure: (T. Banta personal communication, October 20, 2010)
+- will explain how the science of exercise affects stress.
+- will design a grounded research study using the scientific method.
+- will demonstrate the use of correct grammar and various literary devices in creating an essay.
+- will analyze and respond to arguments about racial discrimination.
+Importance of Action Verbs and Examples from Bloom’s Taxonomy
+- Action verbs result in overt behavior that can be observed and measured (see list below).
+- Verbs that are unclear, and verbs that relate to unobservable or unmeasurable behaviors, should be avoided (e.g., appreciate, understand, know, learn, become aware of, become familiar with).
+Instructors may measure student learning outcomes directly, assessing student-produced artifacts and performances; instructors may also measure student learning indirectly, relying on students own perceptions of learning.
+Direct Measures of Assessment
+Direct measures of student learning require students to demonstrate their knowledge and skills. They provide tangible, visible and self-explanatory evidence of what students have and have not learned as a result of a course, program, or activity (Suskie, 2004; Palomba & Banta, 1999). Examples of direct measures include:
+- Objective tests
+- Classroom assignments
+This example of a Student Learning Outcome (SLO) from psychology could be assessed by an essay, case study, or presentation: Students will analyze current research findings in the areas of physiological psychology, perception, learning, abnormal and social psychology.
+Indirect Measures of Assessment
+Indirect
+
+===== SAMPLE 012 | tokens=768 =====
+The 2030 Agenda for Sustainable Development provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. The Sustainable Development Goals (SDGs) recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve access to water, sanitation and hygiene; health and education; reduce inequality; and spur economic growth, among other transformations. In the 17 set of goals, people are central and foundational. There are people around the world who are still in need of the most basic necessities of life – everything from clean water to food, and healthy lives and well-being.
+More than any other goal, Goal 6 – Clean Water and Sanitation, is one of the most interconnected goals. Undoubtedly, increasing access to water, sanitation and hygiene (WASH) aids economic development, poverty reduction, education (particularly for girls), health and many more. As we speak, it is estimated that 60 million Nigerians live without clean water, 120 million lack access to decent toilet facilities and 46 million practice open defecation.
+More disturbing is the fact that annually, about 60,000 Nigerian children, under the age of five, die of WASH-related diseases. This implies that with 12 years left to the attainment of Vision 2030, Nigeria will find it difficult to achieve #SDGs Goal 6: Ensure access to water and sanitation for all, if nothing is done urgently.
+Rising to the challenge, WaterAid in partnership with Connected Development (CODE) are prepared to challenge the status quo especially at the grassroots in Nigeria. Launched in November 2018, #VoteWASH seeks to mainstream WASH in 2019 electioneering campaigns and political conversations at sub-national levels of government where grassroots populations reside.
+Through #Vote4WASH, we are reaching out to electoral stakeholders – political parties and their candidates for Gubernatorial, Senatorial, House of Representatives and House of Assembly positions; community-based organisations; civil societies; and electorates, to recognize; influence and demand for remarkable budgetary attention and funding for WASH in the grassroots. This is can be achieved by conscientizing electorates to cast their votes only on candidates/political parties who sign up unto Pledge Cards and publicly commit to prioritize programmes, projects and interventions that are pro-WASH (SDGs Goal 6).
+On implementation, the sequence of activities include:
+- Pre campaign press conference: Here we would strive to secure buy-in of the media on robust reportage on campaign activities through the life span of the campaign.
+- Mapping of communities affected by severe WASH crisis and preliminary visits: Across the geopolitical zones, selected communities with severe water-related crisis would be mapped and visited for human angle stories and perfection of community penetration processes.
+- Community Outreach: At this stage, we would conduct in-depth interviews with families who are victims of WASH crisis and sensitize/empower community stakeholders on #Vote4WASH. The communities would be armed with accountability tools with which to engage elected officials and track campaign promises post-election wise.
+- High-Level Courtesy Calls: We would map key House of Assembly, House of Representatives, Senatorial and Gubernatorial candidates of leading political parties in Edo, Lagos and Kano states and through strategic engagement, we would have them sign pledge cards – committing to transformative budgetary appropriations and funding for WASH in rural communities upon assumption of offices.
+- Media Engagements – Social Media, offline and online: We would deploy routine and targeted radio programmes, newspaper publications and other applicable media, to drive engagement and conversations among stakeholders in the selected states.
+- Report writing: Among other elements of the campaign, a comprehensive report would be authored on implementation and published for public consumption and it would assume the
+
+===== SAMPLE 013 | tokens=219 =====
+Modified Whale's tail technique for the management of bone-defect in anterior teeth
+
+The purpose of this case report is to describe the efficacy of a modified Whale′s tail technique to achieve primary closure and thereby aid in regeneration of an interdental osseous defect between maxillary central incisors complicated by an aberrant frenal attachment. A healthy 32-year-old female patient reported with the complaint of spacing between her upper front teeth. Clinical examination revealed an aberrant frenum extending into the interdental papilla in relation to the central incisors. There was a 6 mm periodontal pocket in relation to the mesiopalatal aspect of maxillary left central incisor. Intraoral periapical radiograph showed vertical bone loss in relation to mesial aspect of maxillary left central incisor. A modified Whale′s tail flap was employed to access the area. The defect was filled with an alloplastic graft. Six months postoperative review showed complete elimination of the pocket along with radiographic bone fill of the defect.
+
+===== SAMPLE 014 | tokens=277 =====
+Is there any association between ABO blood types and slow coronary flow?
+
+Aim: Slow coronary flow (SCF) is defined as a microvascular disorder characterized by slow advance of the contrast material administered during angiography, despite absence of epicardial coronary artery occlusion and delayed opacification of distal vascular structures. Genetically inherited ABO blood types are presumed to play role in coronary artery disease. In this study, the relationship between SCF and ABO blood types was investigated. Methods: The study was designed as a retrospective study, and included 250 cases that underwent coronary angiography procedure in our center between 2016 January and 2018 December (one hundred and twenty five cases of SCF and 125 cases of normal coronary angiogram). ABO blood types were determined using standard agglutination techniques in both study groups. Blood types were compared between both subject groups. Results: The frequency of blood type A was increased among patients with SCF in comparison with control subjects (p<0.001). High density lipoprotein cholesterol was increased in SCF group (p<0.001). Triglyceride, , total cholesterol and low density lipoprotein cholesterol levels were  increased in the SCF group when compared to controls (p=0.003, p<0.001, and p<0.001, respectively).
+
+===== SAMPLE 015 | tokens=182 =====
+REAL-TIME HAND GESTURE RECOGNITION BASED ON SUPPORT VECTOR MACHINE WITH DEPTH SENSOR
+
+In this article, we present a real-time hand gesture recognition system that can successfully recognize a number of gestures. Our system consist of two major part, hand detection and gesture recognition. We use Kinect sensor to capture both color and depth information, then segment out hand region with skin color model and proper distance. Then, in gesture recognition, we first try to obtain the shape representation with the contour of the hand, which is called time-series curves. The principal components analysis (PCA) is then used to reduce the dimensionality of the features of time-series curves. With the reduced features, SVM is trained to recognize the hand gestures, and the mean accuracy can achieve 93.675% with 0.208 mean running time.
+
+===== SAMPLE 016 | tokens=453 =====
+Rapid, Parallel Identification of Catabolism Pathways of Lignin-Derived Aromatic Compounds in Novosphingobium aromaticivorans
+
+The identification of the genes involved in specific biochemical transformations is a key step in predicting microbial function from nucleic acid sequences and in engineering microbes to endow them with new functions. We have shown that new techniques for transposon mutagenesis can dramatically simplify this process and enable the rapid identification of genes in uncharacterized pathways. These techniques provide the necessary scale to fully elucidate complex biological networks such as those used to degrade mixtures of lignin-derived aromatic compounds. ABSTRACT Transposon mutagenesis is a powerful technique in microbial genetics for the identification of genes in uncharacterized pathways. Recently, the throughput of transposon mutagenesis techniques has been dramatically increased through the combination of DNA barcoding and high-throughput sequencing. Here, we show that when applied to catabolic pathways, barcoded transposon libraries can be used to distinguish redundant pathways, decompose complex pathways into substituent modules, discriminate between enzyme homologs, and rapidly identify previously hypothetical enzymes in an unbiased genome-scale search. We used this technique to identify two genes, desC and desD, which are involved in the degradation of the lignin-derived aromatic compound sinapic acid in the nonmodel bacterium Novosphingobium aromaticivorans. We show that DesC is a methyl esterase acting on an intermediate formed during sinapic acid catabolism, providing the last enzyme in a proposed catabolic pathway. This approach will be particularly useful in the identification of complete pathways suitable for heterologous expression in metabolic engineering. IMPORTANCE The identification of the genes involved in specific biochemical transformations is a key step in predicting microbial function from nucleic acid sequences and in engineering microbes to endow them with new functions. We have shown that new techniques for transposon mutagenesis can dramatically simplify this process and enable the rapid identification of genes in uncharacterized pathways. These techniques provide the necessary scale to fully elucidate complex biological networks such as those used to degrade mixtures of lignin-derived aromatic compounds.
+
+===== SAMPLE 017 | tokens=768 =====
+Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC, and Armstrong became the first person to step onto the Moon's surface six hours and 39 minutes later, on July 21 at 02:56 UTC. Aldrin joined him 19 minutes later, and they spent about two and a quarter hours together exploring the site they had named Tranquility Base upon landing. Armstrong and Aldrin collected  of lunar material to bring back to Earth as pilot Michael Collins flew the Command Module Columbia in lunar orbit, and were on the Moon's surface for 21 hours, 36 minutes before lifting off to rejoin Columbia.
+
+Apollo 11 was launched by a Saturn V rocket from Kennedy Space Center on Merritt Island, Florida, on July 16 at 13:32 UTC, and it was the fifth crewed mission of NASA's Apollo program. The Apollo spacecraft had three parts: a command module (CM) with a cabin for the three astronauts, the only part that returned to Earth; a service module (SM), which supported the command module with propulsion, electrical power, oxygen, and water; and a lunar module (LM) that had two stages—a descent stage for landing on the Moon and an ascent stage to place the astronauts back into lunar orbit.
+
+After being sent to the Moon by the Saturn V's third stage, the astronauts separated the spacecraft from it and traveled for three days until they entered lunar orbit. Armstrong and Aldrin then moved into Eagle and landed in the Sea of Tranquility on July 20. The astronauts used Eagles ascent stage to lift off from the lunar surface and rejoin Collins in the command module. They jettisoned Eagle before they performed the maneuvers that propelled Columbia out of the last of its 30 lunar orbits onto a trajectory back to Earth. They returned to Earth and splashed down in the Pacific Ocean on July 24 after more than eight days in space.
+
+Armstrong's first step onto the lunar surface was broadcast on live TV to a worldwide audience. He described the event as "one small step for [a] man, one giant leap for mankind." Apollo 11 effectively proved U.S. victory in the Space Race to demonstrate spaceflight superiority, by fulfilling a national goal proposed in 1961 by President John F. Kennedy, "before this decade is out, of landing a man on the Moon and returning him safely to the Earth."
+
+Background 
+
+In the late 1950s and early 1960s, the United States was engaged in the Cold War, a geopolitical rivalry with the Soviet Union. On October 4, 1957, the Soviet Union launched Sputnik 1, the first artificial satellite. This surprise success fired fears and imaginations around the world. It demonstrated that the Soviet Union had the capability to deliver nuclear weapons over intercontinental distances, and challenged American claims of military, economic, and technological superiority. This precipitated the Sputnik crisis, and triggered the Space Race to prove which superpower would achieve superior spaceflight capability. President Dwight D. Eisenhower responded to the Sputnik challenge by creating the National Aeronautics and Space Administration (NASA), and initiating Project Mercury, which aimed to launch a man into Earth orbit. But on April 12, 1961, Soviet cosmonaut Yuri Gagarin became the first person in space, and the first to orbit the Earth. Nearly a month later, on May 5, 1961, Alan Shepard became the first American in space, completing a 15-minute suborbital journey. After being recovered from the Atlantic Ocean, he received a congratulatory telephone call from Eisenhower's successor, John F. Kennedy.
+
+===== SAMPLE 018 | tokens=768 =====
+Depression: A Help Guide
+'I feel depressed' has become a common expression to describe a low mood. But clinical depression is much more than feeling down or discontent now and then. Depression is actually a serious mood disorder that involves feeling sad and numb for weeks, months, or longer.
+Depression has a wide range of triggers and can be experienced in different ways by different people. For some, it is a one-off episode triggered by something obvious, while for others depression slowly builds from a series of smaller life challenges or occurs out of the blue and for no exact reason.
+Bringing with it many symptoms and challenges, depression can be quite debilitating and is not something someone can just 'get over' at will. But with the right treatment it is possible to make steps toward recovery.
+As well as there being different levels to depression (mild, moderate, severe) there are also different forms of depression. These include seasonal affective disorder (SAD), mixed anxiety and depressive disorder, and bipolar I disorder.
+Depression, usually accompanied by anxiety, ranks as the most common mental disorder in the UK today. Up to 12% of the population are stated as experiencing depression in any given year. Researchers suggest that mild depression accounts for 70 per cent, moderate depression 20 per cent, and severe depression for 10 per cent of cases. Given that many individuals suffer low levels of depression without seeking help, it is possible total figures are even higher.
+Depression is most common in women and older people, where it affects 1 in 5. It is possible that statistics are underestimated for men and depression because they are less prone to report symptoms of common mental health challenges then women. If they do report issues they are more likely to be diagnosed with something like a personality disorder, where depression does exist but is a symptom.
+As for globally, the World Health Organisation (WHO) estimates a massive 350 million people are affected. While in the UK there is a strong infrastructure of support and services for those who suffer, in some countries less than 10% of people suffering depression receive treatment due to lack of trained providers or fear of being stigmatised for coming forwards.
+Depression can affect different people in different ways and to different degrees. It's important not to underestimate your symptoms just because someone else you know appears to have unalike or seemingly more challenging ones. While doctors do recognise varied levels to depression (mild, moderate, and severe) any depression at all is hard to manage by yourself and is something to take seriously and seek help over. If it is someone else you are worried about, it's important to recognise that many people hide their depression because of the stigma that unfortunately still exists, so a few noticeable symptoms might be signs of a much deeper issue.
+Emotional and mental symptoms of depression can include:
+- Continuous low mood such as sadness, guilt, pessimism, worthlessness, and helplessness
+- Crying far more than usual
+- Negative feelings towards oneself and sometimes others
+- Reduced motivation to participate in activities or difficulty doing much at all
+- Loss of interest and enjoyment in life even in things you usually love
+- Social withdrawal
+- Increased anxiety and/ or panic attacks
+- Suicidal thoughts or intentions, a general sense life is not worth living
+- Low self-esteem
+Physical symptoms of depression can include:
+- Sleeping more/ sleeping less/ disturbed sleep
+- Higher appetite/ lower appetite
+- Lack of energy and unexplained fatigue
+- Fuzzy thinking and difficulty remembering things
+- Poor concentration and coordination
+- Lack of libido
+- Exacerbation of pre-existing pains
+- A general heavy feeling that has you moving or speaking less quickly than usual
+Depression is a very varied illness. For some people it might
+
+===== SAMPLE 019 | tokens=768 =====
+Aesop (620 B.C. - 560 B.C.)
+AESOP (Gr. Aisopos), famous for his Fables, is supposed to have lived from about 620 to 560 B.C. The place of his birth is uncertain - Thrace, Phrygia, Aethiopia, Samos, Athens and Sardis all claiming the honour. We possess little trustworthy information concerning his life, except that he was the slave of Iadmon of Samos and met with a violent death at the hands of the inhabitants of Delphi. A pestilence that ensued being attributed to this crime, the Delphians declared their willingness to make compensation, which, in default of a nearer connexion, was claimed and received by Iadmon, the grandson of his old master. Herodotus, who is our authority for this (ii. 134), does not state the cause of his death; various reasons are assigned by later writers - his insulting sarcasms, the embezzlement of money entrusted to him by Croesus for distribution at Delphi, the theft of a silver cup.
+Aesop must have received his freedom from Iadmon, or he could not have conducted the public defence of a certain Samian demagogue (Aristotle, Rhetoric, ii. 20). According to the story, he subsequently lived at the court of Croesus, where he met Solon, and dined in the company of the Seven Sages of Greece with Periander at Corinth. During the reign of Peisistratus he is said to have visited Athens, on which occasion he related the fable of The Frogs asking for a King, to dissuade the citizens from attempting to exchange Peisistratus for another ruler. The popular stories current regarding him are derived from a life, or rather romance, prefixed to a book of fables, purporting to be his, collected by Maximus Planudes, a monk of the 14th century. In this he is described as a monster of ugliness and deformity, as he is also represented in a well-known marble figure in the Villa Albani at Rome. That this life, however, was in existence a century before Planudes, appears from a 13th-century MS. of it found at Florence. In Plutarch's Symposium of the Seven Sages, at which Aesop is a guest, there are many jests on his original servile condition, but nothing derogatory is said about his personal appearance. We are further told that the Athenians erected in his honour a noble statue by the famous sculptor Lysippus, which furnishes a strong argument against the fiction of his deformity. Lastly, the obscurity in which the history of Aesop is involved has induced some scholars to deny his existence altogether.
+It is probable that Aesop did not commit his fables to writing; Aristophanes (Wasps, 1259) represents Philocleon as having learnt the "absurdities" of Aesop from conversation at banquets) and Socrates whiles away his time in prison by turning some of Aesop's fables "which he knew" into verse (Plato, Phaedo, 61 b). Demetrius of Phalerum (345-283 B.C.) made a collection in ten books, probably in prose (Lopson Aisopeion sunagogai) for the use of orators, which has been lost. Next appeared an edition in elegiac verse, often cited by Suidas, but the author's name is unknown. Babrius, according to Crusius, a Roman and tutor to the son of Alexander Severus, turned the
+
+===== SAMPLE 020 | tokens=255 =====
+Three Women of Liège. A Critical Edition of and Commentary on the Middle English Lives of Elizabeth of Spalbeek, Christina Mirabilis, and Marie d’Oignies (review)
+
+I ask would probably never have arisen in the first place. Despite a few areas in which it might have thought through the nature of its analysis a bit more carefully, this edition of Hm/Hm2, in sum, offers unprecedented amounts of data and the ability to manipulate that data, as well as outstanding editorial, textual, and linguistic analysis. It is a revelatory experience to study Piers Plowman in this way. Doing so brings us much closer to what the poem meant to, and what it was for, fifteenth-century readers than can almost any other mode (direct reading of the manuscripts themselves included). Calabrese, Duggan, and Turville-Petre’s accomplishment is magnificent, the product of as much labor and as high a level of critical acumen as one usually finds in only the very best authorfocused critical editions. One can only hope that critics of Piers Plowman will finally begin exploring what is on offer in the Piers Plowman Electronic Archive. Lawrence Warner University of Sydney
+
+===== SAMPLE 021 | tokens=587 =====
+Environmental exposures, genetic predisposition and allergic diseases: one size never fits all
+
+A remarkable increase in the prevalence of allergic diseaseappears to parallel the postindustrial lifestyle changes inwesternized societies. Insuﬃcient microbial exposureduring infancy and early childhood is one of the proposedexplanations for the increase in prevalence of atopicsensitization and associated clinical phenotypes (asthma,allergic rhinitis, eczema). Within this context, childhoodvaccination may be associated with an increased risk ofallergies [e.g. children whose parents refuse the vaccin-ation have less atopic diseases (1)]. However, it has to beemphasized that major beneﬁts of childhood vaccinationprogrammes and successes in the prevention and treat-ment of infectious diseases (with global reduction inmortality and morbidity) clearly outweigh the risk of thepossible promoting eﬀect on allergic disease.There is growing evidence that one of the inadvertentconsequences of the ﬁght against infectious diseases andour obsession with cleanliness might have been theinterference with the immune system development. Thechanging pattern of microbial exposure, with the declinein some infectious diseases, may lead to a slowermaturation of the immune system, with a delayeddevelopment of the optimally balanced immune re-sponses. This notion forms the immunological basis ofthe hygiene hypothesis. However, the hygiene hypothesisoriginated from epidemiological studies.Searching for the cause of allergy: the link between epidemiologyand immunologyFamily size. The pioneering proposal by David Strachanthat a decrease in family size reduced the possibility ofcross-infections, facilitating the clinical expression ofallergic rhinitis had lead to intense interest in this area(2). His ﬁndings were conﬁrmed in a number of studies(3), and within the same context, exposure to otherchildren in day-care centres was found to be protectiveagainst asthma and atopy (4). Yet, the eﬀects of familysize, position in sibship or day-care arrangements maynot be mediated by the exposure to infectious agents,but some other underlying aspect of immune response(5).Helminths. Children in developing countries who areinfested with helminths are less likely to develop atopyand allergic disease. Furthermore, long-term treatment ofintestinal helminths in infested children increases speciﬁcsensitization to house dust mite (6). In addition, thereappears to be an inverse dose-response relationshipbetween the burden of infestation by helminths andexpression of allergic disease (7). However, helminthsmay only be a marker of environmental exposure to othermicrobial agents and/or endotoxin.Helminthic infections enhance the secretion of T
+
+===== SAMPLE 022 | tokens=332 =====
+Porocytosis: Fusion Pore Array Secretion of Neurotransmitter
+
+We believe that there is sufficient experimental evidence to support the premise that transmitter is secreted by the simultaneous activation of arrays of fusion pores at docked vesicles. This process is initiated by the action potential that activates calcium channels to increase the number of cytoplasmic calcium ions. Calcium ions trigger fusion pores to flicker open causing transmitter to diffuse from vesicular stores. We define the term porocytosis to identify this process and use the term synaptomere to indicate the anatomical and physiological functional unit of the synapse or junction. Our model shows that the simultaneous flicker of fusion pores in an array can generate unitary-end plate potentials (u-EPPs) and miniature end plate potentials (MEPPs) and that activation of all fusion pores produces EPPs. U-EPPs and EPPs generated with the model show mean values and coefficients of variation similar to experimental observations. The model is robust in that the number of docked vesicles can vary and these can be full to empty depending on nerve frequencies and vesicular traffic. The model shows that the overall process of excitation-secretion coupling is highly deterministic. At the neuromuscular junction, secretion from arrays of fusion pores ensures that a muscle fiber action potential is always produced over a range of frequencies because all transmitter release sites are activated. Our model shows that transmission at the synaptomere guarantees fidelity of information transfer at different frequencies. This characteristic shows a dynamic relationship of the secretory process to memory and learning.
+
+===== SAMPLE 023 | tokens=176 =====
+Precocious puberty in boys is rare and easy to miss, but it is often a sign of underlying pathology demanding evaluation.
+Pubertal changes in boys typically occur between the ages of 9 and 14 years. True precocious puberty in boys is rare and can be easy to miss. Puberty is considered precocious in boys when it occurs before the age of 9 years, representing more than two standard deviations below the mean age of 11.5 years. Although precocious puberty in girls (before the age of 8 years) is usually benign, early puberty in boys is much less common and much more worrying. Signs of puberty, including testicular enlargement, presence of pubic hair, adult body odour and voice changes, in boys younger than 9 years should be investigated promptly, because precocious puberty in a boy is frequently a sign of serious underlying pathology.
+
+===== SAMPLE 024 | tokens=317 =====
+The geological origins of the oracle at Delphi, Greece
+
+Abstract Ancient authors from Plato to Pausanias have left descriptions of Delphi’s oracle and its mantic sessions. The latter were interpreted as events in which the Pythia (priestess) placed herself on a tripod over a cleft (fissure) in the ground below the Apollo temple. Here she inhaled a vapour rising from the cleft, and became inspired with the power of prophecy. French archaeologists who excavated the oracle site at the turn of the century reported no evidence of either fissures or gaseous emissions and concluded that the ancient accounts were myths. As a result, modern classical scholars and many archaeologists reject the ancient testimonies concerning the mantic sessions and their geological origin. However, the geological conditions at the oracle site do not a priori exclude the early accounts. A major WNW-ESE fault zone and a minor swarm of NNW-SSE fractures intersect below the site. These intersection(s) provided pathways for rising ground water, including a spring below the Apollo temple. The faults broke through a bituminous limestone formation at relatively shallow depth. Hydrocarbon gases that originated in this formation may have escaped during and after seismo-tectonic events. Such gases can induce mild narcotic effects. It is highly probable therefore that the Pythia’s inspiration resulted from the inhalation of light hydrocarbon gases, which rose along a fissure (fracture) in the adyton below the Apollo temple.
+
+===== SAMPLE 025 | tokens=177 =====
+[Sub-Achilles bursitis--a biomechanical analysis and clinical study].
+
+Chronic inflammations of the distal Achilles tendon correspond frequently to a mechanical irritation of the subcalcaneal bursa. On grounds of the biomechanical analysis an excessive inward bending of the hindfoot is postulated as the reason. So a conception for the clinical therapy is detected. The first measure will be a statics correction of the foot and a local application of antalgics. In case of unsuccessfulness after 3 months the surgical resection of the calcaneus exostosis is performed. After 3 months of conservative treatment 15 of 24 athletic patients are free of pain. The other 9 patients are free of pain 3 months after the surgical treatment. In either case all patients return to their former sports activity 6 months after the beginning of the treatment.
+
+===== SAMPLE 026 | tokens=382 =====
+The seventeenth-century painter Rembrandt was not a conventional Christian, but he did many paintings based on the Bible and religious themes. He also was fascinated with older men and women. The faces of the long-lived people in his portraits are beautiful in their own ways, seemingly unashamed to show the marks of time. We sense in their visages a mixture of vulnerability and surprise at their still being among us.
+There are many different types of prayer in Christianity. In formal congregational prayers, we confess our sins and ask for forgiveness; we join with others to praise God through litanies and chants. We also pray when we ponder the Scriptures and other sacred texts. Our personal informal prayers express our gratitude for all that we have been given and also ask for God's help for ourselves and others in times of trouble. But perhaps the deepest kind of prayer is wordless union with God.
+That is what we see in Rembrandt's Old Man in Prayer. The first thing that strikes us is that the subject is an elderly man. His furrowed brow and downcast eyes suggest that he has suffered and comes to this moment with some trepidation. There is sadness in his face.
+But his stance also suggests humility in the presence of God. His head is slightly bowed, and he holds his hand over his heart. He is gently protecting what is most precious to him – his heart, his spiritual center, the doorway to God, the receptacle of divine grace. That gesture, the right hand held over the heart, is one we see often in Sufi circles. It is used when greeting brothers and sisters on the path as an acknowledgement of our connection heart to heart. And it is assumed during prayer. Gazing at the old man in prayer, we find ourselves joining him in this bodily act of union with God. We do not need words.
+
+===== SAMPLE 027 | tokens=205 =====
+For the UALR English Department, this is J. Bradley Minnick with Facts About Fiction.
+As a girl, Nell Harper Lee, author of To Kill A Mockingbird, supposedly knew about the man she later immortalized as Boo Radley. The actual facts of the story are brief and terrible because they represent the skeletal remains of a life’s promise never fulfilled.
+Here Are The Facts:
+In 1928, Son Boleware and his friends Baggett and Sawyer were charged with the burglary of Foster’s Drug Store.
+They were hauled before Judge Manny Fountain and sentenced to serve out their time at the Boys Industrial School. The parents of Baggett and Sawyer assented to the punishment, but Son’s father informed the judge that if given over to his custody, his boy would never cause any trouble again.
+The epitaph on Son Boleware’s tombstone reads: To Live In Hearts We Leave Behind Is Not To Die.”
+
+===== SAMPLE 028 | tokens=265 =====
+Energy Cooperation between the EAEU and China
+
+In May 2018, the Eurasian economic union (EAEU) and China signed a non-preferential agreement on trade and economic cooperation. The agreement provides for joint projects in many economics sectors. For China, this agreement is a new step in the implementation of the large – scale project «One belt-one road», as well as an attempt to approach the creation of a free trade zone in the SCO countries. For the EAEU, the trade agreement with China is an attempt to establish its own game rules in the process of pairing the EAEU and the Silk road economic belt. Attracting investment from China will allow the EAEU countries to develop large transport and energy projects, because China is still one of the world leaders in energy consumption. However it is important to bear in mind that China faces two important energy challenges: on the one hand, the necessity of transition from coal to natural gas, and, on the other hand, the necessity of transition from fossil to renewable energy sources. The analysis of the current agreements shows China's interest in the EAEU countries only from a logistical point of view, which means the need for the EAEU countries to create a unique proposal for the supply of energy resources to China.
+
+===== SAMPLE 029 | tokens=283 =====
+Z-score standard growth chart design of toddler weight using least square spline semiparametric regression
+
+Underweight is a nutritional status of toddlers characterized by a lack of weight based on anthropometric index weight-for-age. In Indonesia, the anthropometric index is recorded on a KMS (Card Towards Health) which refers to WHO-2005 Standard Growth Chart (WHO-2005 SGC). The toddler samples used by WHO-2005 SGC, i.e., from Ghana, Oman, Norway, the USA, Brazil, and India, are physically different from the Indonesian toddlers. This research aims to design Z-Score Standard Growth Chart (Z-Score SGC) of weight-for-age based on sample toddlers from East Java by using least square spline estimator in semiparametric regression model. The obtained Z-Score SGC would be used to assess the nutritional status of toddlers in East Java. Results showed that the highest average weight gain was achieved at interval of age 0 ≤ t < 6 for about 0.7045 kg, and growth of toddler boys was higher than girls with a difference of 0.4 kg. Also, Z-Score SGC gave a lower reference than WHO-2005 SGC such that percentage of malnutrition and less-nutrition status categories provided by Z-Score SGC was also lower than those by WHO-2005 SGC.
+
+===== SAMPLE 030 | tokens=317 =====
+Land degradation due to tourism gentrification in Tawangmangu, Karanganyar, Indonesia
+
+It is important to study the case of tourism gentrification which has an impact on human resources, ecosystem services and the role of actors who play planning and socio-economic development of the region. The mountainous landscape at the foot of Mount Lawu offers aesthetic views that other regions don’t offer. This has resulted in increased demands and pressures on the emergence of new cities, where the area that should be conservation land and recharge area becomes built up land. From these pressures and demands, an in-depth analysis of the right tools or policies in sustainable landscape management is needed. This study focuses on the problem of anthropogenic pressure caused by land use change taking into account socio-economic and political factors. The methodology used consists of making maps, calculating and analyzing indicators, linking geospatial and socio-economic data to explore landscape changes and identify the drivers of rapid development. The findings show that the urbanization of tourism at the foot of Mount Lawu is increasing, while the drivers and impacts are different. The development carried out by local communities who do not have permits is very rapid, while unsustainable regional planning and development policies will threaten the aesthetics of the existing natural landscape. In addition, the rapid development in the recharge area has resulted in an increase in surface runoff, which will threaten the iconic tourism, namely gerojogan sewu. To stop land degradation, it is necessary to have a policy that is synergized between socio-economic needs and the sustainability of ecosystem services
+
+===== SAMPLE 031 | tokens=223 =====
+Two of the world's biggest companies just teamed up to help reduce waste in a pretty big way.
+McDonald's and Starbucks announced a joint effort this week to come up with a new type of fully compostable cup. Meaning they wouldn't just biodegrade, they'd also provide nutrients to the earth while breaking down in the soil.
+Starbucks actually launched the program earlier this year. And now McDonald's is joining as a founding member.
+They're holding a contest where people and companies can submit ideas starting in September. Then they'll pick the best ones, and start funding the research.
+They're planning to choose as many as seven different ideas, and throw up to a million dollars at each one to see how they pan out.
+If one of them DOES work, it would be a big deal. Because globally, we throw out about 600 BILLION single-use cups every year. And McDonald's and Starbucks alone are responsible for about 25 billion of them.
+Then the idea is if THEY start using compostable cups, the rest of the food industry should follow suit.
+
+===== SAMPLE 032 | tokens=132 =====
+The structure of locally finite groups of finite c-dimension
+
+The [Formula: see text]-dimension of a group is the supremum of lengths of strict nested chains of centralizers. We describe the structure of locally finite groups of finite [Formula: see text]-dimension. We also prove that the [Formula: see text]-dimension of the quotient [Formula: see text] of a locally finite group [Formula: see text] by the locally soluble radical [Formula: see text] is bounded in terms of the [Formula: see text]-dimension of [Formula: see text].
+
+===== SAMPLE 033 | tokens=186 =====
+MAGNETIC RECONNECTION IN SHEARED SOLAR MAGNETIC ARCADES
+
+The evolution of solar magnetic arcades is investigated with the use of MHD simulations imposing resistivity on sheared magnetic elds. It is found that there is a critical amount of shear, over which magnetic reconnection can take place in an arcade-like eld geometry to create a magnetic island. The process leading to reconnection cannot be solely attributed to a tearing instability, but rather to a reactive evolution of the magnetic arcade under resistivity. The natures of the arcade reconnection are governed by the spatial pattern of resistivity. A fast reconnection with a small shock angle can only be achieved when the diiusion region is localized. In this case, a highly collimated reconnection outtow can tear the plasmoid into a pair, and most of principal features in solar eruptive processes are reproduced.
+
+===== SAMPLE 034 | tokens=272 =====
+In the dramatic period from 1800 through 1850, the United States emerged from its inauspicious beginning as a tiny newborn nation, to a near-empire that spanned the continent. It was a time in which the “dream of our founders” spread in ways that few men of that Revolutionary Generation could possibly have imagined. And it was an era that led to the great, tragic conflagration that followed—the American Civil War.
+The narratives that form A Nation Rising each exemplify the “hidden history” of America, exploring a vastly more complex path to nationhood than the national myth of a destiny made manifest by visionary political leaders and fearless pioneers. Davis explores:
+- Aaron Burr’s 1807 trial, showcasing the political intrigue of the early Republic
+- An 1813 Indian uprising and an ensuing massacre
+- A mutiny aboard the slave ship Creole
+- The “Dade Massacre” and the start of the second Seminole War
+- The bloody “Bible Riots” in Philadelphia
+- The story of Jessie Benton Frémont and Lt. John C. Frémont
+This audiobook is not only riveting storytelling in its own right but a stirring reminder of the ways in which our history continues to shape our present. Download and start listening now!
+
+===== SAMPLE 035 | tokens=502 =====
+The Harvard Museum of Natural History announces a new online exhibition, Islands: Evolving in Isolation, a rich resource which has been developed from the Harvard Museum of Natural History’s 2015-2017 exhibition of the same name.
+With bizarre woodpecker-like primates, dwarf humans, and flightless birds over nine feet tall, islands are havens for some of the most unusual creatures on our planet. Why are islands such hotspots of biodiversity and how does evolution work within these isolated pockets of life? This new online exhibition unravels the mysteries of island biodiversity and evolution. Packed with examples from around the globe, it brings together an enormous array of stories about plants and animals, including lizards, giant pitcher plants, hissing cockroaches, Galápagos tortoises, New Guinea birds of paradise, Malagasy lemurs, Komodo Dragons from the Indonesian islands, and Homo floresiensis, a relative of modern humans.
+Full of surprises, Islands: Evolving in Isolation highlights some of the latest research and discoveries made by Harvard scientists, including Edward O. Wilson, Scott Edwards, Brian Farrell and Jonathan Losos.
+“Since Darwin’s time, research on islands has played a pivotal role in advancing understanding of biodiversity and evolution, says Harvard evolutionary biologist Jonathan B. Losos, who was chief faculty advisor to the exhibition. “Our goal was to illustrate not only the extraordinary diversity of island life, but how scientists have studied it.” Losos is the Monique and Philip Lehner Professor for the Study of Latin America in the Department of Organismic and Evolutionary Biology and Curator in Herpetology, Museum of Comparative Zoology at Harvard.
+The Islands: Evolving in Isolation online exhibition is supported by the National Science Foundation.
+About the Harvard Museum of Natural History
+One of the Harvard Museums of Science & Culture, the Harvard Museum of Natural History is located at 26 Oxford Street, Cambridge, on the Harvard campus, a 7-minute walk from the Harvard Square Red Line MBTA station. The museum is wheelchair accessible. The museum is open from 9:00 am to 5:00 pm, 361 days/year. For directions, exhibition schedules, lectures, and information on free parking, see the website or call 617.495.3045.
+# # #
+Blue Magruder, Director of Public Affairs and Marketing
+Harvard Museums of Science & Culture
+
+===== SAMPLE 036 | tokens=700 =====
+What if; in the era of the 19th century, Brazil diverged from a slave based Empire, to a neo-socialist, capitalist system which would allow it to prosper and Brazil would become a superpower. To put it simply, Brazil in our world would be like saying what if the US never had the northern states.
+Brazil is focused around its slave labor force which is slowly dragging the empire towards prosperity. However, Northern businessmen from the US decide to boycott slavery in the American south and head for Brazil. Looking at the Empire, these men and entrepreneurs would shape Brazil for the future.
+Brazil continues to industrialize using its own people as a labor force. Brazil strengthens relations with the USA and France. Other Brazilian merchants travel to the USA and do business.
+Brazilian slave plantations begin to lose relations with both the government and the USA after John Browns storming of Harpers Ferry.
+Brazilian slave owners cut ties with Northern US companies.
+The Free or Slave Crisis in the United States boils over and South Carolina succeeds from the federal government.
+1861. In the Imperial Palace, Emperor Pedro II decided to outlaw slavery in Brazil. The slave owners of Brazil revolt against the monarchy. Pedro II sends in the armed forces. The army is beaten back in the first battles due to its size and inexperience in combat showed the Brazilian army needed help. So with France already fighting a colonial war in Mexico, Brazil asked for advisors and weapons. The slavers meanwhile struck back against the 1st Brazilian Army. The slavers gathered and waited.
+The Brazilian Civil War would be concluded in this year as the Brazilian army pushed into rebel held territory. The slaverys would be tried and executed for their rebellion.
+Pedro II puts in reforms to the nation to stop any trading with any slave based powers. Pedro II along with members of the Brazilian leadership start to see the Pan-South American Alliance lead by Brazil.
+Brazil continues to industrialize while in the USA, the Civil War ends.
+France turns its back on Brazil and fortifies French Guiana.
+Brazil finds friends with Frances hated neighbor, Prussia.
+Germany is formed out of the Franco-Prussian War. In the Brazilian Senate, a Bill passes which favors Germany over France.
+Pedro II plan to unite South America under a Brazilian banner begins and Colombia and Uruguay become Brazilian protectorates and allies.
+Brazil and Venezuela become partners and agree to divide Guiana from the British and French eventually.
+Brazils Pan-American League is crushed when Chile launches a surprise assault on Bolivia and Peru in order to grab more riches on the Atacama coast. The Great Guano War or War of the Pacific is hard fought but eventually Chile will win out thanks to its navy. Bolivia, Peru, and Argentina would all become Brazilian allies.
+Brazil finally settles the Great Guano War between Chile, Peru, and Bolivia. Brazilian influence starts to grow in Peru and Bolivia.
+Peru and Bolivia become Brazilian allies. Bolivia invades Paraguay while Peru invades Ecuador.
+Brazil begins construction of its Grand Army and Grand Fleet.
+Brazilian army reaches 300,000 active troops. The Brazilian Grand Fleet now contains 5 active battleships.
+Brazil joins the central powers along with their allies.
+Continued US aggression in the Caribbean worries Brazilian lawmakers and congressmen.
+Spanish-American War occurs. Cuba, Puerto Rico, Philippines, and Guam are taken by the Americans.
+
+===== SAMPLE 037 | tokens=109 =====
+Towards Reuse-Based Development for the On-chip Distributed SoC Architecture
+
+The development of a reusable library of components for a multi-core segmented bus platform, the SegBus, is presented. The library is based on a plug-in that we develop and deploy within a modeling tool which eventually used by the SegBus DSL while developing applications targeting the SegBus platform. The steps required in building the library and embed it into a plug-in are discussed together with the certain use of it in our design methodology.
+
+===== SAMPLE 038 | tokens=601 =====
+In order to complete the rituals of the Hajj, pilgrims are required to move between several locations in the vicinity of Makkah al-Mukarramah, including the Holy Mosque itself, Arafat, Muzdalifah and Mina, within a precise temporal and geographical framework. The means of transporting pilgrims between these sites have changed along with the changing times.
+In modern times, buses have played an important role in pilgrim transportation. Because they have been the primary means of transportation for pilgrims, certain problems have arisen. These problems include such negative aspects as traffic congestion, long periods of waiting required for transfer between sites, and an increase in levels of environmental pollution, all of which have necessitated turning to more modern and efficient means of transportation between the sacred sites.
+The Sacred Sites Train
+The Custodian of the Two Holy Mosques King Abdullah Bin Abdulaziz ordered the construction of the sacred sites train network in order to assist in the transport of pilgrims between the sacred sites and thereby reduce the problem of traffic jams and all other negative aspects which accompany them.
+At the present time, the train connects Mina, Muzdalifah and Arafat. Its primary aim is to
+lessen dependence on buses to move pilgrims between the sacred sites. It is expected that the train will replace 30,000 buses and will contribute greatly to increasing the safety level of pilgrim movement while also transporting large numbers of pilgrims within a short time frame as compared to traditional methods of transport. This will also contribute to a smoother flow of traffic for those buses that remain in service.
+The train travels between nine main stations in Arafat, Muzdalifah and Mina, beginning with three stations in Arafat, followed by three stations in Muzdalifah, and finishing with final three stations in Mina.
+The first of the three stations in Mina is located at the beginning of the sacred site coming from Muzdalifah, while the second station is situated in central Mina, and the third and final station is located near the fourth floor of the Jamarat Bridge building in Mina.
+The sacred sites train allows easy access and departure and moves at high speed on a route readily accessible to pilgrims. The train operates on an elevated double track and takes into account the local geography, avoiding wadis and floodplains. Every elevated station is equipped with two waiting areas for pilgrims, each of which has a maximum capacity of 3000 people; while a further waiting area has been provided at ground level to assist in organizing passengers.
+All waiting areas are equipped with safety measures as well as climate control.
+In summary, the sacred sits train is an outstanding achievement in the history of Hajj transportation where it is possible to transport half a million pilgrims in only six hours which makes it the highest capacity train in the world. This is another example of the services which the Kingdom of Saudi Arabia offers to the pilgrims from across the globe.
+
+===== SAMPLE 039 | tokens=393 =====
+Platelet-derived growth factor isoforms AA, AB, and BB differentially activate poly r(I):r(C)-induced genes in human fibroblast FS4 cells.
+
+Polyribocytidylic-polyriboinosinic acid [poly r(I):r(C)]-inducible genes were isolated by a differential screening procedure from a human fibroblast cell (FS-4) cDNA bank. Among yet unidentified genes (gene 274), one codes for a protein with multiple finger motifs and has previously been detected in endothelial cells after tumor necrosis factor-alpha (TNF-alpha) treatment (A20; Opipari et al., 1990), the second one codes for a variant of the I kappa B family (Haskill et al., 1991), and a third one for the Ca2+ ATPase (isoform 1). Platelet-derived growth factor (PDGF) isoforms (AA, AB, and BB) stimulated the expression of these immediate-early genes. But the extent of the respective induction correlated neither with the number of the two receptors alpha or beta nor with the level of PDGF-stimulated receptor autophosphorylation on tyrosine. Although alpha-receptors were less abundant than beta-receptors (12,500 binding sites were estimated for PDGF-AA, KD 0.03 nM; 20,000 for PDGF-AB, KD 0.03 nM; 35,000 for PDGF-BB KD 0.16 nM) and tyrosine phosphorylation induced by PDGF-AA was significantly less than that evoked by PDGF-BB, some of the investigated genes were more strongly induced by PDGF-AA. We discuss how the differences in the biological potency of the PDGF isoforms may reside in different functions of the two receptors by activation of alternative signaling pathways.
+
+===== SAMPLE 040 | tokens=364 =====
+Resection or transplant-listing for solitary hepatitis C-associated hepatocellular carcinoma: an intention-to-treat analysis.
+
+OBJECTIVES
+The relative roles of liver resection (LR) and liver transplantation (LT) in the treatment of a solitary hepatocellular carcinoma (HCC) remain unclear. This study was conducted to provide a retrospective intention-to-treat comparison of these two curative therapies.
+
+
+METHODS
+Records maintained at the study centre for all patients treated with LR or listed for LT for hepatitis C-associated HCC between January 2002 and December 2007 were reviewed. Inclusion criteria required: (i) an initial diagnosis of a solitary HCC lesion measuring ≤ 5 cm, and (ii) Child-Pugh class A or B cirrhosis. The primary endpoint analysed was intention-to-treat survival.
+
+
+RESULTS
+A total of 75 patients were listed for transplant (LT-listed group) and 56 were resected (LR group). Of the 75 LT-listed patients, 23 (30.7%) were never transplanted because they were either removed from the waiting list (n = 13) or died (n = 10). Intention-to-treat median survival was superior in the LR group compared with the LT-listed group (61.8 months vs. 30.6 months), but the difference did not reach significance. Five-year recurrence was higher in the LR group than in the 52 LT patients (71.5% vs. 30.5%; P < 0.001).
+
+
+CONCLUSIONS
+In the context of limited donor organ availability, partial hepatectomy represents an efficacious primary approach in properly selected patients with hepatitis C-associated HCC.
+
+===== SAMPLE 041 | tokens=768 =====
+The Osborn Range is a small mountain range located on the northwest flank of Tanquary Fiord on north-central Ellesmere Island, Canada. It lies just outside Quttinirpaaq National Park and is one of the northernmost mountain ranges in the world forming part of the Arctic Cordillera; the only named summit in the Osborn Range is Mount Townsend 1,235 m at the southwest edge of the Osborn Range near McKinley Bay, formed by the Chapman Glacier. A well-known glacier called. List of mountain ranges
+Newfoundland and Labrador
+Newfoundland and Labrador is the most easterly province of Canada. Situated in the country's Atlantic region, it comprises the island of Newfoundland and mainland Labrador to the northwest, with a combined area of 405,212 square kilometres. In 2018, the province's population was estimated at 525,073. About 92% of the province's population lives on the island of Newfoundland, of whom more than half live on the Avalon Peninsula; the province is Canada's most linguistically homogeneous, with 97.0% of residents reporting English as their mother tongue in the 2016 census. Newfoundland was home to unique varieties of French and Irish, as well as the extinct Beothuk language. In Labrador, the indigenous languages Innu-aimun and Inuktitut are spoken. Newfoundland and Labrador's capital and largest city, St. John's, is Canada's 20th-largest census metropolitan area and is home to 40 percent of the province's population. St. John's is the seat of government, home to the House of Assembly of Newfoundland and Labrador and to the highest court in the jurisdiction, the Newfoundland and Labrador Court of Appeal.
+A former colony and dominion of the United Kingdom, Newfoundland gave up its independence in 1933, following significant economic distress caused by the Great Depression and the aftermath of Newfoundland's participation in World War I. It became the tenth province to enter the Canadian Confederation on March 31, 1949, as "Newfoundland". On December 6, 2001, an amendment was made to the Constitution of Canada to change the province's name to Newfoundland and Labrador; the name "New founde lande" was uttered by King Henry VII in reference to the land explored by the Cabots. In Portuguese it is Terra Nova, which means "new land", the French name for the Province's island region; the name "Terra Nova" is in wide use on the island. The influence of early Portuguese exploration is reflected in the name of Labrador, which derives from the surname of the Portuguese navigator João Fernandes Lavrador. Labrador's name in the Inuttitut language is Nunatsuak, meaning "the big land". Newfoundland's Inuttitut name is Ikkarumikluak meaning "place of many shoals".
+Newfoundland and Labrador is the most easterly province in Canada, is at the north-eastern corner of North America. The Strait of Belle Isle separates the province into two geographical parts: Labrador, a large area of mainland Canada, Newfoundland, an island in the Atlantic Ocean; the province includes over 7,000 tiny islands. Newfoundland is triangular; each side is about 400 km long, its area is 108,860 km2. Newfoundland and its neighbouring small islands have an area of 111,390 km2. Newfoundland extends between latitudes 46°36′N and 51°38′N. Labrador is an irregular shape: the western part of its border with Quebec is the drainage divide of the Labrador Peninsula. Lands drained by rivers that flow into the Atlantic Ocean are part of Labrador, the rest belongs to Quebec. Most of Labrador's southern boundary with Quebec follows the 52nd parallel of latitude. Labrador's extreme northern tip, at 60°22′N
+
+===== SAMPLE 042 | tokens=373 =====
+About the Tutorial:
+This tutorial will present you with the basics of how to use NetLogo to create an agent-based modeling. During the tutorial, we will briefly discuss what agent-based modeling is, and then dive in to hands-on work using the NetLogo programming language, which is developed and supported at Northwestern University by Uri Wilensky. No programming background or knowledge is required, and the methods examined will be useable in any number of different fields.About the Instructor(s):
+Bill Rand is an assistant professor of Business Management at the Poole College of Management at North Carolina State University and a computer scientist by training. He has co-authored a textbook on agent-based modelingwith Uri Wilensky, the author of the NetLogo programming language. He is also the author of over 50 scholarly papers, many of which use agent-based modeling as their core methodology. He received his doctorate in computer science in 2005 from the University of Michigan, and was also awarded a postdoctoral fellowship to Northwestern University, where he worked directly with Uri Wilensky as part of the NetLogo development team.Syllabus
+- Introduction to ABM
+- Tabs, Turtles, Patches, and Links
+- Code, Control, and Collections
+- Putting It All Together
+h/t to ComplexExplorer
+WE’RE LAUNCHING A NEW TUTORIAL!
+Fundamentals of NetLogo, a primer on the most used agent-based modeling software, will be available tomorrow.
+Stay tuned for our launch announcement, and check out all our tutorials at https://t.co/APIkME07y5 pic.twitter.com/M8qIJp1R6x
+— ComplexityExplorer (@ComplexExplorer) April 2, 2018
+
+===== SAMPLE 043 | tokens=768 =====
+Does your child sit on the floor with their legs rotated out to the sides, feet pointing in front of them? Is this their preferred pattern of sitting on the floor? Is it, in fact, the only position your really ever see them use on the floor? Well then, you have yourself a W-sitter. And it might not be the death knell to development that you may have been led to believe. But here is why it can affect your child’s walking and sitting, and here are some easy ways to address this issue.
+“W” sitting is not an abnormal sitting pattern. Let me repeat and refine that: it is not abnormal for young children to sit in that position at times throughout the day. It is a very stable position that allows them to reach forward for toys placed directly in front of them. If your child uses a variety of sitting patterns, and you have no indication from anyone that they have issues with strength or stability, relax.
+Therapists get concerned when three things happen: your child uses only this position when floor sitting, she isn’t comfortable or stable in any other position so that even if you help her sit another way, she pops out of it and reverts to “W” sitting or falls over, and she also has either low muscle tone or weakness in her hip and trunk muscles. I am not going to delve into the difference between muscle tone and muscle strength, and kids who “W” sit can absolutely have issues with both. But if your child has that triple play (preference, instability/discomfort, and tone/strength issues) then you should take action to reduce “W”-sitting.
+Here is the reason why: This position will create an imbalance in hip muscle strength, bias your child’s movement patterns in ways that actually weaken their core musculature, and over-stretch the non-elastic ligaments that support the spine and hip. “W” sitting is a self-fulfilling prophecy. The more this pattern is used, the less control your child has for strong, dynamic and balanced trunk and hip control. Therapy can do a great job of helping your child build the strength and control to use a wider range of sitting and movement patterns. This is what you can do:
+- Pay attention to how they sit, and offer alternatives. Sitting on a bench or chair that is well-proportioned for them is a good alternative. This means that you have to offer a young child a table and a chair that allows them to place their entire foot flat on the floor while sitting, and reach objects on a table with ease. Big-box stores do not sell sets that fit children under 3 unless your child is at the top of the height curve. Look around for wooden sets that you can make shorter, take a look at the sites that sell Montessori sets or school supply sets. Don’t let the price tags frighten you: these things sell fast on ebay or craigslist. When your child is 4 or 5, go out and buy the bigger set.
+- Try not sitting. Have them stand at a table, and easel, or use toys that stick to the wall or another vertical surface for play. A child can lie on their stomach or even try hands-and knees play. Use high kneeling at a table ( child kneels on knees but hips aren’t touching their bottom, their upper body is straight up). Your PT will thank me.
+- This is an extra credit question: Why would you ask them to lie on their back and play? Answer: They engage their core more fully, and their legs are likely to either be planted flat on
+
+===== SAMPLE 044 | tokens=768 =====
+|On this page|
+This CHOP converts rows and/or columns of pixels in an image to CHOP channels. It generates one CHOP channel per span of pixels in the image. Pixels, rows, columns or rectangular regions can be extracted from the image.
+There is an optional input which supplies UV coordinates to sample the image. The input CHOP must contain two channels, one for U and one for V. The first channel is always assumed to be U. The channels produced (red, green, blue and alpha) will be exactly as long as the input channel’s length, with a value for each UV coordinate.
+Specify the COP Network, and the COP here as the source from which the image should be obtained.
+The frame number from which to obtain the image.
+Red, Green, Blue, Alpha
+Creates a CHOP channel per scanline with the prefix specified here, starting at 0. For example, the default is "r" in the Red field. If the specified COP is a horizontal ramp that is 5 lines high, it creates five CHOP channels (r0 - r4) using the values of the red pixels in those scanlines.
+Scales the output to lie in the range
+Extracts a single pixel from the image.
+Extracts a single row from the image. The V Start indicates the row to select, and the U Start and U End indicate the range to extract.
+Extracts a single column from the image. The U Start indicates the column to select, and the V Start and V End indicate the range to extract.
+Rows and Columns
+Extracts an area from the image.
+Extracts the full image.
+Specifies the units for the following 4 parameters.
+Starting point for sampling in U. Values outside the range of the image are determined by the image’s extend conditions, in the extend page.
+Ending point for sampling in U.
+Starting point for sampling in V.
+Ending point for sampling in V.
+Determines the interpolation method when UV sampling with an input CHOP is used.
+The image extend conditions when sampling the image with U less than 0.
+The image extend conditions for U greater than 1.
+The image extend conditions for V greater than 1. The extend conditions are:
+Use the first or last pixel value.
+Loop back to the other side of the image.
+Zig-zap back into the image.
+Use a default color specified below.
+The color to use when outside the bounds of the image, and the Default Color extend condition is set.
+Some of these parameters may not be available on all CHOP nodes.
+To determine which channels get affected, some CHOPs have a scope string. Patterns can be used in the scope, for example
+* (match all), and
+? (match single character).
+The following are examples of possible channel name matching options:
+Matches a single channel name.
+chan3 tx ty tz
+Matches four channel names, separated by spaces.
+Matches each channel that starts with
+Matches each channel that has
+foot in it.
+? matches a single character.
+t? matches two-character channels starting with t.
+Matches number ranges giving
+[xyz]matches three characters, giving channels
+Sample Rate Match
+The Sample Rate Match Options handle cases where multiple input CHOPs’ sample rates are different.
+Resample At First Input’s Rate
+Use rate of first input to resample others.
+Resample At Maximum Rate
+Resample to highest sample rate.
+Resample At Minimum Rate
+Resample to the
+
+===== SAMPLE 045 | tokens=234 =====
+CADMANT: Context Anomaly Detection for MAintenance and Network Troubleshooting
+
+In telecommunications network troubleshooting, analytical applications are widely used. Such applications typically use CEP (Complex Event Processing) and SQL queries for data processing and network analysis. Performance engineers need in-depth knowledge of both the telecommunications domain and telecommunications data structures in order to create the required queries. Moreover valuable information contained in free form text data fields such as “additional_info”, “user_text” or “problem_text” can also be ignored. This work proposes CADMANT: Context Anomaly Detection for MAintenance and Network Troubleshooting. Traditional approaches focus on a specific record type and create specific cause and effect rules. With the CADMANT approach all free form text fields of alarms, logs, etc. are treated as text documents similar to Twitter feeds. CADMANT uses distance based outlier detection within sliding windows to detect abnormal terms at configurable time intervals. The CADMANT approach provides automated analysis without the requirement for SQL/CEP queries and provides distinct network insights in comparison to traditional approaches.
+
+===== SAMPLE 046 | tokens=195 =====
+P SY 333D T IPS FOR S TUDYING T EXTS : E XAM O NE Read everything in the assigned chapters. You will be tested over the following concepts and passages (passages are italicized): C HAPTER O NE : Bronfenbrenner’s bioecological model 7 assumptions of ‘today’s’ lifespan perspective 3 critical features of experimental design The Correlational Method C HAPTER T WO : Sections on nature/nurture, goodness/badness, activity/passivity, continuity/discontinuity, universality/specificity) C HAPTER T HREE : Difference between mitosis and meiosis Single Gene-pair Inheritance What are most chromosome abnormalities due to? Examples? Explorations: Prenatal detection of abnormalities Estimating Influences Accounting For Individual Differences: Intellectual Abilities
+This is the end of the preview. Sign up
+access the rest of the document.
+
+===== SAMPLE 047 | tokens=768 =====
+Presentation on theme: "ALABAMA REMEMBERS THE CIVIL RIGHTS MOVEMENT By Ann-Marie Peirano."— Presentation transcript:
+ALABAMA REMEMBERS THE CIVIL RIGHTS MOVEMENT By Ann-Marie Peirano
+During the 1950s and 1960s Alabama was the site of some of the most intense Civil Rights struggles in the country. Montgomery, Selma, Birmingham, and Tuscaloosa led the resistance against inequality, racism, and hatred.
+The Civil Rights Movement in Montgomery, Alabama
+In Montgomery on December 1, 1955 Rosa Parks was arrested for refusing to give up her seat to a white man on a segregated city bus. The next night, African American community leaders met in the Dexter Avenue Baptist Church to organize a massive bus boycott.
+Martin Luther King, Jr. became the movement’s captivating leader. After a year of boycotting the protesters won a federal case forcing the desegregation of the busing system.
+The Civil Rights Movement is remembered in Montgomery today.
+In 1989 the Southern Poverty Law Center dedicated the Civil Rights Memorial in Montgomery, Alabama. Maya Lin created the structure, which is made of black granite and honors forty individuals who gave their lives fighting for civil rights.
+The Dexter Avenue Baptist Church was the rallying place for participants of the Montgomery bus boycott.
+The name of the church was changed to Dexter Avenue King Memorial Baptist Church in honor of Dr. Martin Luther King, Jr. who served as pastor from 1954 until 1960.
+The Civil Rights Movement in Tuscaloosa, Alabama
+In the spring of 1963, The University of Alabama was ordered by the court to enroll an African American student. A few months earlier, George Wallace had been inaugurated as Governor.
+During his campaign, Wallace had declared, “Segregation now! Segregation tomorrow! Segregation forever!” When African American students tried to register, Wallace blocked the entrance to Foster’s Auditorium, making his famous “stand in the school house door.”
+The University of Alabama holds an annual “March to the Schoolhouse Door” to honor the courage of those who challenged segregation.
+Foster Auditorium in Tuscaloosa, Alabama
+George Wallace attempted to block Vivian Malone and James Hood from enrolling at The University of Alabama.
+In 1965, Vivian Malone became the first African American to graduate from The University of Alabama.
+James Hood returned to the University in 1997 to earn his doctorate.
+The Civil Rights Movement in Birmingham, Alabama
+In 1963, Martin Luther King, Jr. led protesters in Birmingham, where Police Commissioner Eugene “Bull” Connor used dogs, cattle prods, tear gas, and fire hoses on the demonstrators.
+On September 15, 1963 the violence reached a bloody climax when a bomb was set off at the Sixteenth Street Baptist Church. Four little girls were killed by the explosion, which took place on a Sunday morning.
+Today Birmingham honors those who sacrificed for the cause of human dignity.
+The site of the Sixteenth Street Baptist Church.
+The sign outside of the Sixteenth Street Baptist Church. Robert E. Chambliss, Thomas Blanton Jr., and Bobby Frank Cherry were convicted of the bombing. Cherry was not convicted until 2002.
+The Birmingham Civil Rights Institute honors those who fought for human dignity during the Civil Rights Movement.
+The Civil Rights Movement in Selma, Alabama
+Martin Luther King Jr. organized a march from Selma to Montgomery on Sunday, March 7, The purpose was to focus attention on voting rights for African Americans. Police and state troopers met protesters on the Edmund Pettus Bridge and savagely beat them. Sixty were injured, and sixteen had to be hospitalized
+
+===== SAMPLE 048 | tokens=512 =====
+If you have a plastic extrusion-based personal 3D printer, there's some things you'd better know. This printing technology has its quirks regardless of the brand and model of machine you're using. We've put together a few of the most basic things to know before you get started.
+Level The Bed: Perhaps the single most important thing you can do to encourage successful 3D prints is to make certain your print bed is as level as humanly possible. Even a slight tilt can cause your 3D printer to have varying gaps between the print nozzle and the bed. This means in some areas the nozzle might be too far from the bed resulting in bad sticking; in other areas the nozzle will be too close resulting in extruder jams. Follow your manufacturer's instructions - to the letter!
+Set The Z-Gap: If your bed is level, you then must make certain your Z-Gap is properly set. It's the space between the print head and the bed. If the gap is too low or zero, there's little space for molten plastic to come out of the nozzle. If it's too high plastic might not be able to properly stick to the bed. Again, follow your manufacturer's instructions.
+Watch The First Layers: The most important part of any 3D print is the first layer. It must successfully adhere to the print bed otherwise you're going to have a lot of trouble as the print proceeds. Therefore it's good practice to carefully observe the first few layers as they are deposited. If they succeed, it's likely the remainder of the print will work. If not, it's advisable to cancel the print and try again - you'll save time and a lot of plastic filament.
+Print Small: Resist the urge to print gigantic items. The larger your print, the more likely something will go wrong. Smaller prints take much less time to complete and you will be a happier 3D printer owner. Try larger prints when you have experience and are willing to withstand some disappointment.
+Maintain Your Machine: Your 3D printer is a very mechanical device. It has moving parts that require maintenance. Follow your manufacturers maintenance instructions closely. You will likely be cleaning and lubricating moving parts. Also ensure you keep the machine clear of dust and debris: these can easily contaminate your filament feed system and gum up your extruder.
+Be Patient: Printing takes a long time; impatience will lead to huge disappointment. Printing also fails frequently. Plan for failure and be happy when things work.
+
+===== SAMPLE 049 | tokens=172 =====
+[Effect of amber acid on the kidney function in gentamycin-induced nephropathy in white rats].
+
+The amber acid neutralized by 10 % solution of NaOH in a concentration of 250 mmoL/L was administered subcutaneously simultaneously with intraperitonal injection of gentamycin in a doze of 10 mg/kg(bw) once a day during 7 days to the ten nonlinear white male rats, weight 100-120 g exposed to the water-induced diuresis. In these experiments the positive action of an amber acid as energy substratum on some renal function tests was shown: improvement of reabsorbtion in proximal tubules, proved by proteinuria decrease, subsequent normalization of glomerular filtrations followed by uremia reduction and diminishing of other signs of acute renal failure.
+
+===== SAMPLE 050 | tokens=581 =====
+Reproducibility of PSMA PET/CT Imaging for Primary Staging of Treatment-Naïve Prostate Cancer Patients Depends on the Applied Radiotracer: A Retrospective Study
+
+Visual Abstract Our purpose was to determine and compare the interobserver variability of 3 clinically frequently used radiotracers targeting the prostate-specific membrane antigen (PSMA), namely 18F-DCFPyL, 18F-PSMA-1007, and 68Ga-PSMA-11, in primary prostate cancer (PCa) staging. Methods: Patients with newly diagnosed PCa in whom PSMA PET/CT was performed for primary staging purposes were retrospectively included. All PSMA PET/CT images were centrally overread within a high-volume PCa center, and original reports (from referring hospitals) were compared with overread reports (from the overreading hospital). To assess the interobserver variability, a Cohen κ analysis was used. To study possible differences in interobserver variability between the 3 applied PSMA radiotracers, multivariate logistic regression analyses were used. Results: In total, 584 patients with newly diagnosed PCa were included in the analysis. 18F-DCFPyL, 18F-PSMA-1007, and 68Ga-PSMA-11 were used in 205 (35.1%), 168 (28.8%), and 211 (36.1%) patients, respectively. The overall agreement (Cohen κ analysis) for locoregional lymph node metastases, distant lymph node metastases, bone metastases, and visceral metastases was 0.86, 0.86, 0.80, and 0.46, respectively. 18F-PSMA-1007 showed a significantly increased interobserver variability regarding bone metastases, compared with 18F-DCFPyL and 68Ga-PSMA-11 (P = 0.001 and 0.03, respectively). Additionally, 18F-PSMA-1007 showed a significantly increased interobserver variability regarding overall agreement and locoregional lymph node metastases, compared with 18F-DCFPyL (P < 0.001 and P = 0.01, respectively). Conclusion: Interobserver variability differs among the 3 clinically frequently used PSMA radiotracers (18F-DCFPyL, 18F-PSMA-1007, and 68Ga-PSMA-11) in patients with newly diagnosed PCa. The agreement in bone metastases is significantly worse for 18F-PSMA-1007, mainly due to nonspecific tracer uptake in osseous structures. On the basis of our findings, PSMA PET/CT scans undertaken with 18F-PSMA-1007 in primary staging should be interpreted carefully, and training on interpreting this specific PSMA radiotracer is strongly advised.
+
+===== SAMPLE 051 | tokens=521 =====
+The Perfect Joy
+spirituality of St. Francis
+of Assisi is summarized in the celebrated lesson on "perfect joy" which
+Francis gave Friar Leo.
+"One day near St. Mary of the
+Angels, the blessed Francis called Friar Leo and said, ‘Friar
+‘Here I am,’ replied the other.
+‘Write down what is perfect
+joy. If a messenger should arrive from Paris announcing that all the
+from Paris had come into the Order, write down: true joy is not therein.
+If all the prelates,
+archbishops and even the King of France and the King of England should
+join the Order, write down: true joy is not therein.
+Further if all my
+friars should go among the infidels and convert them all to the faith,
+or if I should have so much grace from God that I heal the sick and
+miracles, write down: true joy is not therein.
+But what is perfect joy?
+I return from Perugia in the black of night and I come here and it is
+muddy and so cold that icicles form on the hem of my tunic and strike
+my legs without cease and draw blood from my wounds. Thus covered with
+mud, soaked and frozen I come to the door and after I call out and
+for a long time, a friar comes and asks: ‘Who are
+you?’ I answer, ‘Friar
+Francis,’ and he says: ‘Begone! This is not an hour
+to be wandering around!’
+And since I insist and knock further, he answers: ‘Begone!
+You are a worthless
+fellow, a simpleton. Don’t come here anymore. We are just so
+many and have
+no need of you!’
+still knock on the door, and
+I say: ‘For the love of God give me shelter for this
+night.’ And he answers,
+‘I will not. Go to the hospital of the Cruciferi and ask
+I endure all this patiently and without dismay, I say to you,
+that therein lies perfect joy, true virtue and the salvation of the
+to Excerpts Index
+in KC] [Babaji's
+Cave] [SRF Quiz]
+[SRF Links] [Thoughts]
+[Humor] [What's New]
+
+===== SAMPLE 052 | tokens=215 =====
+How to teach nature in an interesting way, how to encourage children to watch and explore it? One option is classes with birds. We hope that the education offers, ideas and information presented here will help and inspire your work. Our offer is the education programme “Przyroda wokół nas – Ptaki” (Nature around us – Birds).
+Schools and other education units are welcome to participate. We offer a free set of teaching materials that will come in useful when creating attractive classes on birds: the diversity of their species, habitats used by them and problems of their conservation.
+We launched an education internet portal for children and youth, www.otopjunior.org.pl . We hope that OTOPJunior will be an attractive site, visited by pupils, nature education teachers and instructors alike.
+Plaes contact us:
+Pomorskie Biuro OTOP, ul. Lipowa 4, 84-230 Rumia
+tel./fax: +48 58 341 26 93
+Partner of the project:
+
+===== SAMPLE 053 | tokens=237 =====
+Global Math Week: Second, Fourth, and Fifth Graders Learn About Exploding Dots
+This month, MMS students in second, fourth, and fifth grade participated in Global Math Week, a grassroots program that shares fun and creative math activities with students around the world. Organizers aimed for ten million children in 2018.
+This year’s assignment is based on the theory of Exploding Dots, which is directly relevant to elementary school mathematics, but also provides a gateway to abstract mathematical explorations beyond the standard curriculum. The theory of Exploding Dots was formulated by mathematician James Tanton. In its simplest form, it is a visual model designed to teach students how to perform binary arithmetic, and calculations in different number bases. The theory is especially relevant to MMS students; they soon realize that Exploding Dots is really just a variation of the Montessori Stamp Game, which is used in Kindergarten and Lower Elementary to teach place value and dynamic addition with exchanges. By studying Exploding Dots, children better understand the role of place value in our number system. More importantly, they learn to see mathematics as a creative endeavor of discovery and experimentation.
+
+===== SAMPLE 054 | tokens=768 =====
+BOOKS by KATHLEEN V. KUDLINSKI
+"Look," this book urges the reader, and "Look again," at the lives and fates of some of the wildest of Western animals and of a few of the Native Americans who so revered them. Horses, the "Sacred Dogs" of the Plains Indians, wolves, grizzleys, cougars and more are illustrated with 25 of Judy Larson's spectacular paintings.
+Each painting invites that a second look, for related images are hidden there for observant children and their parents to find and ponder. Often the concealed image is of an animal, Indian, or spirit who shares the same struggle for survival in The West.
+A description of the artist's scratchboard technique plus activities appropriate for younger children are included. An extensive "To Learn More" section lists web references for readers eager to explore even further. A final key to every hidden image finishes the book so curious children can check to see if they've missed any small secret hidden in the amazing artwork.
+The Greenwich Workshop Press, Seymour, CT, 2010
+Distributed by Workman Press
+For ages 7 and up.
+48 pages. $16.95 ISBN 978-0-86713-150-5
+Author's secret - I have watched, far in the distance, as a herd of wild horses grazed over a desert hillside where I could not find a single green plant. There is magic in their will to survive.
+Boy, Were We Wrong About Dinosaurs!
+*Starred Review* K-Gr. 3. What could be more heartening to children than the unabashed admission that grown-ups make mistakes? Science has had its share of theories once accepted as fact but later superseded, and the mystery of dinosaur fossils seems to have brought out the imaginative side of scientists. Beginning with the ancient Chinese, who decided that dinosaur fossils came from dragons that still lived, the story fast-forwards to nineteenth-century scientists, who guessed that Iguanodon's sharp, conical bone was a spike on its head, rather than a spur on its hand. One mistaken idea after another is examined and illustrated with an ink drawing juxtaposed against a single-color background. Further information comes to light, and the information is corrected on a page showing a dinosaur drawing tinted with full-color washes. Intelligently designed and imaginatively conceived, the artwork makes the text more understandable and the whole book more beautiful. It also reflects the outlook of the text, portraying the scientists of each generation as earnest, sometimes puzzled searchers who did the best they could with the evidence available. The ending returns to the Chinese beliefs, stating that if birds are the descendants of dinosaurs, then they still live. Best of all, the closing paragraph acknowledges that the search is not over yet: the children fascinated by this book may one day find new answers to old questions about the dinosaurs. Carolyn Phelan
+Reading Level 4-8 32 Pages
+Dutton Juvenile, 2005
+ISBN-10: 0525469788 $15.99
+Author's Secret: I use a beautiful chunk of dinosaur poop - fossilized, cut, and polished - as a bookend on my printer desk. It is a rainbow-hued, odorless rock now. But thirty million years ago? Ick!
+Dr. Suess, Young Author and Artist
+Just finished this book, part of the Childhood of Famous Americans series I've been reading since the '70s. The author does a wonderful job of telling Seuss' life story in a way that is interesting and neither glosses over difficult topics nor scares the young reader with them. Tough topics such as his first wife's despondency over a long-term debilitating illness
+
+===== SAMPLE 055 | tokens=455 =====
+Polycolonization of Helicobacter pylori among Chinese subjects.
+
+OBJECTIVE
+To investigate the situation among Chinese patients with regard to infection with multiple strains of Helicobacter pylori.
+
+
+METHODS
+Biopsy specimens for culture of H. pylori were obtained from gastric antrum, body and fundus of 20 patients during endoscopic investigation of upper gastrointestinal symptoms. H. pylori was identified by culture from one site in 16 and two or more sites in 10 of the 16 patients. Five isolated colonies of six strains of H. pylori from gastric antrum were subcultured and used for further analysis. Antibiotic susceptibility to metronidazole and clarithromycin was determined by disk diffusion test. Protein profiles of isolates were compared by sodium dodecylsulfate-polyacrylamide gel electrophoresis (SDS-PAGE). DNA diversity of the isolates was determined by arbitrarily primed polymerase chain reaction (AP-PCR) fingerprinting.
+
+
+RESULTS
+Of the 10 patients with multiple isolates, 70% (7/10) exhibited variation in susceptibility to metronidazole and 20% (2/10) to clarithromycin between different sites. In 83% of (5/6) single colonies, no variability was seen in metronidazole and clarithromycin susceptibility; they were either susceptible or resistant. Protein profiles of all isolates by SDS-PAGE were similar. Isolates from different patients produced clearly different AP-PCR fingerprints. In 50% of H. pylori strains isolated from different sites of the stomach, genetic diversity was demonstrated by different AP-PCR fingerprints. In 67% (4/6) strains, five single-colony fingerprints were similar.
+
+
+CONCLUSIONS
+Genetic variability has been found in H. pylori strains. Individual patients are infected with a single predominant genotype at a single site but can be colonized by multiple strains, and they may show different antibiotic susceptibilities. Individual colonies of the H. pylori population from a single site may not always yield identical DNA fingerprints and antibiotic sensitivities.
+
+===== SAMPLE 056 | tokens=174 =====
+About Not Predicting the Future …
+
+Organisational justice has been identified as the glue that allows people to work together effectively. The increasing electronic monitoring and surveillance of workers that has emerged in the 21st century may be conceived as a continuation of former practices – indicated in words like ‘supervisor’ and ‘overseer’, with their connotations of a person physically looking down on the workers they controlled. There is a growing stream of literature on the notion of ‘meaningful’ work. Information justice can be expected to be a key strategy for managing uncertainty and stress in the context of this new world of work, because a feeling of personal control can be a crucial coping resource during organisational transition, thereby reducing perceived stress. The chapter also presents some closing thoughts on the key concepts discussed in the preceding chapters of this book.
+
+===== SAMPLE 057 | tokens=768 =====
+The most basic question asked to a beginner in a Java Interview is “What are the advantages of Java Programming Language?”. Here is a detailed answer to this question.
+Java is a relatively high level language. It provides lot of features out of the box, which makes it easy to learn for today’s developers and focus on the real business implementation rather than worrying about the system level infrastructure management.
+Few of the advantages of Java Programming Language are:
+- Platform Independence : Java is platform independent, which means that if a program is written and compiled in Java on any platform(underlying hardware and software), it can run on any other platform of similar capabilities subjected to available hardware (computing power, memory and disk space) and software(installed JRE) requirements. This is achieved by the virtue of the software component which is called Java Virtual Machine which is an abstract computing machine, when I say abstract I mean it can have many implementations. Oracle provides one such implementation.
+- Automatic Storage Management : This is done using a garbage collector, which avoids the safety problems of explicit de-allocations. This means that a programmer need not call the destructor (as in C/C++) to explicitly de allocate the memory used by an the structures or objects. In Java when an object is no longer referenced, it may be reclaimed by the garbage collector. The programmer cannot force the garbage collection event, the JVM triggers it as per the need. Java also provides capabilities to objects to perform some cleaning work (if required) like freeing connections and other system resources before it is garbage collected. Java with the help of JVM also unloads classes if they are no longer needed in the execution.
+- Avoids Unsafe Constructs : In Java arrays are accessed after explicitly doing an index check on the bounds of the array. It throws an
+ArrayIndexOutOfBoundexception in case the program tries to access an index which is not within the range of the array. This helps in running the program correctly, else imagine a scenario where the language does not check the array index and returns a value which is stored in the memory location, but the memory location is not within the boundaries of the array. This could pose a big question on the correctness of your program.
+- No explicit declaration order required : It does not require types (Classes or Interfaces) or their members(fields and methods) to be declared before they are used. It only becomes significant when we declare local variables, local classes and the order of initializers of fields in a class or interface. All other variables are automatically initialized to a default value, the Java programming language does not automatically initialize local variables.
+- Type Safety : Java is a safe programming language because of its static typed and strongly typed nature. Statically typed means every variable is declared and has a type and the type is known at the compile time. Strongly typed means that a variable can only be assigned a set of values which are compatible with the type of the variable. This also helps in identifying most of the errors at compile time and clearly distinguishes them with the runtime errors.
+- Exception Handling Support : Java has defined an Exception Hierarchy and has a great support for Exception Handling. This offers a lot of robustness and helps the developers to handle compile time exceptions without fail and write a defensive program.
+- Multi-threading Support : Java encapsulates the underlying system’s thread infrastructure and offers a great and easy support for multi threading. There is no explicit need of writing a monitor code for acquiring a locks on objects. Java also makes it easy to create multiple threads and execute independent tasks with the help of Thread Pools.
+If you want to learn these aspects in more detail look at Core Java section
+Happy
+
+===== SAMPLE 058 | tokens=88 =====
+A Taxonomy Of Aspect-Oriented Security
+
+Aspect-Oriented Programming is gaining prominence, particularly in the area of security. There are however no taxonomies available, that classify the proliferation of research done in the area of Aspect-Oriented Security. This paper attempts to categorize research outputs conducted in this area, and evaluate the usability of the aspect-oriented paradigm in terms of software security.
+
+===== SAMPLE 059 | tokens=584 =====
+Neuroplasticity induced by tooth pulp stimulation in trigeminal subnucleus oralis involves NMDA receptor mechanisms.
+
+We have recently demonstrated that application of the mustard oil (MO), a small-fiber excitant and inflammatory irritant, to the rat maxillary molar tooth pulp induces significant increases in jaw muscle electromyographic (EMG) activity and neuroplastic changes in trigeminal (V) subnucleus caudalis. Since subnucleus oralis (Vo) as well as caudalis receives projections from molar pulp afferents and is also an integral brain stem relay of afferent input from orofacial structures, we tested whether MO application to the exposed pulp induces neuroplastic changes in oralis neurons and whether microinjection of MK-801, a noncompetitive NMDA antagonist, into the Vo influences the pulp/MO-induced neuroplastic changes in chloralose/urethan-anesthetized rats. Single neuronal activity was recorded in Vo, and neurons classified as low-threshold mechanoreceptive (LTM), wide dynamic range (WDR), nociceptive-specific (NS), deep (D), or skin/mucosa and deep (S + D). The spontaneous activity, mechanoreceptive field (RF) size, mechanical threshold, and response to suprathreshold mechanical stimuli applied to the neuronal RF were assessed prior to and throughout a 40- to 60-min period after MO application to the maxillary molar pulp. In animals pretreated with saline microinjection (0.3 microl) into the Vo, MO application to the pulp produced a significant increase in spontaneous activity, expansion of the pinch or deep RF, decrease in the mechanical threshold, and increase in response to suprathreshold mechanical stimuli of the nociceptive (WDR, NS, and S + D) neurons except for those nociceptive neurons having their RF only in the intraoral region. The pulpal application of MO did not produce any significant neuroplastic changes in LTM neurons. Furthermore, in animals pretreated with MK-801 microinjection (3 microg/0.3 microl) into the Vo, MO application to the pulp did not produce any significant changes in the RF and response properties of nociceptive neurons. In other animals pretreated with saline (0.3 microl) or MK-801 (3 microg/0.3 microl) microinjected into the Vo, mineral oil application to the pulp did not produce any significant changes in RF and response properties of nociceptive neurons. These findings indicate that the application of MO to the tooth pulp can induce significant neuroplastic changes in oralis nociceptive neurons and that central NMDA receptor mechanisms may be involved in these neuroplastic changes.
+
+===== SAMPLE 060 | tokens=201 =====
+Physiologic Monitor Alarm Rates at 5 Children’s Hospitals
+
+Alarm fatigue has been linked to patient morbidity and mortality in hospitals due to delayed or absent responses to monitor alarms. We sought to describe alarm rates at 5 freestanding children’s hospitals during a single day and the types of alarms and proportions of patients monitored by using a point-prevalence, cross-sectional study design. We collected audible alarms on all inpatient units and calculated overall alarm rates and rates by alarm type per monitored patient per day. We found a total of 147,213 alarms during the study period, with 3-fold variation in alarm rates across hospitals among similar unit types. Across hospitals, one-quarter of monitored beds were responsible for 71%, 61%, and 63% of alarms in medical-surgical, neonatal intensive care, and pediatric intensive care units, respectively. Future work focused on addressing nonactionable alarms in patients with the highest alarm counts may decrease alarm rates.
+
+===== SAMPLE 061 | tokens=768 =====
+An allegiance is a duty of fidelity said to be owed, or freely committed, by the people, subjects or citizens to their state or sovereign.
+
+Etymology
+The word allegiance comes from Middle English  (see Medieval Latin , "a liegance"). The al- prefix was probably added through confusion with another legal term, allegeance, an "allegation" (the French  comes from the English). Allegiance is formed from "liege," from Old French , "liege, free", of Germanic origin. The connection with Latin , "to bind," is erroneous.
+
+Usage
+Traditionally, English legal commentators used the term allegiance in two ways. In one sense, it referred to the deference which anyone, even foreigners, was expected to pay to the institutions of the country where one lived. In the other sense, it meant national character and the subjection due to that character.
+
+Types
+ Local allegiance
+ Natural allegiance
+
+United Kingdom
+The English doctrine, which was at one time adopted in the United States, asserted that allegiance was indelible: "Nemo potest exuere patriam". As the law stood prior to 1870, every person who by birth or naturalisation satisfied the conditions set forth, even if removed in infancy to another country where their family resided, owed an allegiance to the British crown which they could never resign or lose, except by act of parliament or by the recognition of the independence or the cession of the portion of British territory in which they resided.
+
+This refusal to accept any renunciation of allegiance to the Crown led to conflict with the United States over impressment, which led to further conflicts during the War of 1812, when thirteen Irish American prisoners of war were executed as traitors after the Battle of Queenston Heights; Winfield Scott urged American reprisal, but none was carried out.
+
+Allegiance was the tie which bound the subject to the sovereign, in return for that protection which the sovereign afforded the subject. It was the mutual bond and obligation between monarch and subjects, whereby subjects were called their liege subjects, because they are bound to obey and serve them; and the monarch was called their liege lord, because they should maintain and defend them (Ex parte Anderson (1861) 3 El & El 487; 121 ER 525; China Navigation Co v Attorney-General (1932) 48 TLR 375; Attorney-General v Nissan [1969] 1 All ER 629; Oppenheimer v Cattermole [1972] 3 All ER 1106). The duty of the crown towards its subjects was to govern and protect them. The reciprocal duty of the subject towards the crown was that of allegiance.
+
+At common law, allegiance was a true and faithful obedience of the subject due to their sovereign. As the subject owed to their sovereign their true and faithful allegiance and obedience, so the sovereign
+
+  (Calvin's Case (1608) 7 Co Rep 1a; Jenk 306; 2 State Tr 559; 77 ER 377).
+
+Natural allegiance and obedience is an incident inseparable to every subject, for parte Anderson (1861) 3 El & El 487; 121 ER 525). Natural-born subjects owe allegiance wherever they may be. Where territory is occupied in the course of hostilities by an enemy's force, even if the annexation of the occupied country is proclaimed by the enemy, there can be no change of allegiance during the progress of hostilities on the part of a citizen of the occupied country (R v Vermaak (1900) 21 NLR 204 (South Africa)).
+
+Allegiance is owed both to the sovereign as a natural person  and to the sovereign in the political capacity (Re Stepney Election
+
+===== SAMPLE 062 | tokens=636 =====
+The Effect of the Difference in the Distribution of the Level of Ability that is Skeweded Positive for the Parameters of the Items of the Mental Ability Test According to the Item Response Theory
+
+The research aims to study “the effect of the difference in the distribution of the level of ability that is skeweded positive for the parameters of the items of the mental ability test according to the item response theory.” In the light of their observations, no item in the test was excluded because its percentage is (100%). Thus, the descriptive validity of the test was confirmed, and the test was applied to a sample of (60) male and female students chosen at random from middle school students / fourth grade (scientific and literary). It became clear from this experience that the instructions and items of the test are clear and understandable. To conduct the statistical analysis, the test was applied to a sample of (1000) male and female students, depending on the three-way teacher model. On the lower limits of "Gatman", which is a statistically significant factor when the potential root that can be explained is equal to or greater than (1), and the adoption of a saturation percentage (0.30) to accept the saturation of each of the test items with the general factor. The saturation of the test with the general factor showed what except for (6) items of the sequenced items (7, 19, 34, 51, 73, 86). They were deleted so that the test consisted of (88) items. After that, the researcher entered the data and analyzed it again with the ByLock program to judge the suitability of the test items to the model. Depending on the value of the chi-square, where it appeared that (80) of the test items were appropriate to the model and their value of the chi-square (Ka)2 was not statistically significant, while the value of the chi-square for (8) items was statistically significant, which is of the sequence (1), 13, 33, 44, 54, 68, 75, 83. Therefore, they were excluded, and the test consisted of (80) items, and the analysis was re-analyzed for the second time in order to identify the inappropriate items for the purpose of excluding them from the test. Its discrimination coefficient (5.0) to (5.2) and the items in which the guessing coefficient was greater than (30.0), in which two items were deleted from the test and its sequence (19, 43) because its estimate coefficient amounted to (0.408, 0.442) respectively. The analysis was repeated for the third time, and the test in its final form consisted of (78) items, and the validity was verified (descriptive validity, functional itnegraity), and the value of the reliability coefficient was . ( 0.991 ) To achieve the objectives of the research, the data was generated using the Wing program in order to obtain the shape of the positive skeweded distribution. The results showed a statistical significance in the difficulty, discrimination and estimation of items according to the variable form of the positive skewed distribution.
+
+===== SAMPLE 063 | tokens=178 =====
+EXPLORE Multimedia and Education
+The overall objective of the Montana Climate Assessment (MCA) is to inform Montanans about the state’s changing climate so that they can better plan for the future. This page of the MCA provides multi-media, communication, educational materials and other resources for stakeholders across the state.
+The 2017 MCA focused on three sectors that Montana stakeholders identified as important to their lives: water, forests, and agriculture. The MCA videos explore how these sectors have experienced impacts and are currently dealing with climate change. They tell stories from the perspective of real Montanans making decisions and managing these valuable resources.
+The following vignettes explore in more detail the connections between climate change and the sectors of the MCA. The three stories here all focus on climate change and forests, but check back for more details about water and agriculture.
+
+===== SAMPLE 064 | tokens=215 =====
+Antibody level of New Zealand children immunized with the triple vaccine DTP (diphtheria-tetanus-pertussis)
+
+SUMMARY Enzyme-linked immunosorbent assay (ELISA) tests were used to measure IgG antibody levels in 2638 New Zealand children who had been immunized with the triple vaccine DTP. The percentage of children immune to diphtheria decreased with age. The percentage of children immune to tetanus varied from 67.1 to 55.0%. The percentage of children with measurable antibody to pertussis increased with age. The mean percentages of children with measurable antibody or immunity to one or more DTP components were 34.2% (with 3 components), 34.4% (2 components), and 78.1% (1 component). It appears the immunization strategy for diphtheria and tetanus is satisfactory for herd immunity in New Zealand children. However, the current pertussis strategy may not be providing adequate immunity to 5-year-olds in this country.
+
+===== SAMPLE 065 | tokens=88 =====
+An overview of group sequential methods in longitudinal clinical trials
+
+During the last decade, several papers have been published on group sequential methods in general and on sequential longitudinal clinical trials in particular. This paper gives an overview of the proposed methods, emphasizing longitudinal clinical trials. Furthermore, it tries to answer some practical questions that may arise during the conduct of interim analyses in longitudinal trials. Simulations have been carried out to obtain insight in these practical considerations.
+
+===== SAMPLE 066 | tokens=117 =====
+Wireless distributed network key-agreement protocol based on discrete logarithm
+
+Because of the limited processing ability of wireless distributed network devices, most of the equipment are using symmetric encryption algorithm to encrypt the data, both communications need a shared secret key and it should be changed regularly in the service. But the key agreement process is vulnerable to eavesdropping attack, modification attack, man-in-the-middle attack, and so on. This paper proposes a wireless distributed network key agreement protocol based on discrete logarithm problem. It is used to prevent above attacks.
+
+===== SAMPLE 067 | tokens=512 =====
+Three Portuguese organisations, MARETEC, INSTITUTO SUPERIOR TECNICO and ACTION MODULERS, have developed an oil and Hazardous and Noxious Substances (HNS) spill model-based decision support tool for use in the Atlantic, called the ARCOPOL Platform. Since 2014, the Lisbon Agreement (CILPAN) has set up a mechanism to ensure cooperation in the event of pollution incidents. In this context, MARETEC, INSTITUTO SUPERIOR TECNICO and ACTION MODULERS have developed a model-based decision support system to improve preparedness and prevention concerning oil and chemical pollution, based on Lagrangian Wizard (an on-demand simulator), a Dynamic Risk Tool, an oil-spill modelling system and the MOHID-CLEANSEANET oil spill alert system. The oil spill modelling system is downscaled from the Copernicus Marine Service model. Dynamical downscaling is a method for obtaining high-resolution local models from lower resolution CMEMS models as forcing conditions. The European Maritime Safety Agency (EMSA) is a prime user of this service and incorporates oil spill forecasts (backwards and forwards in time) in its CLEANSEANET online graphic interface.
+- Free and sustained information provision for dashboard tool development.
+- High quality information allowing realistic applied results.
+- Provision of sustained and accurate ocean currents for reliable drift forecast.
+Maritime traffic in the Portuguese Exclusive Economic Zone (EEZ) is very dense, with hundreds of ships passing through daily. More than 2000 HNS-classified chemicals are transported by sea, generating increasing pollution risks along the Portuguese coast. An oil spill is the release of a liquid petroleum hydrocarbon into the environment, especially marine areas, due to human activity, and is a form of pollution. Oil spills can have disastrous consequences for society; economically, environmentally, and socially. As a result, oil spill accidents have initiated intense media attention and political uproar and actions have been taken to reduce their impact, including oil spill monitoring.
+CMEMS Analysis and Forecast model products provide with 7-day forecast of 3D ocean currents updated daily. Physics Model over the Iberia Biscay Irish seas is used in this application. It provides hydrodynamic forecast including high frequency processes of paramount importance to characterize regional scale marine processes.
+Maretec addresses Environmental Systems through a comprehensive approach to water, soil and atmosphere for Ecological and Economic studies necessary to support Environmental Sciences, Engineering and Management.
+
+===== SAMPLE 068 | tokens=768 =====
+The use of facial recognition in advertising research. As published in the June-July 2018 edition of the Australian Market and Social Research Society’s publication Research News. Our facial expressions, unconsciously or not, reveal more than we think or we say. Even if a person tries hard to hide their real feelings, our countenance will often uncover the truth. A frown, wink, grimace, snarl, laugh, wince, smile… these are just a number of our – often subconscious – micro expressions, which reveal our inner emotions. They often only last a split second, yet these small facial movements uncover whether someone is angry, sad, scared, disgusted, surprised, happy or full of contempt.
+Tweetaway: Facial expressions reveal more than we think or say https://insit.es/2LK3YsS by @KPallini via @InSites #mrx #newmr #implicit #emotions #indirectmeasures #advertisingresearch
+This brings an interesting perspective to marketing research, where the core lies in understanding what people think and feel. Recent evidence in neuroscience has shown that people are not always aware of their own behaviour. We might generally agree to like something, yet the implicit and automatic behaviour such as our emotional expressions may well reveal otherwise. This duality brings an interesting viewpoint when wanting to understand consumer perceptions, for example of commercials. Many advertisements are centred on emotions, as research has shown that if you want people to act – whether by voting or by buying a product – you need to appeal to their emotions. Hence, emotions are a key metric when evaluating advertisement effectiveness.
+Tweetaway: If you want people to act, from voting to buying your brand, you need to appeal to their emotions https://insit.es/2LK3YsS by @KPallini via @InSites #mrx #newmr #implicit #emotions #indirectmeasures
+Keeping in mind the fact that people aren’t always aware of their expressions, the use of eye tracking and facial coding brings many opportunities for marketing research, especially since research shows that humans are less effective in registering and analysing these reactions. Quantum Lab research, for example, demonstrates how the human eye succeeded in capturing emotional responses with a 46.33 per cent accuracy while technology was able to recognise emotions with 83.28 per cent accuracy.
+Tweetaway: Eye tracking technology can detect emotions twice as accurate compared to the human eye https://insit.es/2LK3YsS by @KPallini via @InSites #mrx #newmr #implicit #emotions #indirectmeasures #eyetracking
+Yet the question remains whether these new techniques match their promises and provide the necessary insights for decision-making. Are implicit measures the new ad-testing reality and should they replace the more traditional, explicit research approaches?
+Tweetaway: Is implicit the go-to for ad testing and what is the role of explicit measures https://insit.es/2LK3YsS by @KPallini via @InSites #mrx #newmr #implicit #emotions #indirectmeasures #adtesting
+In order to gain insights into the added value of these techniques, we conducted a phased research project together with TUI Group, the leading tour operator in Europe. In addition to more classic conditions, where participants are invited to give their opinion on an ad’s execution, message and impact, another condition was added, exploring the integration of physiological data in survey research through facial coding using Quantum Sense Technology.
+The use of this facial recognition technique uncovered that next to dominant expressions of (mainly positive) emotions, people also showed signs of anger
+
+===== SAMPLE 069 | tokens=130 =====
+Assessment of the antitumor activity of a cyclopalladated ferrocene compound assisted by a dual-targeting drug delivery system.
+
+One cyclopalladated ferrocene compound CP was synthesized, which showed a good cell cytotoxicity. Assisted by a dual-targeting drug delivery system, the anticancer activity of CP to MDA-MB-468 remained unchanged, but the toxicity to non-tumorigenic cell line NIH3T3 was remarkably reduced. This provided a new path for the development of cyclopalladated ferrocene as an antitumor drug candidate.
+
+===== SAMPLE 070 | tokens=210 =====
+[Evaluation of a telemedicine pilot project].
+
+BACKGROUND AND OBJECTIVE
+Rapid progress in computer and information technologies has led to an increased interest in the use of telemedicine during the past few years. Thus it should be clarified, whether teledermatology can achieve comparable results to conventional specialist examination and advice.
+
+
+PATIENTS/METHODS
+We initiated a pilot study, comparing teledermatology with conventional examination in a dermatology outpatient setting. 60 patients were included.
+
+
+RESULTS
+Out of 60 teledermatological examinations, remote clinicians were in agreement with face-to-face clinicians in 90%. Teledermatology was unable to make a useful diagnosis in 6 patients, however further diagnostic procedures were ordered, enabling teledermatologists to achieve correct diagnoses. Regarding need for further diagnostic tests, there was no difference between teledermatology and conventional examination.
+
+
+CONCLUSIONS
+Teledermatology appears suitable to transfer a dermatologist's expertise over large distances.
+
+===== SAMPLE 071 | tokens=503 =====
+Census 2000 Other Data Sources
+- Complete list of special tabulations
+- Equal Employment Opportunity (EEO) Tabulation: "Information for various occupation groupings by race and ethnicity and sex."
+- School District Demographics Data Files : Census 2000 data and maps for public school districts. Includes a special tabulation by the Census Bureau similar to the SF3 file with 492 population tables and 329 housing tables. Tables available for the U.S, American Indian and Alaska Native Areas and Hawaiian home lands, States, Counties and School Districts (Elementary, Secondary and Unified). [National Center for Education Statistics] User Guide
+Tables and Reports (not in Factfinder)
+- Briefs and Special Reports
+- Census 2000 Profiles: 4 tables of state and national summaries of sample and 100% data.
+- Demographic Profiles: Search or browse 100% and Sample profiles.
+- Rankings and Comparisons
+- All Census 2000 PDF reports and publications
+- PHC-1 Summary Population and Housing Charcteristics: "...report series provides data based on the 100-percent questions. This series is similar to the 1990 census CPH-1 series." [PDF] Ordering information
+- PHC-2 Summary Population and Housing Charcteristics: "...report series provides sample data on a wide range of characteristics....In prior decennial census publications, the appendixes that explained these subjects, geographic terms and concepts, and other general product information were included in the volumes containing the statistical tables; for Census 2000, these appendixes are found in the PHC-2-A report, "Summary Social, Economic, and Housing Characteristics, Selected Appendixes."" [PDF] The PHC-2 series is similar to the 1990 census CPH-5 series. Ordering information
+- PHC-3 Summary Population and Housing Charcteristics: "...report series provides Census 2000 and historical comparisons of the 100-percent population and housing unit counts. It provides land and water area measurements, and population density. The user notes section documents geographic changes over the past decade. This series is similar to the 1990 census CPH-2 series." [PDF]
+- Adjusted Data
+- PL94-171 Redistricting Files - PL 94-171 ASCII files guide
+- Summary File 1 - SF 1 ASCII files guide
+- Summary File 2 - SF 2 ASCII files guide
+- Summary File 3 - SF 3 ASCII files guide
+- Supplementary Survey
+
+===== SAMPLE 072 | tokens=233 =====
+A new association : Trichogramma bournieri pintureau and babault (Hymenoptera : Trichogrammatidae) and Chilo sacchariphagus Bojer (Lepidoptera : Crambidae) in sugarcane in Mozambique
+
+Chilo sacchariphagus Bojer, a sugarcane borer indigenous to South East Asia and the Indonesian Islands, was identified from Mozambican sugarcane in 1999. Prior to a biocontrol programme being implemented against it, intensive pre-release surveys for any indigenous natural enemies of the borer were completed. Negligible parasitism of larvae and pupae was recorded. In contrast, egg batches were heavily parasitised. Parasitoid adults emerging from eggs were Trichogramma bournieri Pintureau and Babault only. The impact of T. bournieri on C. sacchariphagus eggs in Mozambique are presented, and the potential of using this parasitoid against C. sacchariphagus in an augmentation biocontrol programme is discussed. (Resume d'auteur)
+
+===== SAMPLE 073 | tokens=277 =====
+Warner Sallman (1892-1968) was an American painter of Christian subject matter, particularly scenes depicting Jesus Christ. He spent his life in Chicago, attending the Art Institute of Chicago. He was a devout Christian and a member of the Evangelical Covenant Church. Sallman became a commercial success in the 1930s and thereafter, creating a number of Christ scenes for distribution by Christian publishers.
+Head of Christ. This famous Protestant icon began as a charcoal sketch composed in 1924 for the official magazine of Sallman's denomination. A publishing firm affiliated with the Church of God (Anderson) saw potential in his work, and began mass-marketing them. He created several versions over the years, the last and most popular of which was this one created in 1941.
+Christ at Heart's Door. The lightly concealed heart of Jesus literally glows in reflection of a Biblical passage. It is a distinctively Protestant image, as art historian David Morgan wrote "For American Protestants whose spirituality is premised on the acceptance of a call and “born again” experience and its subsequent testimonial, this image articulates a central theological principle and has served to commemorate such experiences. "
+Christ in the Garden. Here, Warner makes a theological statement about the divine persons present within the Garden. Light radiates from two sources: Jesus the Son and the Father above.
+
+===== SAMPLE 074 | tokens=248 =====
+Time-dependent screening of a point charge at a metal surface
+
+The space–time evolution of the dynamical screening charge density caused by a suddenly created point charge at the Cu(111) surface is investigated in the linear response approximation. Considering a thin slab as a model for the Cu(111) surface, we investigate the confinement effects on dynamical screening as well. The results have been obtained on the basis of self-consistent evaluation of the energy–momentum-dependent response function, taking into account the realistic surface band structure of Cu(111). At the initial stage, we observe fast long-range charge density oscillations due to excitation of the surface plasmon modes. Then we observe the propagation of the shock wave of the electron–hole excitations along the slab with velocity determined by the Fermi velocity of bulk Cu. At longer times, we have identified the propagation along the two slab surfaces of a much slower (with velocity ∼ 0.3 au, close to the Fermi velocity of the Cu(111) surface state) charge disturbance due to acoustic surface plasmon. The role of the energy band gap in the direction perpendicular to the surface in establishing the screening is also addressed.
+
+===== SAMPLE 075 | tokens=768 =====
+Produced by David Widger
+
+
+
+
+
+
+
+THE WORKS OF ROBERT G. INGERSOLL
+
+By Robert G. Ingersoll
+
+"The Hands That Help Are Better Far Than Lips That Pray."
+
+In Twelve Volumes, Volume IV.
+
+1900
+
+THE DRESDEN EDITION
+
+
+
+CONTENTS OF VOLUME IV.
+
+WHY I AM AN AGNOSTIC.
+
+(1896.)
+
+I. Influence of Birth in determining Religious Belief--Scotch, Irish,
+English, and Americans Inherit their Faith--Religions of Nations
+not Suddenly Changed--People who Knew--What they were Certain
+About--Revivals--Character of Sermons Preached--Effect of Conversion--A
+Vermont Farmer for whom Perdition had no Terrors--The Man and his
+Dog--Backsliding and Re-birth--Ministers who were Sincere--A Free Will
+Baptist on the Rich Man and Lazarus--II. The Orthodox God--The
+Two Dispensations--The Infinite Horror--III. Religious Books--The
+Commentators--Paley's Watch Argument--Milton, Young, and Pollok--IV.
+Studying Astronomy--Geology--Denial and Evasion by the Clergy--V. The
+Poems of Robert Burns--Byron, Shelley, Keats, and Shakespeare--VI.
+Volney, Gibbon, and Thomas Paine--Voltaire's Services to Liberty--Pagans
+Compared with Patriarchs--VII. Other Gods and Other Religions--Dogmas,
+Myths, and Symbols of Christianity Older than our Era--VIII. The Men
+of Science, Humboldt, Darwin, Spencer, Huxley, Haeckel--IX. Matter and
+Force Indestructible and Uncreatable--The Theory of Design--X. God an
+Impossible Being--The Panorama of the Past--XI. Free from Sanctified
+Mistakes and Holy Lies.
+
+THE TRUTH.
+
+(1897.)
+
+I. The Martyrdom of Man--How is Truth to be Found--Every Man should be
+Mentally Honest--He should be Intellectually Hospitable--Geologists,
+Chemists, Mechanics, and Professional Men are Seeking for the Truth--II.
+Those who say that Slavery is Better than Liberty--Promises are not
+Evidence--Horace Greeley and the Cold Stove--III. "The Science of
+Theology" the only Dishonest Science--Moses and Brigham Young--Minds
+Poisoned and Paralyzed in Youth--Sunday Schools and Theological
+Seminaries--Orthodox Slanderers of Scientists--Religion has nothing
+to do with Charity--Hospitals Built in Self-Defence--What Good has the
+Church Accomplished?--Of what use are the Orthodox Ministers, and
+What are they doing for the Good of Mankind--The Harm they are
+Doing--Delusions they Teach--Truths they Should Tell about the
+Bible--Conclusions--Our Christs and our Miracles.
+
+HOW TO REFORM MANKIND.
+
+(1896.)
+
+I. "There is no Darkness but Ignorance"--False Notions Concerning
+All Departments of Life--Changed Ideas about Science, Government and
+Morals--II. How can we Reform the World?--Intellectual Light the First
+Necessity--Avoid Waste of Wealth in War--III. Another Waste--Vast Amount
+of Money Spent on the
+
+===== SAMPLE 076 | tokens=186 =====
+U.S. News & World Report recently published an article "Are Late Nights, Little Exercise and a Lack of Veggies Aging Your Kids?", which presents recent findings from FFCWS research on youth sleep and telomere length. Using data from our Year 9 wave, the study found that telomeres were shorter in children who slept less.
+In the article, FFCWS Co-I Dr. Daniel Notterman notes “Telomere length may be a particularly useful biomarker when assessing health in pediatric populations, because disparities in telomere length emerge before the manifestation of chronic health conditions in adulthood.”
+The article focuses on a paper in press at The Journal of Pediatrics written by Sarah James, Sara McLanahan, Jeanne Brooks-Gunn, Colter Mitchell, Lisa Schneper, Brandon Wagner, and Daniel Notterman. To read the original paper's abstract, click here.
+
+===== SAMPLE 077 | tokens=312 =====
+Just think back to your own adolescent years. You probably remember some highs and some lows, with some bumps along the way? If we imagine adolescence as the road between childhood and adulthood, you might agree that the adolescent road is complex journey.
+And it’s a long road. Adolescence these days is thought to span the ages of eight and twenty eight!
+So why is the adolescent journey so complex?
+Adolescence is a time of change and transition. Now, change can be exciting, but it can also be daunting. And to make it harder, many of those changes and transitions are happening at the same time…. puberty, school transitions, changes in friendships groups, new subjects to study, challenging experiences, different expectations…
+And it to make it harder again, our children are travelling their adolescent journey on a road that is changing at a faster pace than ever before.
+Our children have to navigate a faster, busier, wider adolescent road than we did. Just think of the changes that have occurred over this last generation. It’s a road which has given our children more freedoms, choices and opportunities than we had. But, it’s also a road which has fewer boundaries, established lanes and signposts. We might describe this road as high opportunity –high risk. It’s a road which adolescents are struggling to navigate, and you’ve only got to read the latest statistics to see that an increased numbers are ‘crashing’, and at an ever earlier age.
+
+===== SAMPLE 078 | tokens=768 =====
+Robotics Class – Lesson 3 – Simple Machines Part 3 – Wedge and Screw (Compiled mostly from Wikipedia entries)
+– Simple Machines –
+A simple machine is a mechanical device that changes the direction or magnitude of a force. In general, they can be defined as the simplest mechanisms that use mechanical advantage (also called leverage) to multiply force. Usually the term refers to the six classical simple machines which were defined by Renaissance scientists:
+Wheel and axle
+A simple machine uses a single applied force to do work against a single load force. Ignoring friction losses, the work done on the load is equal to the work done by the applied force. The machine can increase the amount of the output force, at the cost of a proportional decrease in the distance moved by the load. The ratio of the output to the applied force is called the mechanical advantage.
+– Wedge –
+A wedge is a triangular shaped tool, and is a portable inclined plane, and one of the six classical simple machines. It can be used to separate two objects or portions of an object, lift up an object, or hold an object in place. It functions by converting a force applied to its blunt end into forces perpendicular (normal) to its inclined surfaces. The mechanical advantage of a wedge is given by the ratio of the length of its slope to its width. Although a short wedge with a wide angle may do a job faster, it requires more force than a long wedge with a narrow angle.
+Perhaps the first example of a wedge is the hand axe. Wedges have been around for thousands of years, they were first made of simple stone. A hand axe is made by chipping stone, generally flint, to form a bifacial edge, or wedge. A wedge is a simple machine that transforms lateral force and movement of the tool into a transverse splitting force and movement of the workpiece. The available power is limited by the effort of the person using the tool, but because power is the product of force and movement, the wedge amplifies the force by reducing the movement. This amplification, or mechanical advantage is the ratio of the input speed to output speed. For a wedge this is given by 1/tanα, where α is the tip angle. The faces of a wedge are modeled as straight lines to form a sliding or prismatic joint.
+The origin of the wedge is not known. In ancient Egyptian quarries, bronze wedges were used to break away blocks of stone used in construction. Wooden wedges that swelled after being saturated with water, were also used. Some indigenous peoples of the Americas used antler wedges for splitting and working wood to make canoes, dwellings and other objects.
+The blade is a compound inclined plane, consisting of two inclined planes placed so that the planes meet at one edge. When the edge where the two planes meet is pushed into a solid or fluid substance it overcomes the resistance of materials to separate by transferring the force exerted against the material into two opposing forces normal to the faces of the blade.
+The blade’s first known use by humans was the sharp edge of a flint stone that was used to cleave or split animal tissue, e.g. cutting meat. The use of iron or other metals led to the development of knives for those kind of tasks. The blade of the knife allowed humans to cut meat, fibers, and other plant and animal materials with much less force than it would take to tear them apart by simply pulling with their hands. Other examples are plows, which separate soil particles, scissors which separate fabric, axes which separate wood fibers, and chisels and planes which separate wood.
+Wedges, saws and chisels can separate thick and hard materials, such as wood, solid stone
+
+===== SAMPLE 079 | tokens=768 =====
+In celebration of International Migratory Bird Day May 8, the Woodland Park Zoo is offering a guided tour of zoo grounds with a keeper for attendees to learn firsthand about the wild birds that the zoo home and those that make it a temporary home during their annual migration.
+Zookeepers and expert staff give natural history and birding tips to participants of all ages and levels of experience.
+International Migratory Bird Day highlights the migration of nearly 350 bird species between nesting habitats in North America and nonbreeding grounds in South and Central America, Mexico and the Caribbean.
+Many think of migratory birds as symbolic harbingers of spring and melodious songsters of the woods, but migratory birds are also an important economic resource, controlling insect pests and generating billions in recreational dollars, according to a zoo press release.
+Unfortunately, research has shown that many migratory bird populations are in decline, facing a growing number of threats on their migration routes and in both summer and winter habitats, according to the press release.
+The Woodland Park Zoo euthanized a 19-year-old, male elk April 13 due to a decline in health from age-related concerns, including limited mobility, joint discomfort and poor eyesight.
+Despite treatments that included anti-inflammatory medication for the control of joint associated discomfort, the life of the elk, named Woody, had become compromised, according to a zoo press release.
+The elk arrived at the zoo as a young calf in 1991.
+During recent weeks, the zoo’s animal management and animal health staff had been closely monitoring the elk’s mobility, condition and pain levels, according to the press release.
+“It became increasingly apparent he was in discomfort from suspected osteoarthritis, a degenerative joint disease, not uncommon in geriatric animals, including humans,” Dr. Darin Collins, the zoo’s director of animal health, said in the press release. “Our staff had successfully managed his arthritid joint disease with supplements; however, during the last month he began declining in his comfort level with signs of increased mobility challenges and a reduced appetite. Euthanizing the animal was the most humane option in his continued care.”
+Animals First Foundation (AFF) came to Pet Elements at 6701 California Avenue SW on Saturday April 10 joining and Teri Ensley of Furry Faces Foundation to bring more attention to the issue of animal adoption. AFF is a West Seattle based animal rescue group. They accept many of the dogs with special needs, giving them everything they need until finding the perfect home.
+CLICK THE PHOTO TO SEE TWO MORE IMAGES
+The non-profit, West Seattle-based Animals First Foundation, which is dedicated to support and promote the preservation and well-being of all animals; both domestic and wildlife, holds a rock 'n roll auction fundraiser Sunday, April 18, 2pm-5pm at the Feedback Lounge.
+Prior to that event, Animals First Foundation is involved in a fundraiser Saturday, April 10, 11am-3pm at Pet Elements, 6701 California Avenue SW. At least one dog and some cats will be on hand for adoption.
+The Woodland Park Zoo’s all-new, sustainably designed West Entrance opens to the public on May 1, replacing the current North and West Entrances.
+The new entrance is set back from Phinney Avenue North between North 55th Street and North 56th Street. A landscaped path leads visitors to the new Bank of America Commons, a welcoming space for groups to gather in the West Entrance before embarking on their zoo adventure.
+The commons features state-of-the-art soundscaping with real audio samples
+
+===== SAMPLE 080 | tokens=165 =====
+A secure and reliable coding scheme over wireless links in cyber-physical systems
+
+Cyber-physical systems connect the physical world and the information world by sensors and actuators. These sensors are usually small embedded systems which have many limitations on wireless communication, computing and storage. This paper proposes a lightweight coding method for secure and reliable transmission over a wireless communication links in cyber-physical systems. The reliability of transmission is provided by forward error correction. And to ensure the confidentiality, we utilize different encryption matrices at each time of coding which are generated by the sequence number of packets. So replay attacks and other cyber threats can be resisted simultaneously. The issues of the prior reliable transmission protocols and secure communication protocols in wireless networks of a cyber-physical system are reduced, such as large protocol overhead, high interaction delay and large computation cost.
+
+===== SAMPLE 081 | tokens=744 =====
+10 Years After Hurricane Katrina, Shelter Animals Still Need Your Help!Alli B.
+In 2005, Hurricane Katrina devastated the Gulf Coast. 10 years later, the underfunded and struggling Hancock County Animal Shelter in Mississippi still needs your help in its ongoing rebuilding effort.
+Read their story below, and find out how you can help.
+10 years ago:
+August 29th, 2005.
+In the early morning hours of August 29, 2005, Hurricane Katrina reached land at a category 3 rating. It brought with it winds that reached up to 140 miles per hour, and stretched across 400 miles. The damages that Hurricane Katrina caused were unprecedented. The aftermath was catastrophic. Hundreds of thousands of people and animals in Alabama, Louisiana, and Mississippi were displaced from their homes.
+The gulf coast of Mississippi suffered near total devastation during Hurricane Katrina. Katrina affected over one million Mississippi residents alone, and left over 600,000 pets without shelter. The eye of the hurricane actually travelled up through the state of Mississippi, causing complete devastation in its path. Although almost all counties had damage, The three counties most affected by the storm were Hancock County, Harrison County, and Jackson County.
+In Waveland, Mississippi, the Hancock County Animal Shelter was forced to close its doors because it was condemned after the hurricane, which meant that the numerous animals at the shelter were displaced. Some animals went to shelters that weren’t affected by the hurricane, others were transported north, and others went into the foster care of those that still had standing homes.
+Recognizing the dire need for an animal shelter, the county did what was necessary to re-open its doors, despite the limited funds and resources, while actively trying to raise enough money to enact a better animal shelter for the struggling community…
+Flash forward 7 years…
+After seven years of fundraising and extreme determination, HCAS built a new facility in Kiln, MS, and officially re-opened their doors in June of 2012. However, due to lack of federal and state support, they were never able to raise enough money to build a shelter that has the capacity required for the community that they are servicing. HCAS was only able to raise funds to build kennels to accommodate 20 dogs, with limited outside space. This was nowhere near the capacity needed in a county with a high number of strays and surrenders.
+A full decade later, parts of the gulf coast are still struggling to recover after Hurricane Katrina, especially those smaller and rural communities that did not receive the national media attention and funding from the government. Kiln, Mississippi is still struggling to support a community that has a high number of strays with a shelter that only has a 20 dog capacity. This low capacity is not acceptable or desirable for the number of strays and surrenders that occur daily in their community.
+Today HCAS is seeking to expand their current operations by building additional open-air dog kennels and more inviting play areas. With your help, GreaterGood’s Rescue Rebuild team of builders will be heading to Kiln, Mississippi in May to make their vision a reality.
+Rescue Rebuild plans to expand HCAS’ operations by tripling the size of their facilities, and to create a community around the shelter that will be supportive and longstanding. Rescue Rebuild, Animal Lifeline, and the Friends of Hancock County Animal Shelter are joining forces to aid the deserving community and help them meet their goal.
+With your help, we can triple the capacity of this animal shelter! Right now, your donation will be matched by Animal Lifeline, dollar for dollar, until we reach our $20,000 goal!
+
+===== SAMPLE 082 | tokens=292 =====
+The Role of Calpains in Skeletal Muscle Remodeling with Exercise and Inactivity-induced Atrophy.
+
+Calpains are cysteine proteases expressed in skeletal muscle fibers and other cells. Although calpain was first reported to act as a kinase activating factor in skeletal muscle, the consensus is now that calpains play a canonical role in protein turnover. However, recent evidence reveals new and exciting roles for calpains in skeletal muscle. This review will discuss the functions of calpains in skeletal muscle remodeling in response to both exercise and inactivity-induced muscle atrophy. Calpains participate in protein turnover and muscle remodeling by selectively cleaving target proteins and creating fragmented proteins that can be further degraded by other proteolytic systems. Nonetheless, an often overlooked function of calpains is that calpain-mediated cleavage of proteins can result in fragmented proteins that are biologically active and have the potential to actively influence cell signaling. In this manner, calpains function beyond their roles in protein turnover and influence downstream signaling effects. This review will highlight both the canonical and noncanonical roles that calpains play in skeletal muscle remodeling including sarcomere transformation, membrane repair, triad junction formation, regulation of excitation-contraction coupling, protein turnover, cell signaling, and mitochondrial function. We conclude with a discussion of key unanswered questions regarding the roles that calpains play in skeletal muscle.
+
+===== SAMPLE 083 | tokens=303 =====
+Analysis of volatile organic compounds: an innovative approach to heart failure characterization in older patients
+
+Background: Analysis of exhaled volatile organic compounds (VOCs) may be applied for diagnostic purposes in some chronic diseases, but there are no data on their role for discriminating people with congestive heart failure (CHF), particularly in older patients where natriuretic peptides have lower accuracy. We evaluated whether VOCs analysis can discriminate patients with or without CHF, stratify CHF severity and predict the response to therapy of decompensated CHF. Methods and Results: We recruited 89 subjects admitted to an acute care ward with acutely decompensated CHF, 117 healthy controls and 103 chronic obstructive pulmonary disease (COPD) controls. CHF patients performed echocardiography. VOCs were collected using the Pneumopipe® and analyzed with the BIONOTE electronic nose. Partial least square analysis was used to evaluate the discriminative capacity of VOCs. Accuracy in discrimination of CHF versus healthy and COPD controls was 81% and 69%, respectively; accuracy did not decrease in a sensitivity analysis excluding subjects younger than 65 and older than 80 years. In CHF patients VOCs pattern could predict with fair precision ejection fraction and systolic pulmonary arterial pressure, but not changes in weight due to therapy. Conclusions: VOCs pattern is able to discriminate older CHF patients from healthy people and COPD patients and correlates with cardiac function markers.
+
+===== SAMPLE 084 | tokens=242 =====
+[Positive ratio of allergen specific IgE antibodies in serum, from a large scale study].
+
+Incidences of allergen specific IgE antibodies in a large Japanese population(n = 4,797,158) were studied. Sera from patients were collected in our laboratories during 1994-1998, and assayed with Pharmacias CAP system FEIA. Values greater than 0.70 UA/ml(Score 2) were considered positive. Japanese cedar pollen showed the highest IgE response(positive ratio), followed by house dust, and dust mite. Among food allergens, apple had the highest response, followed by sesame seed, egg white, potato, and tomato. IgE response against Anisakis was significantly higher than that against seafood. Positive ratio varied significantly among regions and among seasons. For example, Hokkaido, compared to other regions, showed lower values for cedar and cypress, but higher for silver birch. Values used in this study were from patients who chose IgE testing, and thus do not represent the general population. However, our findings include positive ratios of rare allergens, and are useful for clinicians who do allergen testing.
+
+===== SAMPLE 085 | tokens=259 =====
+287(g) and the Politics of Interior Immigration Control in the United States: Explaining Local Cooperation with Federal Immigration Authorities
+
+This paper aims to improve our understanding of emerging patterns of interior immigration control in the United States by examining local law enforcement cooperation with federal immigration authorities under the 287(g) Program. While several recent studies have drawn attention to the shifting terrain of immigration enforcement away from borders into the interior, few have attempted to systematically explain reasons for this shift. Using a county-level dataset of all counties in the United States, this study finds that, despite the purported links between the 287(g) Program and public safety, county crime rates are not significantly related to local cooperation with federal immigration authorities. Rather, the results indicate that local decisions to engage in immigration control efforts are driven by political factors, particularly a county's partisan composition, and demographic pressures related to increases in the Hispanic/Latino population. Demography is not, however, destiny, as new immigration in localities with established foreign-born populations does not significantly increase the likelihood of cooperation under 287(g). This suggests that the partisan composition of the places where immigrants settle mediates the extent to which the demand for tighter immigration enforcement exceeds the political influence immigrant communities have in their efforts to contest restrictive immigration control policies.
+
+===== SAMPLE 086 | tokens=768 =====
+Boxed warnings, also known as black box warnings, are the most serious type of warning issued by the Food and Drug Administration (FDA). These warnings are front and center on a drug’s package insert, on the FDA’s website, and on the pharmaceutical company’s website page for that product (if one exists).
+According to the American Family Physician (AAFP), doctors are required to provide patients with information about the relevant risks of a boxed warning drug before prescribing.
+The Drug Advisories Are Meant For Doctors
+“The purpose of box warnings is to increase prominence of warning to the ‘learned intermediary’ or the physician — not the patient or consumer,” says Theresa Eisenman, a spokesperson for the FDA. “Labeling or prescribing information is designed to make information in prescription drug labeling easier for healthcare practitioners to access, read, and use to make prescribing decisions,” she says.
+What Kinds of Adverse Events or Possible Risks Lead to a Boxed Warning?
+According to the regulations set by the FDA, one or more of the following scenarios must be present for a drug to receive a black box warning:
+- If an adverse event is so serious (death or a permanently disabling reaction) in proportion to the potential benefit from the drug that it is essential to consider when weighing the risks and benefits of the drug
+- If a serious adverse reaction can be prevented, reduced in frequency, or made less severe by following certain guidelines, such as patient selection, careful monitoring, or taking into account other medication that the person might be taking
+- If there are mandatory restrictions for prescribing the drug. Some medication may only be administered in certain settings (supervised or inpatient) or may require the doctor to complete extra training in order to prescribe
+Weighing the Risks vs. Benefits of a Black Box Drug
+A black box warning on a drug should not cause a person undue alarm, says Susan Blalock, MPH, PhD, vice chair of pharmaceutical outcomes and policy and a professor at the Eshelman School of Pharmacy in Chapel Hill, North Carolina. “To a large extent, although the risks that are included in black boxes are very serious side effects or potential side effects, there is usually quite a bit of scientific uncertainty associated with them.” Often researchers and the medical community don’t know for certain if the medication causes the side effect that leads to the boxed warning, she says.
+Even in cases in which the medication does cause the risk, it can often be a very small risk in comparison with the potential benefits of the drug. “Sometimes we’re talking about something that occurs in 1 in 10,000 people, or 1 in 100,000 people,” she says.
+Consider the Risks of Not Taking a Prescription Medication, Too
+There are also risks involved in not taking a prescribed medication, a reality that many people don’t always consider, says Dr. Blalock, pointing to rheumatoid arthritis (RA) as an example. “Even if the pain is controlled, the inflammation from the condition may be doing permanent damage to the heart and lungs if you don’t take the therapy,” she says. “You really need to weigh the risk benefit of both options: of taking a recommended therapy versus not taking it.”
+A Doctor’s Perspective on Black Box Warnings For Prescription Medication
+“It’s important for people to get all the information on the risks and benefits of a drug with a boxed warning from a conversation with their doctor,” says David Brill, DO, a family medicine doctor in the Cleveland Clinic Health System in
+
+===== SAMPLE 087 | tokens=119 =====
+Tue May 16, 2017 4:06 pm
+I have a two contours (sun contour and shadow contour). The contours differ from each other only by the order of the bypass. So first contour fill the first half of the Earth, the second remaining. But i can't specify the orientation of contour. As a result, these two contours lie on each other and fill only first half of earth.
+Im trying to visualize contours with GeoDataLinearRing. The order of inserting points in the contour did not affect the result. Any suggestions?
+
+===== SAMPLE 088 | tokens=768 =====
+There are currently over 2,000 cryptocurrencies and digital tokens trading in the cryptocurrency ecosystem. Most cryptocurrencies over-promise to revolutionise certain areas of commerce, and some altcoins even go as far as to claim to be a better, updated version of Bitcoin. However, Bitcoin is unique and stands apart from all other altcoins for a couple of important reasons.
+So what are altcoins?
+Well simply, altcoins are all cryptocurrencies other than Bitcoin. Perhaps the biggest difference between Bitcoin and altcoins is its origin, history and grass roots adoption.
+The creation and growth of Bitcoin from its humble beginning into the world’s largest and most widely adopted cryptocurrency was a one off fluke event. In the aftermath of the 2008 Global Financial Crisis, an anonymous author using the pseudonym Satoshi Nakamoto posted a nine page document onto an online forum. The paper titled Bitcoin: A Peer to Peer Electronic Cash System would become the building block for what is today the first fully working concept of decentralised electronic money.
+The anonymous creator of Bitcoin mined the first block of the Bitcoin Blockchain (called the Genesis block) in January 2009. It’s believed that he or she continued to mine more Bitcoin until sometime in 2010. It’s important to note that a single Bitcoin was worth basically nothing at the time they were mined by Satoshi. In fact, in March 2010 online user SmokeTooMuch auctioned 10,000 Bitcoin for $50 but was unable to find a buyer. The first real-world Bitcoin transaction occurred in May 2010, where two pizzas were traded for 10,000 BTC, meaning that one Bitcoin was worth far less than a single penny in mid 2010.
+BTC’s slow adoption
+Bitcoin continued to develop under the radar, and adoption by savvy online merchants slowly increased. The ecosystem grew steadily as users began to learn about the utility and usefulness of Bitcoin as a censorship resistant way to transfer value online. More users began to use Bitcoin to circumvent authorities and payment blockades while others, particularly in broken economies such as Cyprus and Zimbabwe, sought refuge in Bitcoin as a store of wealth and as an alternative to their crumbling currencies. Meanwhile, the anonymous creator faded off into the distance and was never to be heard from again.
+The vast majority of altcoins, on the other hand, have a very different history. Most altcoins have a known founder and development team. Many even have marketing departments, offices, publicists. And while they claim to be decentralised, the survival of most altcoins rely on their creator and small development team to grow and sustain their project. Bitcoin is governed by the laws of computer science and mathematics, while many altcoins are centralised in the hands of their creators.
+Centralising the rules of a cryptocurrency in the hands of a group of people seems like a reasonable idea, but humans are corruptible. Altcoins where humans are in charge are able to be shut down, turned off, prosecuted in a court of law, or otherwise compromised. Compare that to the decentralised mathematics that govern Bitcoin. Maths can never be corrupted. One plus one will always equal two.
+Source code rules
+To further illustrate this, the rules of the Bitcoin protocol, such as the number of coins in circulation and their emission schedule, are all embedded into the source code. On the other hand, many altcoins which claim to be decentralised are sometimes governed by human decisions. Examples of this are Ripple (XRP) employing Mary Jo White, former Chairperson of the US Securities and Exchange Commission, Ethereum (ETH) reversing transactions by rolling back their chain in 2016, and EOS (EOS) freezing 27 accounts just last week.
+The vast majority of altcoins are also premined. A premine is where a developer of an altcoin alloc
+
+===== SAMPLE 089 | tokens=768 =====
+What is neuralgia?
+Neuralgia is an intense (often described as burning or stabbing) pain caused by irritated or damaged nerves. Neuralgia can occur anywhere in the body and is often named and classified by the affected area.
+- Trigeminal neuralgia: Disorder of the nerves of the face. Causes stabbing, and shock-like pains in affected parts of the face. Painful sensations may last anywhere from a few seconds to several minutes. Pain may coincide with muscle spasms. Typically affects only one side of the face.
+- Glossopharyngeal neuralgia: This form of neuralgia is characterized by repeated episodes of pain in the tongue, throat, ear, and tonsils. It is suspected that damage or irritation to the glossopharyngeal nerve causes this disorder since all the affected areas are connected to it. During episodes, pain may last anywhere from seconds to minutes, and typically only affects one side of the face. Pain may be triggered by relatively common tasks such as swallowing, speaking, laughing, chewing, or coughing.
+- Occipital neuralgia: Described as a piercing, throbbing, or shock-like headache. Occipital neuralgia affects the areas of the upper neck, back of the head, and region behind the ears. Some people also report pain in the scalp, forehead, and area behind the eyes. Occipital neuralgia usually affects only one side of the head and is related to damage or irritation of the greater and lesser occipital nerves.
+What are the symptoms of neuralgia?
+Across all forms of neuralgia, the most common, identifiable, and significant symptom is pain. Pain associated with neuralgia occurs in chronic episodes, and is often brief but intense. Pain is often described as similar to electrical shock and is often followed by dull aching. Pain may occur as a result of stimuli, the most common being touch, or without apparent cause. The severity, duration, occurrence, and localization of pain are variable depending on the individual, the type of neuralgia, and progression of the disease.
+What causes neuralgia?
+The causes of neuralgia are often associated with nerve irritation, dysfunction, or damage. Precise causes are specific to the form of neuralgia a person suffers from.
+How is neuralgia diagnosed?
+Diagnosing any form of neuralgia is dependent upon recognizing and identifying the characteristic symptoms of the disorder. Paroxysmal attacks of pain, lasting from seconds to minutes, that is intense, or sharp is the primary identifying factor for diagnosis. Other factors depend on ruling out other neurological, or disease based causes for pain. Blood tests, MRI, CT Scan, and X-rays may all be ordered to assist in ruling out other diagnoses.
+What are the treatments for neuralgia?
+Treatment options for neuralgia depend somewhat on the individual and the form of neuralgia present. In general, medication, and forms fo surgery may aid in relieving symptoms. Anticonvulsant medications used to block nerve firing may be effective. Examples include carbamazepine, topiramate, phenytoin, and valproic acid. Tricylci antidepressents such as amitriptyline, and nortriptyline may be used to treat recurring pain. Analgesiacs, and opiods are often unable to treat pain associated with neuralgia. In cases in which medicine is not effective, or neuralgia is extreme, surgical procedures such as rhizotomy, or neurectomy may by attempted with some risk. In some cases, alternative therapies combined with medication may assist in treatment. Examples include exercise (low impact
+
+===== SAMPLE 090 | tokens=768 =====
+The author of the book of Revelation struggled, as we do today, to live out a Christian faith in the context of an empire that trampled and destroyed the earth and its creatures. In this book, Micah D. Kiel will look at how and why Revelation was written, along with how it has been interpreted across the centuries, to come to an understanding of its potential contribution to a modern environmental ethic. While the book of Revelation is replete with images of destruction of the earth, Kiel shows readers, through Revelation's ancient context, a message of hope that calls for the care of and respect for the environment.
+Micah D. Kiel, PhD, is associate professor of theology at St. Ambrose University in Davenport, Iowa. He has a BA in music performance from Saint John's University, Collegeville, Minnesota, and an MDiv and PhD from Princeton Theological Seminary. He has published many articles and essays and is a frequent speaker in churches. He lives in Davenport with his wife and two children, with whom he enjoys travel, hiking, bike riding, baseball, and reading.
+"Kiel's work combines a rigorous study of Revelation and a creative dialogue between its response to the ecological situation in which it came into existence and what could be our response to the contemporary ecological crisis. All this written in a lively and accessible prose."
+"This book suggests that engagement with the book of Revelation can offer a radically different way of thinking and being which critiques these unthinking patterns of cultural behavior. The close attention which Kiel gives to the ecological imagery of Revelation offers a compelling matrix by which to understand the current global environmental catastrophes that threaten the flourishing of many species, our own included."
+Journal for the Study of the New Testament
+"In his innovative study of Revelation, Micah D. Kiel employs different strategies to show what Revelation's `apocalyptic ecology' can offer the environmental crisis. His most challenging question concerns the book's depiction of earth's destruction. How can a book where the sea is annihilated contribute positively to ecological consciousness? In the refusal of John of Patmos to diminish his critique of the Roman Empire, and it's devastating effect on the earth, lies Revelation's theocentric vision of nothing less than a new earth.
+"Revelation is not an anthropocentric book. The earth protects the woman from the dragon, and birds refuse to let evil have the last word. But humankind is not passive in the drama of John's eschatology. In his engaging eco-critical journey through the historical contexts that have formed John's theology to the illuminated manuscripts that depict Revelation's legacy, Kiel shows that Revelation's apocalyptic eschatology provides a robust call to ecological action. Biblical students and scholars alike will find in Apocalyptic Ecology much inspiration for ecological hope."
+Marie Turner, Flinders University of South Australia
+"For many, the book of Revelation is self-evidently detrimental to environmental concerns. In this engaging and provocative book, full of rich insights on every page, Micah Kiel forces readers to think again. Once we allow that Revelation's terrifying vision of environmental catastrophe is more descriptive than prescriptive, an ancient visionary response to deforestation and water and air pollution, new possibilities open up for us. Kiel skillfully uncovers dimensions of Revelation that reveal humanity's connectedness to the earth, to animal and vegetable life, dimensions acknowledged by many of the book's medieval illuminators. He challenges us to swallow our anthropocentric pride and enter into its vision in which nonhuman animals lead the way to a proper orientation of the cosmos. Most important, he unleashes Revelation's surprisingly rich potential for developing a contemporary, theocentric ecology."
+Ian Boxall, Associate Professor of New Testament
+
+===== SAMPLE 091 | tokens=222 =====
+QoS-Aware Ring Redundancy Protocol (QoS-ARRP) for High-Availability Ethernet Networks
+
+During the last decade, Ethernet’s significance has increased in many embedded systems application areas, such as automotive, avionics and automation. However, guaranteeing the required availability level for such applications on Ethernet is still a hot research topic. In this specific area, we propose in this paper a new redundancy protocol for high availability Ethernet networks, called QoS-Aware Ring Redundancy Protocol (QoS-ARRP). First, the specifications of such a protocol are detailed, including the frame redundancy and filtering management, the auto-configuration mechanisms, as well as the maximum recovery time analysis. Second, the numerical results of the recovery time have shown the impact of the protocol parameters to tune and the trade-off between availability and scalability of the network. Moreover, we have benchmarked the state-of-the-art results on the recovery time against ours. A noticeable enhancement of the maximum recovery time with our proposal, thus of the availability level, has been highlighted.
+
+===== SAMPLE 092 | tokens=768 =====
+Ajax may refer to:
+
+Greek mythology and tragedy
+ Ajax the Great, a Greek mythological hero, son of King Telamon and Periboea
+ Ajax the Lesser, a Greek mythological hero, son of Oileus, the king of Locris
+ Ajax (play), by the ancient Greek tragedian Sophocles, about Ajax the Great
+
+Arts and entertainment
+
+Fictional characters
+ Ajax Duckman, in the animated television series Duckman
+ Marvel Comics:
+ Ajax the Greater, another name for Ajak, one of the Eternals from Marvel Comics
+ Ajax the Lesser, another name for Arex, one of the Eternals from Marvel Comics
+ Ajax, a member of the Pantheon appearing in Marvel Comics
+ Ajax (Francis Fanny), a fictional supervillain first appearing in Deadpool #14
+ Martian Manhunter, a DC Comics superhero called Ajax in Brazil and Portugal
+ Ajax, a Call of Duty: Black Ops 4 operative
+ Ajax, from the video game Genshin Impact
+
+Music
+ A-Jax (band), a South Korean boy band
+ Ajax (band), an electronic music band from New York City
+ Ajax (opera), by the French composer Toussaint Bertin de la Doué
+ DJ Ajax (1971-2013; born Adrian Thomas), an Australian electro mashup DJ
+ Lisa Ajax (born 1998), Swedish singer
+ "Ajax" (song), a song by Tante Leen, 1969
+ Ajax Records, a former North American record company
+
+Other arts and entertainment
+ Ajax (painting), a painting by John Steuart Curry
+ Ajax (Disney), a fictional company (the Disney equivalent of Looney Tunes' Acme Corporation)
+ A-Jax (video game), a 1987 Konami arcade game
+
+Computing
+ Ajax (floppy disk controller), a floppy disk controller fitted to the Atari STE
+ Ajax (programming), Asynchronous JavaScript and XML, a method used in web application development, and a software framework for it
+
+Places
+
+Canada
+ Ajax (federal electoral district), in the Durham Region of Ontario
+ Ajax (provincial electoral district), in Ontario
+ Ajax, Ontario, a town in the Greater Toronto Area
+
+United States
+ Ajax, Louisiana, an unincorporated community
+ Ajax, Missouri, a ghost town
+ Ajax Peak, a summit near Telluride, Colorado
+ Ajax, South Dakota, an unincorporated community
+ Ajax, Utah, a ghost town
+ Ajax, Virginia, an unincorporated community
+ Ajax, West Virginia, an unincorporated community
+ Aspen Mountain (Colorado), also known as Ajax Mountain
+
+Elsewhere
+ Mount Ajax, part of the Admiralty Mountains, Victoria Land, Antarctic
+ 1404 Ajax, an asteroid
+
+People
+ Ajax (missionary), Arian missionary who converted the Suevi to Christianity ( 466)
+ Ajax, pen name of Sidney William Jackson (1873–1946), Australian naturalist and ornithologist
+ Ajax, nickname of Heinrich Bleichrodt (1909–1977), German World War II U-boat commander
+
+Sport
+
+Association football (soccer)
+ AFC Ajax, a football club in Amsterdam, Netherlands
+ Ajax Cape Town F.C., a South African football club
+ Ajax Futebol Clube, a Brazilian football club
+ Ajax de Ouenzé, a Congolese football club
+ FC Ajax Lasnamäe, an Estonian football club
+ Ajax Orlando Prospects, American soccer team from Orlando, Florida, a.k.a. Ajax America
+ Ajax America Women, American women's soccer team from California
+ Aias Salamina F.C., a football club in Sal
+
+===== SAMPLE 093 | tokens=484 =====
+It is also known as horned melon, African horned cucumber or melon, jelly melon, hedged gourd and melano.
+By 1930, the fruite was little known outside its native Africa, after which he was successfully cultivated in New Zealand and Australia, where it got its name kiwano because of its similarity to kiwi.
+The plant is a monoecious, climbing, annual herb, with staminate flowers typically appearing several days before pistillate flowers.
+Ripe fruit has orange skin and lime green, jelly-like flesh with a refreshingly fruity taste, and texture similar to a passionfruit or pomegranate.
+The fruit’s taste has been compared to a combination of banana and passionfruit or a combination of banana, cucumber and lime.
+There are 44 calories in 100 grams (3.5 ounces) of kiwano.
+Kiwano is primarily a good source of vitamin C, Vitamin B Complex, Vitamin E, potassium and iron. Other minerals present in small quantities are magnesium, phosphorus, zinc, copper, calcium and sodium. Seeds contain a variety of fatty acids including linoleic and oleic acid.
+The health benefits of kiwano include keep the blood vessels and nerves healthy, preventing or managing diabetes, improves digestion, reduces pre-mature aging, alleviates stress, maintain metabolic process, improve visibility, strengthens your bones, improves brain function, improve hair strength, improve skin health and speeds up wound healing
+Kiwano is a common ingredient of fruit salad, it is also eaten raw.
+The easiest way to consume kiwano is to cut it on two halves and remove the pulp together with the seeds with a spoon.
+Seeds and pulp kiwans are also delicious in combination with ice cream, sorbets or yoghurt.
+It can be used in the preparation of salad dressings, as a substitute for vinegar or in combination with it.
+Kiwano tastes well with salty cheeses, such as feta cheese, and cucumber and tomatoes in vegetable salads.
+Since the fruits have a long shelf life and retain their decorative appeal for many months at room temperature it can be developed into a major ornamental fruit.
+This nutritious fruit is available almost throughout the year, and during the summer months it is seasonal.
+
+===== SAMPLE 094 | tokens=160 =====
+This Time, It’s Real: Affective Flexibility, Time Scales, Feedback Loops, and the Regulation of Emotion
+
+Because both emotional arousal and regulation are continuous, ongoing processes, it is difficult, if not impossible, to separate them. Thus, affective dynamics can reveal the regulation of emotion as it occurs in real time. One way that this can be done is through the examination of intra- and interpersonal flexibility or the transitions into and out of affective states. The present article reviews and then expands upon the Flex3 model of real-time dynamic and reactive flexibility, specifying the ways in which individual differences in emotion regulation manifest as differences in flexibility. The differences in results at the real-time scale versus diurnal variability are also discussed within an emotion regulation framework.
+
+===== SAMPLE 095 | tokens=159 =====
+A Combined Intravascular MRI Endoscope and Intravascular Ultrasound (IVUS) Transducer for High-Resolution Image-Guided Ablation.
+
+An intravascular MRI (IMRI) loopless antenna is combined for the first time with an intravascular water-cooled ultrasound ablation transducer as a possible tool for providing high-resolution MRI-guided ablations of pathological tissue via intravascular access. High resolution anatomical MRI, and real-time MRI thermometry were used to monitor ablation delivery in phantoms and tissue specimens. Results show that IMRI can guide IVUS-mediated directional ablation with minimal image artifacts. This permits the monitoring of thermal dose and therapy titration while minimizing potential thermal damage to the vessel wall.
+
+===== SAMPLE 096 | tokens=386 =====
+Relationship between plasma potassium concentration and renal potassium excretion.
+
+To study the relationship between extracellular potassium concentration and renal excretion of potassium, seven chronically adrenalectomized dogs were maintained on a constant intravenous infusion of aldosterone (50 micrograms/day), and constant sodium intake (30 meq/day ) while they received four levels of potassium intake--10, 30, 100, and 200 meq/day--for 7-10 days each. At the conclusion of each level of intake, plasma potassium and renal excretion as well as other variables known to influence potassium excretion were measured. There were minimal changes in arterial pH, mean arterial pressure, extracellular fluid volume, or glomerular filtration rate at any level of potassium intake. The values for plasma potassium and renal potassium excretion attained at each level of intake were: 3.13 +/- 0.24 and 10 +/- 2; 4.18 +/- 0.18 and 21 +/- 6; 4.31 +/- 0.11 and 66 +/- 10; and 4.75 +/- 0.10 meq/liter and 170 +/- 16 meq/day, respectively. Under these experimental conditions in which the levels of aldosterone, sodium intake, arterial pH, arterial pressure, extracellular fluid volume, and glomerular filtration rate remain constant, plasma potassium concentration appears to have a week effect on renal potassium excretion below the normal level of plasma potassium (approx. 11 meq/day change in excretion for each milliequivalent per liter change in concentration). Above the normal level, however, plasma potassium concentration has a powerful effect, 260 meq/day per milliequivalent per liter. The characteristics of the relationship between plasma potassium and renal potassium excretion make it ideally suited for controlling potassium excretion in response to greater than normal potassium intake.
+
+===== SAMPLE 097 | tokens=167 =====
+Estimating multiple independent motions in segmented images using parametric models with local deformations
+
+This paper presents a new model for optical flow based on the motion of planar regions plus local deformations. The approach exploits brightness information to organize and constrain the interpretation of the motion by using segmented regions of piecewise smooth brightness to hypothesize planar regions in the scene. Parametric flow models are fitted to these regions an a two step process which first computes a coarse fit and then refines it using a generalization of the standard area-based regression approaches. Since the assumption of planarity is likely to be violated, we allow local deformations from the planar assumption. This parametric+deformation model exploits the strong constraints of parametric approaches while retaining the adaptive nature of regularization approaches.<<ETX>>
+
+===== SAMPLE 098 | tokens=314 =====
+Changes in hearing acuity in ambulance personnel.
+
+OBJECTIVES
+To determine whether emergency medical technicians (EMTs) and paramedics suffer excessive hearing loss as a result of occupational noise exposure. A secondary objective was to determine noise levels in a modern ambulance.
+
+
+METHODS
+This retrospective study reviewed audiograms for EMTs and paramedics currently employed by the Louisville Emergency Medical Services. The age-adjusted threshold shift was calculated for the right and left ears at 1,000, 2,000, and 4,000 Hz in 81 of these individuals. Seventy-four of the subjects also had measurements that allowed similar calculations at 3,000 Hz in both ears. The age-adjusted threshold shift was then correlated with the elapsed time. Second, noise levels were measured inside an ambulance at several times during an eight-hour shift.
+
+
+RESULTS
+The correlation coefficient of age-adjusted threshold shifts and elapsed time was greatest at 2,000 Hz in the left ear but was still not significant at -0.2692. The noise levels in the ambulance ranged from 58 dBA in the patient compartment while stationary to 84 dBA in the forward cab with the windows down and the siren in use.
+
+
+CONCLUSION
+There was no significant correlation between the number of months elapsed between audiograms and the age-adjusted threshold shift at any frequency in either ear. There appears to be no excessive loss of hearing acuity in ambulance personnel. The noise levels in the study ambulance stayed well below the Occupational Safety and Health Administration (OSHA) guidelines.
+
+===== SAMPLE 099 | tokens=139 =====
+LITL at CLEF eHealth2017: Automatic Classification of Death Reports
+
+This paper describes the participation of a group of students supervised by two teachers to the CLEF eHealth 2017 campaign, task 1. The task involves the classication of death certicates in French and more precisely the labelling of each cause of death with the relevant ICD10 code. The system that performs the automatic coding is based on an information retrieval method using the Solr interface. Two runs were submitted according to whether the system distinguishes cases of multiple causes or not. The best performance was obtained with the system which distinguishes multiple causes, with a precision of 0.61 and a recall of 0.55.
+

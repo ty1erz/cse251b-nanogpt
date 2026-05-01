@@ -1,0 +1,40 @@
+{
+  "doc_count": 100,
+  "mean_chars": 1870.64,
+  "mean_tokens": 395.87,
+  "domain_vote_counts": {
+    "educational_textbook": 13,
+    "unclear": 53,
+    "qa_forum": 6,
+    "math_science": 4,
+    "fiction_story": 15,
+    "web_article": 3,
+    "code_technical": 2,
+    "wiki_reference": 4
+  },
+  "aggregate_pattern_scores": {
+    "wiki_reference": 14,
+    "educational_textbook": 75,
+    "math_science": 6,
+    "qa_forum": 16,
+    "fiction_story": 97,
+    "web_article": 9,
+    "code_technical": 6
+  },
+  "top_url_domains": [
+    [
+      "insit.es",
+      4
+    ],
+    [
+      "t.co",
+      1
+    ]
+  ],
+  "data_path": "/data/fengfei/cse251b-nanogpt/val.bin",
+  "total_tokens": 5170336,
+  "eot_split_doc_count": 5442,
+  "sampling_mode": "documents",
+  "num_samples": 100,
+  "max_decode_tokens": 768
+}

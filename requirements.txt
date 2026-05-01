@@ -2,3 +2,6 @@ torch>=2.0
 numpy
 tiktoken
 huggingface_hub
+datasets
+tokenizers
+tqdm
