@@ -51,8 +51,16 @@ class _SourceShards:
     def next_batch(self):
         B, T = self.B, self.T
         chunk = B * T
-        # if loading the next batch would walk off the shard, advance shard
-        if self.pos + chunk + 1 > len(self.tokens):
+        # Walk forward until we find a shard with enough tokens for one batch.
+        # Some data-prep tail shards can be tiny (< B*T+1 tokens); skip them.
+        attempts = 0
+        while self.pos + chunk + 1 > len(self.tokens):
+            attempts += 1
+            if attempts > len(self.shards):
+                raise RuntimeError(
+                    f"[{self.name}] no shard has >= {chunk + 1} tokens "
+                    f"(checked all {len(self.shards)})"
+                )
             self.shard_i = (self.shard_i + 1) % len(self.shards)
             self.tokens = _load_tokens(self.shards[self.shard_i])
             self.pos = B * T * self.process_rank

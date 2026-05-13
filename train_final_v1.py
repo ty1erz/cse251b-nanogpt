@@ -1,17 +1,29 @@
 """
-Phase 2 trainer (v3) for the CSE 251B NanoGPT competition.
+Final trainer v1 — SwiGLU + tighter mix + tuned LR for the 38k schedule.
 
-  Differences vs train_v2.py:
-    * Optimizer split: Muon for 2-D hidden weights + AdamW for embeddings/norms.
-    * Mix ratio shifted to FineWeb-heavy 59/17/12/12 (vs 50/20/15/15 in v2).
-    * Default schedule: 5100 steps, checkpoint every 1700 steps (3 saves).
-    * WD 0 on embeddings (v2 had a bug applying 0.1 there).
+  Differences vs train_final.py:
+    * Model: model_final.GPT (SwiGLU MLP) instead of model_v2.GPT (ReLU²).
+      ~96.6 M params (13 layers, n_embd=640, mlp_hidden=1728), same 100 M cap.
+    * Mix shifted FineWeb-heavy: 62 / 16 / 12 / 10 (was 50 / 20 / 15 / 15).
+      Rationale: val.bin is pure FineWeb-Edu, so a fineweb-tilted training mix
+      should reduce val.bin PPL.
+    * Peak LR scaled down for the 38k schedule:
+        muon: 2e-2 → 1.3e-2  (≈ 2e-2 × √(17k/38k))
+        adam: 8e-4 → 5.2e-4
+      Rationale: original peak was tuned for ~17k steps; over a 38k cosine the
+      higher peak spends too long noisy. Lower peak settles into a deeper basin.
 
-  Architecture: imported from model_v2 (same RoPE / RMSNorm / ReLU² / QK-Norm,
-  ~91M params). No model_v3.py needed — the architecture didn't change.
+  Same as train_final.py:
+    * Muon + AdamW split optimizer
+    * 38000 steps, ckpt every 2000, eval every 250
+    * Full seamless resume (model + optims + loader state + RNG)
 
-Launch:
-    python train_v3.py --run_name v3_muon_5100
+Launch (fresh):
+    python train_final_v1.py --run_name final_v1_swiglu_62mix
+
+Launch (resume):
+    python train_final_v1.py --run_name final_v1_swiglu_62mix \
+        --resume log_final_v1/final_v1_swiglu_62mix/model_010000.pt
 """
 
 import argparse
@@ -30,7 +42,7 @@ import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from model_v2 import GPT, GPTConfigV2, num_params  # noqa: E402
+from model_final import GPT, GPTConfigFinal, num_params  # noqa: E402
 from mix_loader import MixedDataLoader  # noqa: E402
 from muon import Muon, split_params_for_muon  # noqa: E402
 
@@ -38,7 +50,7 @@ from muon import Muon, split_params_for_muon  # noqa: E402
 # ---------------------------------------------------------------------------
 # Config
 
-V3_MIX = {
+FINAL_V1_MIX = {
     "fineweb": 0.50,
     "wikipedia": 0.20,
     "science": 0.15,
@@ -47,25 +59,28 @@ V3_MIX = {
 
 DEFAULTS = dict(
     run_name=None,
-    log_root=os.path.join(HERE, "log_v3"),
-    resume=None,                  # path to a v3 checkpoint to resume from
+    log_root=os.path.join(HERE, "log_final_v1"),
+    resume=None,
     # data
     total_batch_size=524288,
     micro_batch=16,
     seq_len=1024,
-    # schedule
-    max_steps=17000,           # 17000 × 524288 ≈ 8.9B tokens ≈ 0.45 epoch over 20B corpus
+    # schedule — one full epoch over ~20 B mixed corpus
+    max_steps=38000,
     warmup_steps=200,
-    ckpt_every=1700,
+    ckpt_every=2000,
     eval_every=250,
     eval_iters=20,
-    # optim — Muon hidden weights, AdamW embed / norms
-    muon_lr=2e-2,
+    # optim — peak LRs scaled for the long schedule
+    muon_lr=1.3e-2,
     muon_momentum=0.95,
-    adam_lr=8e-4,
+    adam_lr=5.2e-4,
     min_lr_ratio=0.1,
-    weight_decay=0.1,            # applied to Muon hidden only; embeddings + norms get 0
+    weight_decay=0.1,
     grad_clip=1.0,
+    # model
+    n_layer=13,
+    mlp_hidden=1728,
     # bookkeeping
     seed=1337,
     val_bin_path=os.path.abspath(os.path.join(HERE, "..", "cse251b-nanogpt", "val.bin")),
@@ -113,7 +128,7 @@ def perplexity_on_valbin(model, val_path, device, block_size=1024, batch_size=8)
 
 
 # ---------------------------------------------------------------------------
-# Model card writer
+# Model card
 
 def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
                      final_step, final_val_loss, valbin_result, mix,
@@ -124,16 +139,16 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 **Generated:** {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 
 ## Architecture
-- Class: `model_v2.GPT` ([model_v2.py](../../model_v2.py))
-- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_embd={cfg.n_embd}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
+- Class: `model_final.GPT` ([model_final.py](../../model_final.py))
+- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_embd={cfg.n_embd}`, `mlp_hidden={cfg.mlp_hidden}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
 - **Parameters:** {n_params:,}  ({n_params/1e6:.2f} M)
-- Modern components: RoPE, RMSNorm, ReLU² MLP, QK-Norm, tied embeddings, bias-free linears
+- Components: RoPE, RMSNorm, **SwiGLU MLP**, QK-Norm, tied embeddings, bias-free linears
 
-## Training data (v3 mix — FineWeb-heavy)
+## Training data (final_v1 mix)
 - Mix: {", ".join(f"{k}={v:.0%}" for k, v in mix.items())}
 - Loader: `MixedDataLoader` ([mix_loader.py](../../mix_loader.py))
 
-## Optimizer (Phase 2)
+## Optimizer
 - **Muon** for {n_muon_params:,} 2-D hidden parameters
   - lr={args.muon_lr}, momentum={args.muon_momentum}, ns_steps=5, nesterov=True, wd={args.weight_decay}
 - **AdamW** for {n_adam_params:,} embedding + 1-D parameters
@@ -148,7 +163,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 
 ## Results
 - Final step: {final_step}
-- **Final val loss (FineWeb-Edu val shard):** {final_val_loss:.4f}
+- **Final val loss (mix val shard):** {final_val_loss:.4f}
 """
     if valbin_result is not None:
         card += (
@@ -165,7 +180,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 - Ended:   {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 - Wall-clock: {elapsed_h:.2f} h
 - Seed: {args.seed}
-- Run script: `train_v3.py --run_name {args.run_name} --max_steps {args.max_steps}`
+- Run script: `train_final_v1.py --run_name {args.run_name} --max_steps {args.max_steps}`
 
 Checkpoints in this directory: every {args.ckpt_every} steps + final.
 """
@@ -179,7 +194,7 @@ Checkpoints in this directory: every {args.ckpt_every} steps + final.
 def main():
     args = parse_args()
     if args.run_name is None:
-        args.run_name = f"v3_muon_{args.max_steps}st_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
+        args.run_name = f"final_v1_swiglu_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
     out_dir = os.path.join(args.log_root, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
@@ -221,27 +236,27 @@ def main():
         print(f"total_batch_size = {args.total_batch_size}")
         print(f"grad_accum_steps = {grad_accum_steps}")
 
-    # Data — v3 mix
+    # Data
     train_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="train", master_process=master, mix=V3_MIX,
+        split="train", master_process=master, mix=FINAL_V1_MIX,
     )
     val_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="val", master_process=master, mix=V3_MIX,
+        split="val", master_process=master, mix=FINAL_V1_MIX,
     )
 
     torch.set_float32_matmul_precision("high")
 
-    # Model — same arch as v2
-    cfg = GPTConfigV2()
-    raw_model = GPT(cfg).to(device)   # unwrapped GPT instance — used for ckpt save/load
+    # Model — model_final (SwiGLU, 13L)
+    cfg = GPTConfigFinal(n_layer=args.n_layer, mlp_hidden=args.mlp_hidden)
+    raw_model = GPT(cfg).to(device)
     n_params = num_params(raw_model)
     if master:
         print(f"params: {n_params:,}  ({n_params/1e6:.2f} M)")
         assert n_params < 100_000_000, "OVER 100M PARAM CAP"
 
-    # ----- Optimizer split: Muon hidden + AdamW embed/norms -----
+    # Optimizer split: Muon hidden + AdamW embed/norms
     muon_params, adam_decay, adam_nodecay = split_params_for_muon(raw_model)
     n_muon = sum(p.numel() for p in muon_params)
     n_adam = sum(p.numel() for p in adam_decay) + sum(p.numel() for p in adam_nodecay)
@@ -256,22 +271,20 @@ def main():
     )
     adam_optim = torch.optim.AdamW(
         [
-            {"params": adam_decay,   "weight_decay": 0.0},   # embedding (no WD)
-            {"params": adam_nodecay, "weight_decay": 0.0},   # 1-d / norms
+            {"params": adam_decay,   "weight_decay": 0.0},
+            {"params": adam_nodecay, "weight_decay": 0.0},
         ],
         lr=args.adam_lr, betas=(0.9, 0.95), eps=1e-8,
         fused=(device_type == "cuda"),
     )
 
-    # ---- Optional resume ----
+    # Optional resume
     start_step = 0
     if args.resume is not None:
         if master:
             print(f"resuming from {args.resume}")
         rckpt = torch.load(args.resume, map_location=device, weights_only=False)
         raw_model.load_state_dict(rckpt["model"])
-        # Newer ckpts include optimizer/loader/RNG state; old (pre-resume-support)
-        # ckpts only have model+config+step. We restore what's available.
         if "muon_optim" in rckpt:
             muon_optim.load_state_dict(rckpt["muon_optim"])
         elif master:
@@ -286,7 +299,6 @@ def main():
             print("  (no train_loader state — restarting source walks from 0)")
         if "val_loader" in rckpt:
             val_loader.load_state(rckpt["val_loader"])
-        # CUDA + Python RNG (need CPU ByteTensor; map_location may have moved them)
         def _to_cpu_byte(t):
             if t is None:
                 return None
@@ -302,8 +314,6 @@ def main():
             print(f"  → continuing at step {start_step} (was at step {rckpt['step']})")
             print(f"  → val_loss at resume: {rckpt.get('val_loss', float('nan')):.4f}")
 
-    # DDP wrap (if applicable). model is what we forward through; raw_model
-    # exposes the GPT instance for save/load regardless of wrapping.
     model = raw_model
     if ddp:
         model = DDP(model, device_ids=[ddp_local_rank])
@@ -320,7 +330,6 @@ def main():
         coeff = 0.5 * (1.0 + math.cos(math.pi * progress))
         return floor + coeff * (peak - floor)
 
-    # Logging — append on resume so the per-step trace is contiguous
     log_path = os.path.join(out_dir, "train_log.txt")
     log_mode = "a" if args.resume else "w"
     with open(log_path, log_mode) as f:
@@ -336,7 +345,7 @@ def main():
         t0 = time.time()
         last_step = (step == args.max_steps - 1)
 
-        # ---- val pass ----
+        # val pass
         if step % args.eval_every == 0 or last_step:
             model.eval()
             val_loader.reset()
@@ -356,7 +365,7 @@ def main():
                 with open(log_path, "a") as f:
                     f.write(f"{step} val {final_val_loss:.6f}\n")
 
-        # ---- checkpoint (full resume state) ----
+        # checkpoint
         if master and step > 0 and (step % args.ckpt_every == 0 or last_step):
             ckpt = {
                 "model": raw_model.state_dict(),
@@ -374,7 +383,7 @@ def main():
             }
             torch.save(ckpt, os.path.join(out_dir, f"model_{step:06d}.pt"))
 
-        # ---- train step ----
+        # train step
         model.train()
         muon_optim.zero_grad()
         adam_optim.zero_grad()
@@ -419,7 +428,6 @@ def main():
 
     ended_at = time.time()
 
-    # ---- val.bin perplexity ----
     valbin_result = None
     if master:
         print("\nrunning val.bin perplexity...")
@@ -429,7 +437,6 @@ def main():
         else:
             print("val.bin not found, skipping")
 
-    # ---- model card ----
     if master:
         write_model_card(
             out_dir, args, cfg, n_params,
