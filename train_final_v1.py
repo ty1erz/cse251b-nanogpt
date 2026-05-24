@@ -50,13 +50,19 @@ from muon import Muon, split_params_for_muon  # noqa: E402
 # ---------------------------------------------------------------------------
 # Config
 
-FINAL_V1_MIX = {
-    "fineweb": 0.50,
-    "wikipedia": 0.20,
-    "science": 0.15,
-    "books": 0.15,
-}
+# FINAL_V1_MIX = {
+#     "fineweb": 0.50,
+#     "wikipedia": 0.20,
+#     "science": 0.15,
+#     "books": 0.15,
+# }
 
+FINAL_V1_MIX = {
+    "fineweb": 0.53,
+    "wikipedia": 0.19,
+    "science": 0.14,
+    "books": 0.14,
+}
 DEFAULTS = dict(
     run_name=None,
     log_root=os.path.join(HERE, "log_final_v1"),
