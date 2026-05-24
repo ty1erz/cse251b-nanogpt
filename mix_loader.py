@@ -92,10 +92,10 @@ def _default_source_paths(repo_root: str) -> Dict[str, str]:
 
 
 DEFAULT_MIX = {
-    "fineweb": 0.50,
-    "wikipedia": 0.20,
-    "science": 0.15,
-    "books": 0.15,
+    "fineweb": 0.56,
+    "wikipedia": 0.18,
+    "science": 0.13,
+    "books": 0.13,
 }
 
 

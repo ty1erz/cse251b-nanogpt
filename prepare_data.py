@@ -6,7 +6,9 @@ shards (same format as fineweb.py / DataLoaderLite expects).
 
 Sources mirror the example eval blend (FineWeb-Edu 50%, Wikipedia 20%,
 science 15%, books 15%). FineWeb-Edu is already prepared by fineweb.py;
-this script handles the other three.
+this script handles the other three. Default token caps include enough
+headroom to vary each non-FineWeb source roughly 10 percentage points upward
+in a ~20B-token run.
 
 Usage:
     python prepare_data.py --source wikipedia
@@ -29,8 +31,11 @@ from tqdm import tqdm
 
 # ---------------------------------------------------------------------------
 # Source registry. Each entry tells us which HF dataset/config/text-field to
-# read and how many tokens to keep. Token caps are sized so that 5+ epochs of
-# the target Phase-2 mix (~6B tokens, ratios 50/20/15/15) stay covered.
+# read and how many tokens to keep. Token caps are sized for a ~20B-token final
+# run with +/-10 percentage point mix sweeps:
+#   wikipedia: 20% base, up to 30% -> 6B tokens
+#   science:   15% base, up to 25% -> 5B tokens
+#   books:     15% base, up to 25% -> 5B tokens
 
 SOURCES = {
     "wikipedia": dict(
@@ -38,7 +43,7 @@ SOURCES = {
         config="20231101.en",
         split="train",
         text_field="text",
-        target_tokens=int(4.0e9),  # 4B tokens — supports 20B training at 20% mix
+        target_tokens=int(6.0e9),
     ),
     "science": dict(
         # peS2o v2 / armanc/scientific_papers are script-based; HF datasets >= 2.15
@@ -48,14 +53,14 @@ SOURCES = {
         config=None,
         split="train",
         text_field="text",
-        target_tokens=int(3.0e9),  # 3B tokens — supports 20B training at 15% mix
+        target_tokens=int(5.0e9),
     ),
     "books": dict(
         repo="sedthh/gutenberg_english",
         config=None,
         split="train",
         text_field="TEXT",
-        target_tokens=int(3.0e9),  # 3B tokens — supports 20B training at 15% mix
+        target_tokens=int(5.0e9),
     ),
 }
 

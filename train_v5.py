@@ -1,29 +1,19 @@
 """
-Final trainer v1 — SwiGLU + tighter mix + tuned LR for the 38k schedule.
+Trainer v5 — deeper/thinner SwiGLU + GQA model under the 100M cap.
 
-  Differences vs train_final.py:
-    * Model: model_final.GPT (SwiGLU MLP) instead of model_v2.GPT (ReLU²).
-      ~96.6 M params (13 layers, n_embd=640, mlp_hidden=1728), same 100 M cap.
-    * Mix shifted FineWeb-heavy: 62 / 16 / 12 / 10 (was 50 / 20 / 15 / 15).
-      Rationale: val.bin is pure FineWeb-Edu, so a fineweb-tilted training mix
-      should reduce val.bin PPL.
-    * Peak LR scaled down for the 38k schedule:
-        muon: 2e-2 → 1.3e-2  (≈ 2e-2 × √(17k/38k))
-        adam: 8e-4 → 5.2e-4
-      Rationale: original peak was tuned for ~17k steps; over a 38k cosine the
-      higher peak spends too long noisy. Lower peak settles into a deeper basin.
-
-  Same as train_final.py:
-    * Muon + AdamW split optimizer
-    * 38000 steps, ckpt every 2000, eval every 250
-    * Full seamless resume (model + optims + loader state + RNG)
+  Differences vs train_final_v1.py:
+    * Model: model_v5.GPT with grouped-query attention.
+    * Default architecture: 20 layers, n_embd=576, n_head=9, n_kv_head=3,
+      mlp_hidden=1536. Parameter count is ~99.78M.
+    * Keeps the same mixed data loader, Muon + AdamW optimizer split,
+      38k-step schedule, checkpointing, and seamless resume path.
 
 Launch (fresh):
-    python train_final_v1.py --run_name final_v1_swiglu_62mix
+    python train_v5.py --run_name v5_20L_576d_gqa
 
 Launch (resume):
-    python train_final_v1.py --run_name final_v1_swiglu_62mix \
-        --resume log_final_v1/final_v1_swiglu_62mix/model_010000.pt
+    python train_v5.py --run_name v5_20L_576d_gqa \
+        --resume log_v5/v5_20L_576d_gqa/model_010000.pt
 """
 
 import argparse
@@ -42,7 +32,7 @@ import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from model_final import GPT, GPTConfigFinal, num_params  # noqa: E402
+from model_v5 import GPT, GPTConfigV5, num_params  # noqa: E402
 from mix_loader import MixedDataLoader  # noqa: E402
 from muon import Muon, split_params_for_muon  # noqa: E402
 
@@ -50,16 +40,16 @@ from muon import Muon, split_params_for_muon  # noqa: E402
 # ---------------------------------------------------------------------------
 # Config
 
-FINAL_V1_MIX = {
-    "fineweb": 0.56,
-    "wikipedia": 0.18,
-    "science": 0.13,
-    "books": 0.13,
+V5_MIX = {
+    "fineweb": 0.50,
+    "wikipedia": 0.20,
+    "science": 0.15,
+    "books": 0.15,
 }
 
 DEFAULTS = dict(
     run_name=None,
-    log_root=os.path.join(HERE, "log_final_v1"),
+    log_root=os.path.join(HERE, "log_v5"),
     resume=None,
     # data
     total_batch_size=524288,
@@ -78,12 +68,12 @@ DEFAULTS = dict(
     min_lr_ratio=0.1,
     weight_decay=0.1,
     grad_clip=1.0,
-    # model
-    n_layer=13,
-    mlp_hidden=1728,
+    # model_v5 defaults
+    n_layer=20,
+    mlp_hidden=1536,
     # bookkeeping
     seed=1337,
-    val_bin_path=os.path.abspath(os.path.join(HERE, "..", "cse251b-nanogpt", "val.bin")),
+    val_bin_path=os.path.abspath(os.path.join(HERE, "val.bin")),
 )
 
 
@@ -139,12 +129,12 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 **Generated:** {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 
 ## Architecture
-- Class: `model_final.GPT` ([model_final.py](../../model_final.py))
-- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_embd={cfg.n_embd}`, `mlp_hidden={cfg.mlp_hidden}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
+- Class: `model_v5.GPT` ([model_v5.py](../../model_v5.py))
+- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_kv_head={cfg.n_kv_head}`, `n_embd={cfg.n_embd}`, `mlp_hidden={cfg.mlp_hidden}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
 - **Parameters:** {n_params:,}  ({n_params/1e6:.2f} M)
-- Components: RoPE, RMSNorm, **SwiGLU MLP**, QK-Norm, tied embeddings, bias-free linears
+- Components: RoPE, RMSNorm, **SwiGLU MLP + grouped-query attention**, QK-Norm, tied embeddings, bias-free linears
 
-## Training data (final_v1 mix)
+## Training data (v5 mix)
 - Mix: {", ".join(f"{k}={v:.0%}" for k, v in mix.items())}
 - Loader: `MixedDataLoader` ([mix_loader.py](../../mix_loader.py))
 
@@ -180,7 +170,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 - Ended:   {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 - Wall-clock: {elapsed_h:.2f} h
 - Seed: {args.seed}
-- Run script: `train_final_v1.py --run_name {args.run_name} --max_steps {args.max_steps}`
+- Run script: `train_v5.py --run_name {args.run_name} --max_steps {args.max_steps}`
 
 Checkpoints in this directory: every {args.ckpt_every} steps + final.
 """
@@ -194,7 +184,7 @@ Checkpoints in this directory: every {args.ckpt_every} steps + final.
 def main():
     args = parse_args()
     if args.run_name is None:
-        args.run_name = f"final_v1_swiglu_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
+        args.run_name = f"v5_20L_576d_gqa_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
     out_dir = os.path.join(args.log_root, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
@@ -239,17 +229,17 @@ def main():
     # Data
     train_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="train", master_process=master, mix=FINAL_V1_MIX,
+        split="train", master_process=master, mix=V5_MIX,
     )
     val_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="val", master_process=master, mix=FINAL_V1_MIX,
+        split="val", master_process=master, mix=V5_MIX,
     )
 
     torch.set_float32_matmul_precision("high")
 
-    # Model — model_final (SwiGLU, 13L)
-    cfg = GPTConfigFinal(n_layer=args.n_layer, mlp_hidden=args.mlp_hidden)
+    # Model — model_v5 (SwiGLU + GQA, 20L)
+    cfg = GPTConfigV5(n_layer=args.n_layer, mlp_hidden=args.mlp_hidden)
     raw_model = GPT(cfg).to(device)
     n_params = num_params(raw_model)
     if master:
