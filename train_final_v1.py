@@ -24,6 +24,83 @@ Launch (fresh):
 Launch (resume):
     python train_final_v1.py --run_name final_v1_swiglu_62mix \
         --resume log_final_v1/final_v1_swiglu_62mix/model_010000.pt
+
+    usage：
+    python /workspace/build-nanogpt/train_final_v1.py \
+      --run_name final_v1_swiglu_56_ft_42k \
+      --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56/model_037999.pt \
+      --max_steps 42000 \
+      --muon_lr 6e-3 \
+      --adam_lr 2.4e-4 \
+      --min_lr_ratio 0.1 \
+      --ckpt_every 500 \
+      --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+    --run_name final_v1_swiglu_56_ft_44k \
+    --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_42k/model_041999.pt \
+    --max_steps 44000 \
+    --muon_lr 4e-3 \
+    --adam_lr 1.8e-4 \
+    --min_lr_ratio 0.1 \
+    --ckpt_every 500 \
+    --eval_every 250 \
+    --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+      --run_name final_v1_swiglu_56_ft_45k_from43500 \
+      --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_44k/model_043500.pt \
+      --max_steps 45000 \
+      --muon_lr 3e-3 \
+      --adam_lr 1.35e-4 \
+      --min_lr_ratio 0.1 \
+      --ckpt_every 250 \
+      --eval_every 250 \
+      --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+    --run_name final_v1_swiglu_56_ft_45750_from44750 \
+    --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_45k_from43500/model_044750.pt \
+    --max_steps 45750 \
+    --muon_lr 1.5e-3 \
+    --adam_lr 8e-5 \
+    --min_lr_ratio 0.1 \
+    --ckpt_every 250 \
+    --eval_every 250 \
+    --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+    --run_name final_v1_swiglu_56_ft_46750_from45749 \
+    --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_45750_from44750/model_045749.pt \
+    --max_steps 46750 \
+    --muon_lr 1.2e-3 \
+    --adam_lr 6.4e-5 \
+    --min_lr_ratio 0.1 \
+    --ckpt_every 250 \
+    --eval_every 250 \
+    --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+    --run_name final_v1_swiglu_56_ft_47750_from46749 \
+    --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_46750_from45749/model_046749.pt \
+    --max_steps 47750 \
+    --muon_lr 9e-4 \
+    --adam_lr 5e-5 \
+    --min_lr_ratio 0.1 \
+    --ckpt_every 250 \
+    --eval_every 250 \
+    --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
+
+    python /workspace/build-nanogpt/train_final_v1.py \
+    --run_name final_v1_swiglu_56_ft_51500_from47749 \
+    --resume /workspace/build-nanogpt/log_final_v1/final_v1_swiglu_56_ft_47750_from46749/model_047749.pt \
+    --max_steps 51500 \
+    --muon_lr 7e-4 \
+    --adam_lr 4e-5 \
+    --min_lr_ratio 0.1 \
+    --ckpt_every 750 \
+    --eval_every 750 \
+    --val_bin_path /workspace/build-nanogpt/cse251b-nanogpt/val.bin
 """
 
 import argparse
