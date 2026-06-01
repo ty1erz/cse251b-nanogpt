@@ -1,0 +1,385 @@
+% =======> To use this template:
+% => Edit authors in this file.
+% => Edit the paper's content itself in the respective sections. Edit as needed
+% => Add any references to references.bib (cite with \cite or \citet)
+% =================================================
+
+\documentclass{article}
+
+% to avoid loading the natbib package, add option nonatbib:
+% \usepackage[nonatbib]{neurips_2024}
+% \PassOptionsToPackage{square,comma,sort,numbers}{natbib}
+\PassOptionsToPackage{numbers, compress}{natbib}
+% \usepackage[numbers]{natbib}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+\usepackage[preprint]{neurips_2024}
+% \usepackage[nonatbib, preprint]{neurips_2024}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+% \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+% For maths/theorems and such
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{float}
+% Use DeclareMathOperator and/or \newcommand to define abbreviations, e.g.:
+\DeclareMathOperator{\R}{\mathbb{R}} % real numbers
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{booktabs} % for professional tables (https://www.ctan.org/pkg/booktabs)
+\usepackage{algorithm}  % For algorithms
+\usepackage{algorithmic}
+\usepackage{hyperref} % hyperref makes hyperlinks in the resulting PDF.
+\usepackage{wrapfig}  % For wrapping figures with text
+\usepackage[capitalize,noabbrev]{cleveref}   % For \cref
+\RequirePackage{doi}
+% Color references and URLs
+\usepackage{xcolor, colortbl}
+\definecolor{darkblue}{rgb}{0.19, 0.19, 0.62}
+\hypersetup{
+  colorlinks = true,
+  citecolor  = darkblue,
+  filecolor  = darkblue,
+  urlcolor   = darkblue,
+    % linkcolor  = myred,
+}
+% Todonotes is useful during development; simply uncomment the next line
+%    and comment out the line below the next line to turn off comments
+%\usepackage[disable,textsize=tiny]{todonotes}
+\usepackage[textsize=tiny]{todonotes}
+% Use a lightweight inline TODO marker (in red) in the text.
+% Note: this overrides the \todo command from todonotes.
+\renewcommand{\todo}[1]{\textcolor{red}{\emph{TODO}: #1}}
+
+% \input{_macros}
+
+
+
+\title{
+CSE 151B/251B Milestone Report
+\\
+% {\small $<$Your-accessible-and-up-to-date-GitHub-URL$>$} % Note: You can put it in your abstracts or as a footnote in the first page, if you prefer. Note 2: Use \href or \url to link your URL.
+} 
+
+\author{%
+    Yirui Miao \\
+    A69042306 \\
+    \texttt{y5miao@ucsd.edu} \\
+    \And
+    Fengfei Yu \\
+    A69042700 \\
+    \texttt{fey006@ucsd.edu} \\
+    \And
+    Tianyue Zhang \\
+    A16347115 \\
+    \texttt{tiz052@ucsd.edu} \\
+    \And
+    Zavier Zhao \\
+    A69041344 \\
+    \texttt{zhz214@ucsd.edu} \\
+}
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+Check out \href{https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers#Abstract}{this blog post for tips on how to write a compelling abstract and paper.} \textbf{\textit{Include your final private Kaggle leaderboard score and/or rank at the end of the abstract or introduction.}}
+\end{abstract}
+
+% \section*{Formatting instructions (remove this section in your submission)}
+% Please read the instructions below carefully and follow them faithfully. You can keep the section headers but delete the instructional texts.
+% \paragraph{Hints on writing}
+% \begin{itemize}
+%     \item Each paragraph should convey one main message, typically in the beginning sentence of the paragraph (topical sentence).
+%     \item  Use simple sentences with fewer compounds or clauses. The simpler, the better. Avoid passive tense and use active tense.
+%     \item Use PDF for your figures to ensure the resolution of your images.
+%     \item The captions of Figures and Tables should contain sufficient details to be self-explanatory (readers can understand the figure without referring to the text).
+% \end{itemize}
+
+
+% Figures and tables must be appropriately referenced and discussed in the main text (tip: Use \textbackslash label\{fig:xyz\} and \textbackslash cref\{fig:xyz\}; example:~\cref{fig:example}). Captions must strive to be self-contained.
+% \paragraph{Figures.}
+% % \begin{figure}[h]  % Use figure or wrapfigure as needed.
+% \begin{wrapfigure}{r}{0.4\textwidth} % Example: occupy 40% of text width
+%   \vspace{-4mm}  % Force moving the figure up by a little bit
+%   \centering
+%   \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%   \caption{Sample figure caption.}
+%   \label{fig:example}
+% \end{wrapfigure}
+% % \end{figure}
+
+
+% All artwork must be neat, clean, and legible. Lines should be dark enough for
+% purposes of reproduction. The figure number and caption always appear after the figure. The figure caption should be lowercase (except for the first word and
+% proper nouns); figures are numbered consecutively. Captions should be written clearly and, ideally, allow the reader to understand the key message of the figure without having to read the main text.
+
+
+% \paragraph{Tables.}
+% All tables must be centered, neat, clean, and legible.  The table number and
+% title always appear before the table. See~\cref{sample-table} for an example.
+% Captions should be written clearly and, ideally, allow the reader to understand the key message of the table without having to read the main text.
+% \begin{table}[h]
+%   \caption{Sample table title}
+%   \label{sample-table}
+%   \centering
+%   \begin{tabular}{lll}
+%     \toprule
+%     \multicolumn{2}{c}{Part}                   \\
+%     \cmidrule(r){1-2}
+%     Name     & Description     & Size ($\mu$m) \\
+%     \midrule
+%     Dendrite & Input terminal  & $\sim$100     \\
+%     Axon     & Output terminal & $\sim$10      \\
+%     Soma     & Cell body       & up to $10^6$  \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% % % === Introduction
+\section{Introduction}
+\label{sec:intro}
+Introduce the problem that you are trying to solve and write 1-2 paragraphs for each of the sub-sections.  Provide a high-level summary in this section instead of detailed descriptions.
+\paragraph{Problem Definition.}
+Describe in your own words what the deep learning task is.  You may use figures to help your explanation.
+
+\paragraph{Problem Significance.}
+Explain  why is your problem important. Provide some real-world examples where successfully solving this task can have a great impact on our daily life and society. 
+
+\paragraph{Technical Challenge.}
+Why is this project that you are proposing difficult? Think about challenges from (1) data processing (2) model design (3) implementation (4) engineering (5) evaluation. 
+
+
+\paragraph{Contributions.}
+ On a high level, explain what the starter code does and what its limitations/issues are. Describe how your current solution effectively addresses (some) of these limitations/issues. Be very precise and clear. Any empirical claims must be justified by your results. You may find it useful to explicitly enumerate your key contributions (e.g., a better architecture/loss function or a more suitable problem/data setup relative to the starter code, an insightful finding/result, an innovative technique or combination of existing techniques, etc.) as follows:
+
+% Find and cite (use \href{https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex}{BibTex
+% }) state-of-the-art works or papers that have tried to solve a similar problem (use \href{https://scholar.google.com/}{Google Scholar} to search). Point out the limitations of the state-of-the-art.
+
+
+Our main contributions are:
+\begin{itemize}
+  \item Contribution A: ...
+  \item Contribution B: ...  
+    % etc.
+\end{itemize}
+
+% % % === Related Work
+\section{Related Work (Optional)}
+\label{sec:relatedwork}
+Describe related papers and contextualize your own work with respect to them. If useful, you can reference and discuss them in the introduction too. Example:
+\paragraph{Related works topic 1.} \citet{radford2018improving} introduced the first GPT-1 model...  % This is an example for citing (plz remove)
+
+\paragraph{Related works topic 2.}
+% 
+
+% % % === Methods
+\section{Methods}
+\label{sec:methods}
+In this section, clearly describe the technical details of the problem and your approach. If needed, provide the necessary background and cite any sources that you used.
+
+
+\paragraph{Problem Setting.}
+Introduce the problem. Formulate your prediction task as an optimization problem and write out the objective (i.e., loss function) that you use to train your model. Describe the dataset. Define the inputs and outputs in mathematical language, describing their meaning in natural language. \textbf{Note:} \textit{The inputs and outputs here should correspond to what your model actually ingests and predicts, respectively}. 
+
+
+\paragraph{Idea Summary.}
+Describe and motivate your idea to solve the problem.  How is it different from the state-of-the-art method? Provide a sketch of your idea to illustrate y our idea. Is there any risk associated with your idea? Provide alternative solutions if your idea does not work out.
+
+% \paragraph{Method Description.}
+% Describe and motivate any relevant design or architectural choices that you explored.  
+% If helpful, include a picture/sketch of your approach or architecture.
+
+% How did you split the training and validation data? How did you normalize inputs and outputs? Detail any deviations from the starter code. If valuable, you may include visualizations of the data or diagrams/sketches of your approach.
+
+
+
+% % % === Experiments
+\section{Experiments}
+\label{sec:experiments}
+% 
+In this section, clearly describe your empirical exploration of the problem and associated results. Provide evidence for your claims.
+Analyse and discuss your results.
+Note: Whenever you make claims such as \textit{Approach A performs ``better'' than approach B}, please be very specific in terms of \emph{what} it is better at and by \emph{how much}. Be transparent if it is only better on certain metrics, but not all.
+\subsection{Baselines}
+\label{sec:baselines}
+Describe all the baselines excluding the starter code. You should always start with simple models (such as a multi-layer Perceptron or linear regression) and gradually increase the complexity. You may use the starter code as a baseline, too.
+Use an itemized list to briefly summarize each of the models, their architecture, and parameters, and provide the correct reference if possible.
+
+We compare with the following baselines:
+\begin{itemize}
+    \item \textbf{Baseline A}:
+    \item \textbf{Baseline B}: 
+    % Etc.
+\end{itemize}
+% 
+\subsection{Evaluation}
+\label{sec:evaluation}
+Describe how you evaluate your model and baselines. There is no need to provide long explanations for the Kaggle evaluation, but clearly explain any complementary evaluations you explore in your project (if any).
+% 
+\subsection{Implementation details}
+\label{sec:implementation_details}
+The goal of this section (together with other relevant parts of your paper) is to ensure full reproducibility without having to check your code.
+Some relevant points to include:
+\begin{itemize}
+    \item What computational platform/GPU did you use for training and testing? How long does it take to train your model for one epoch (going through the entire training data set once)?
+    \item Describe hyperparameters/regularization techniques/optimization details: What is your optimizer and learning rate, etc.? How many epochs? What is your batch size? Which HPs were tuned, and what range of values did you try? Was the tuning any different between baselines and your model? What were the final values that you used?
+    \item How did you choose them? Provide any intuition of these choices: Explain why you made these design choices. Was it motivated by your past experience? Or was it due to the limitations of your computational platform? Be transparent if any hyperparameters are inconsistent between different runs (e.g., baseline A and B were trained with different learning rates).
+\end{itemize}
+
+\subsubsection{Alvin's experiment}
+\label{sec:alvins_experiment}
+\noindent\textbf{Compute/Platform:} All experiments were run in the \texttt{build-nanogpt} codebase on a CUDA-enabled Linux server. Experiments were conducted on a Linux server running Ubuntu 22.04.4 LTS.
+The server uses an AMD EPYC 7313 16-Core Processor and an NVIDIA L40S GPU with 48GB VRAM. The NVIDIA driver version was 580.95.05, and the reported CUDA version was 13.0. Training was performed with CUDA-enabled PyTorch on a single GPU.
+
+\noindent\textbf{Runtime:} Experiments were run across multiple directions/variants, with a total estimated runtime of roughly 6 days. For pure-student training runs (no teacher), each training step took approximately 8 seconds. For experiments using GPT-2 XL as a teacher (teacher forcing / knowledge distillation), each step took approximately 110 seconds due to the additional forward pass required to compute teacher logits. We did not train for a full epoch because the training corpus is very large and we continuously collected a large amount of training data; instead, training was organized as fixed-step continuation runs.
+
+\noindent\textbf{Data / Splits:} We trained on a mixture of several datasets: FineWeb, Wikipedia, Science, Books, Cosmopedia, and OpenWebText. In our core pretraining mixture, FineWeb contributed approximately 10B tokens and Cosmopedia contributed approximately 3.6B tokens; \todo{fill in the approximate token counts (in billions) used for Wikipedia, Science, Books, and OpenWebText in your runs.}
+
+Officially, we did not create a separate held-out test split, in order to incorporate more data into training. Instead, we used the official provided validation set \texttt{../val.bin} as the sole validation dataset, and evaluated perplexity on \texttt{val.bin} every 1000 steps.
+
+\noindent\textbf{Model / Code:} The student model is a 99.03M-parameter decoder-only GPT2-style language model with vocabulary size 50,257 and context length 1,024. The architecture uses 16 transformer layers with 10 attention heads, grouped-query attention with 5 KV heads, and an embedding size of 640. We used RMSNorm, RoPE positional embeddings, and SwiGLU feed-forward layers.
+
+\noindent\textbf{Optimization objectives:} We tried several lines of tuning and experiments. Across all runs, we treated next-token cross entropy as the main pretraining objective:
+\begin{equation}
+\mathcal{L}_{\mathrm{CE}} = -\frac{1}{T}\sum_{t=1}^{T} \log p_{\theta}\bigl(x_t \mid x_{<t}\bigr).
+\end{equation}
+
+For later experiments, we also added a distillation term from a teacher model (GPT-2 XL). Specifically, we used a KL-divergence term restricted to the teacher's Top-$K$ tokens at each position to encourage the student distribution to match the teacher on high-probability candidates. We kept the main cross-entropy loss, so the combined objective becomes:
+\begin{equation}
+\mathcal{L} = \mathcal{L}_{\mathrm{CE}} + \lambda\, \mathcal{L}_{\mathrm{KD}},
+\qquad
+\mathcal{L}_{\mathrm{KD}} = \mathrm{KL}\Bigl(\,p_{\text{teacher}}^{(K,\tau)}(\cdot\mid x_{<t})\;\big\|\;p_{\text{student}}^{(K,\tau)}(\cdot\mid x_{<t})\,\Bigr).
+\end{equation}
+Here $K$ is the number of tokens retained from the teacher distribution and $\tau$ is the distillation temperature. \todo{Add the values of $K$, $\tau$, and $\lambda$ used in your best KD runs (if any).}
+
+\noindent\textbf{Tuning trajectories:} We explored the following experiment trajectories:
+\begin{enumerate}
+    \item v1: baseline long-run pretraining on the original FineWeb + Cosmopedia mixture. \todo{Add: key hyperparameters (LR, batch size, wd, $\tau$ if any), optimizer, training steps, and checkpoint initialization (if any).}
+    \item v2: smaller effective batch / more update-efficient sampling; random window sampling. \todo{Add: hyperparameters, optimizer, training steps, and checkpoint initialization.} \todo{Add: reason this trajectory was abandoned.}
+    \item v3: architecture-heavy experimental branch (e.g., factorized embedding, QK norm, gated attention, hybrid Muon + AdamW). \todo{Add: hyperparameters, optimizer(s), training steps, and checkpoint initialization.} \todo{Add: reason this trajectory was abandoned.}
+    \item v4: post-training continuation resumed from a strong v1 checkpoint with a more targeted late-stage schedule. \todo{Add: hyperparameters, optimizer, continuation steps, and which v1 checkpoint was loaded.}
+    \item v5: domain-shift continuation from v4, strongly biasing toward the second source. \todo{Add: hyperparameters, optimizer, continuation steps, and which v4 checkpoint was loaded.}
+    \item v5\_distill: conservative Top-$k$ distillation from a GPT-2 XL teacher on top of the main CE loss. \todo{Add: $K$, $\tau$, $\lambda$, hyperparameters, optimizer, steps, and checkpoint loaded.}
+    \item v6: hidden-state distillation from GPT-2 XL (projection heads + cosine loss). \todo{Add: hidden-loss weight(s), hyperparameters, optimizer, steps, and checkpoint loaded.} \todo{Add: reason this trajectory was abandoned.}
+    \item v7: teacher-guided data selection (score windows and select ``high-gap'' windows). \todo{Add: selection criteria/thresholds, hyperparameters, optimizer, steps, and checkpoint loaded.} \todo{Add: reason this trajectory was abandoned.}
+    \item v7\_kd: selective knowledge distillation when the teacher is better. \todo{Add: KD trigger rule, $K$, $\tau$, $\lambda$, hyperparameters, optimizer, steps, and checkpoint loaded.}
+    \item v8: four-source late-stage mixture (FineWeb remaining / Cosmopedia / OpenWebText / Wikipedia) with light GPT-2 XL Top-$k$ distillation. \todo{Add: mixture weights used in the reported run, $K$, $\tau$, $\lambda$, hyperparameters, optimizer, steps, and checkpoint loaded.}
+    \item v9: teacher-guided hard-negative margin loss (auxiliary objective on top of CE). \todo{Add: margin-loss definition/weight, hyperparameters, optimizer, steps, and checkpoint loaded.} \todo{Add: reason this trajectory was abandoned.}
+    \item v10: four-source continuation similar to v8 but without a teacher (pure CE). \todo{Add: mixture weights, hyperparameters, optimizer, steps, and checkpoint loaded.} \todo{Add: reason this trajectory was abandoned.}
+    \item v11: equal-weight four-source mixture (25/25/25/25) with a stronger continuation learning-rate regime. \todo{Add: learning rate, hyperparameters, optimizer, steps, and checkpoint loaded.} \todo{Add: reason this trajectory was abandoned.}
+    \item v12: final zzw-style data-mixture continuation (FineWeb/Wikipedia/Science/Books) with pure CE (no teacher). \todo{Add: hyperparameters, optimizer, continuation steps, and checkpoint loaded (e.g., from v8@30950).}
+\end{enumerate}
+
+These choices were motivated by validation perplexity rather than architectural changes. Our best-performing line followed the sequence v1 $\rightarrow$ v4 $\rightarrow$ v5 $\rightarrow$ v8 $\rightarrow$ v12. The reasons for selecting this sequence (and for abandoning other branches) are discussed in Result~3 (Alvin). Earlier experiments showed that heavy hidden-state distillation and aggressive teacher-based objectives could hurt official perplexity late in training, while lighter distillation and more validation-like late-stage data were more effective. The largest improvement came from changing the late-stage data mixture rather than changing the model architecture. \todo{Add a nuanced conclusion summarizing the main lessons learned across trajectories (what worked, what failed, and under what conditions).}
+
+\noindent\textbf{Final checkpoint and reproducibility:} Our final model was trained for 40,949 steps. The checkpoint can be found at \todo{Add Hugging Face link to the final checkpoint}, and the full training/evaluation codebase is available at \todo{Add GitHub link to the codebase}.
+% 
+\subsection{Results}
+\label{sec:results}
+Present the results from starter code and preliminary implementation from your idea. This can be a mix of quantitative results (e.g., validation metrics or leaderboard score) and qualitative results (e.g., example visualizations of predictions, case studies, etc.). Use figures and tables. You are welcome to include any negative findings/results.
+\paragraph{Result 1.}
+\paragraph{Result 2.}
+\paragraph{Result 3 (Alvin).}
+\todo{Check the experiment results and fill in the exact validation perplexities/steps for each run below.}
+
+Table~\ref{tab:alvin_mainline} summarizes the main sequence that produced our best results (v1 $\rightarrow$ v4 $\rightarrow$ v5 $\rightarrow$ v8 $\rightarrow$ v12). Overall, the largest gains came from (i) carefully designed continuation schedules and (ii) shifting the late-stage data mixture to be more validation-like; teacher-based objectives were helpful only when applied lightly and late.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Setup & Init ckpt & Data recipe & Objective & Steps & Val PPL \\
+\midrule
+v1  & scratch & FineWeb 70\% + Cosmopedia 30\% & CE & \todo{steps} & \todo{PPL} \\
+v4  & \todo{v1 step} & \todo{late-stage continuation schedule} & CE & \todo{steps} & \todo{PPL} \\
+v5  & \todo{v4 step} & \todo{bias toward Cosmopedia (or second source)} & CE & \todo{steps} & \todo{PPL} \\
+v8  & \todo{init ckpt} & 4-source (FW/Cos/OWT/Wiki) & CE + light Top-$k$ KD & \todo{steps} & \todo{PPL} \\
+v12 & v8@30950 & 4-source (FW/Wiki/Sci/Books) & CE & 40949 & \todo{PPL} \\
+\bottomrule
+\end{tabular}
+\caption{Alvin mainline trajectory summary. ``Val PPL'' refers to perplexity on the official \texttt{val.bin} evaluated every 1000 steps.}
+\label{tab:alvin_mainline}
+\end{table}
+
+\textbf{Setup-by-setup analysis.} 
+\begin{itemize}
+    \item \textbf{v1 (baseline):} Established a strong base model and stable training dynamics on the core FineWeb/Cosmopedia mixture. \todo{Add the key baseline PPL and the checkpoint step used for continuation.}
+    \item \textbf{v4 (continuation):} Improved over v1 by resuming from a strong v1 checkpoint and changing the continuation schedule/mixture. \todo{State what changed (LR, mixture emphasis, etc.) and quantify the gain.}
+    \item \textbf{v5 (distillation):} Added teacher distillation on top of the main CE objective to improve student generalization. \todo{Specify the distillation setup (teacher, Top-$K$, $\tau$, $\lambda$) and quantify the change in validation perplexity.}
+    \item \textbf{v8 (late-stage mixture + light KD):} Adding more validation-like sources (OpenWebText/Wikipedia) and applying light Top-$k$ distillation improved PPL when tuned conservatively. \todo{Record $K$, $\tau$, $\lambda$, and the best achieved PPL (e.g., around 24.05 at step 30950).}
+    \item \textbf{v12 (zzw-style mixture, no teacher):} The final jump came primarily from changing the data recipe (FW/Wiki/Sci/Books) while keeping training stable and removing the teacher objective. \todo{Explain why this mix aligns better with \texttt{val.bin} and quantify the improvement over v8.}
+\end{itemize}
+We also explored several alternative trajectories (v2, v3, v6, v7, v9, v10, v11) but ultimately abandoned them. In brief, v3 introduced substantial architectural complexity without competitive validation perplexity; v6 (hidden-state distillation) reduced the auxiliary loss but degraded official perplexity; v7-style teacher-guided selection/KD was useful for analysis but did not outperform simpler continuation recipes; v9 remained an exploratory objective and did not become a stable improvement; v10 served as a no-teacher control but underperformed the best teacher-assisted continuation (v8); and v11 was an exploratory equal-weight mixture that did not beat the best-tuned weighted mixtures. \todo{Check experiment logs and add the specific validation PPL deltas and failure modes for each abandoned version.}
+
+
+
+% 
+% \subsection{Ablations}
+% \label{sec:ablations}
+% Try to explore which design choices contribute to your final performance by removing/replacing individual components. Note that ablations are most convincing when you isolate the contribution of those individual components. For example, if you are comparing architecture A and architecture B, make sure to use the same hyperparameters as much as possible (or tune them for each architecture separately and compare the best version of each). Be clear but concise.
+% 
+% % % === Discussion
+\section{Discussion}
+\label{sec:discussion}
+Provide a few sentences to summarize your project. 
+
+\paragraph{Achievements.}
+What have you achieved? What is the significance of your contribution? Did you contribute to dataset curation, algorithm improvement or model development?  Summarize your achievement in quantitative terms. We value the effort that you have devoted to this project.
+
+
+
+% \paragraph{Lessons Learned.}
+% What did you learn from this project at this point?   Brainstorm in different aspects including selecting problems, literature survey, team formulation and technical implementation. 
+% If given more time, what aspects and how would you improve your project development?
+
+\paragraph{Bottlenecks and Mitigation.}
+What are bottlenecks of the project? How did you resolve them?  Any changes that you would like to highlight from the milestone?
+
+
+
+\paragraph{Plans Forward.}
+What do you plan to do from now until the final report? Any change of plans from the initial proposal? What decision factors contributed to this change of plans?
+
+
+
+\paragraph{Team Responsibilities.}
+Summarize the background and expertise for each of your team member. Clearly identify each person's role and contribution in this project.
+
+\paragraph{Timelines.}
+Estimate the timeline with the milestones to achieve your expected outcome in this class, considering the discussion provided above.
+\begin{itemize}
+    \item Week 2: Fill in your milestones and deliverable
+    \item Week 3:
+    \item ...
+    \item Week 10:
+\end{itemize}
+
+
+\section*{LLM Usage}
+The use of LLMs is allowed as a general-purpose assist tool. However,  if LLMs played a significant role in research ideation and/or writing to the extent that they could be regarded as a contributor, then authors should describe the precise role of the LLM in this section on LLM usage. 
+
+Irrespective of the ways that LLMs were used in a given project, authors should understand that they take full responsibility for the contents written under their name, including content generated by LLMs that could be construed as plagiarism or scientific misconduct (e.g., fabrication of facts).  LLMs are not eligible for authorship.
+
+
+
+% % % === ACKNOWLEDGMENTS AND REFERENCES START
+% \section*{Acknowledgements}
+% This work was supported $\dots$.
+\bibliography{references.bib}
+\bibliographystyle{plainnat}  % Can also use abbrvnat, unsrt, etc.
+% 
+% % % === APPENDIX (optional)
+% \newpage
+% \appendix
+% \section*{Appendix}
+% \section{Appendix topic 1}
+% 
+\end{document}
