@@ -1,0 +1,7 @@
+{
+  "perplexity": 27.0708060562396,
+  "avg_loss_nats": 3.298455879918747,
+  "total_tokens_evaluated": 5169152,
+  "total_params": 99032320,
+  "eval_time_sec": 117.69
+}

@@ -1,0 +1,7 @@
+{
+  "avg_loss_nats": 3.0041885997527373,
+  "checkpoint": "log/v17/alvin_v17_seq76k_v13_38k/boost_42k/train_ckpt_38500.pt",
+  "perplexity": 20.169843638462137,
+  "stage": "boost_42k",
+  "step": 38500
+}

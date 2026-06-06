@@ -1,0 +1,117 @@
+# initialized from /data/fengfei/cse251b-nanogpt/build-nanogpt/log/v12/submission_20260501_alvin_v12_40949 at step 40949, target_step 60949
+40950 train 2.913925 hard 2.913925 distill 7.553716 kd_w 0.0000 gold_topk_frac 0.949257 selected_frac 0.949257 muon_lr 6.50000000e-06 adam_lr 2.60000000e-07
+40951 train 2.939402 hard 2.938709 distill 7.555845 kd_w 0.0001 gold_topk_frac 0.948280 selected_frac 0.948280 muon_lr 1.30000000e-05 adam_lr 5.20000000e-07
+40952 train 2.922093 hard 2.920705 distill 7.544275 kd_w 0.0003 gold_topk_frac 0.948845 selected_frac 0.948845 muon_lr 1.95000000e-05 adam_lr 7.80000000e-07
+40953 train 3.020672 hard 3.018569 distill 7.690172 kd_w 0.0004 gold_topk_frac 0.943127 selected_frac 0.943127 muon_lr 2.60000000e-05 adam_lr 1.04000000e-06
+40954 train 2.926698 hard 2.923921 distill 7.551021 kd_w 0.0006 gold_topk_frac 0.949024 selected_frac 0.949024 muon_lr 3.25000000e-05 adam_lr 1.30000000e-06
+40955 train 2.961820 hard 2.958328 distill 7.614814 kd_w 0.0008 gold_topk_frac 0.945225 selected_frac 0.945225 muon_lr 3.90000000e-05 adam_lr 1.56000000e-06
+40956 train 2.907000 hard 2.902860 distill 7.503096 kd_w 0.0009 gold_topk_frac 0.945686 selected_frac 0.945686 muon_lr 4.55000000e-05 adam_lr 1.82000000e-06
+40957 train 2.923248 hard 2.918360 distill 7.573551 kd_w 0.0011 gold_topk_frac 0.947205 selected_frac 0.947205 muon_lr 5.20000000e-05 adam_lr 2.08000000e-06
+40958 train 2.956920 hard 2.951406 distill 7.547156 kd_w 0.0012 gold_topk_frac 0.944550 selected_frac 0.944550 muon_lr 5.85000000e-05 adam_lr 2.34000000e-06
+40959 train 2.986459 hard 2.980113 distill 7.680570 kd_w 0.0013 gold_topk_frac 0.944412 selected_frac 0.944412 muon_lr 6.50000000e-05 adam_lr 2.60000000e-06
+40960 train 2.935913 hard 2.928973 distill 7.555654 kd_w 0.0015 gold_topk_frac 0.948547 selected_frac 0.948547 muon_lr 7.15000000e-05 adam_lr 2.86000000e-06
+40961 train 2.779757 hard 2.772053 distill 7.441645 kd_w 0.0016 gold_topk_frac 0.953548 selected_frac 0.953548 muon_lr 7.80000000e-05 adam_lr 3.12000000e-06
+40962 train 2.886408 hard 2.878006 distill 7.545549 kd_w 0.0018 gold_topk_frac 0.946980 selected_frac 0.946980 muon_lr 8.45000000e-05 adam_lr 3.38000000e-06
+40963 train 2.974294 hard 2.965218 distill 7.619397 kd_w 0.0019 gold_topk_frac 0.948181 selected_frac 0.948181 muon_lr 9.10000000e-05 adam_lr 3.64000000e-06
+40964 train 2.882806 hard 2.873026 distill 7.529742 kd_w 0.0021 gold_topk_frac 0.949627 selected_frac 0.949627 muon_lr 9.75000000e-05 adam_lr 3.90000000e-06
+40965 train 2.981637 hard 2.971232 distill 7.595476 kd_w 0.0022 gold_topk_frac 0.944748 selected_frac 0.944748 muon_lr 1.04000000e-04 adam_lr 4.16000000e-06
+40966 train 2.934908 hard 2.923857 distill 7.528444 kd_w 0.0024 gold_topk_frac 0.944927 selected_frac 0.944927 muon_lr 1.10500000e-04 adam_lr 4.42000000e-06
+40967 train 2.921492 hard 2.909814 distill 7.489294 kd_w 0.0026 gold_topk_frac 0.946014 selected_frac 0.946014 muon_lr 1.17000000e-04 adam_lr 4.68000000e-06
+40968 train 2.913696 hard 2.900992 distill 7.606052 kd_w 0.0027 gold_topk_frac 0.949192 selected_frac 0.949192 muon_lr 1.23500000e-04 adam_lr 4.94000000e-06
+40969 train 2.976487 hard 2.963415 distill 7.550308 kd_w 0.0029 gold_topk_frac 0.944530 selected_frac 0.944530 muon_lr 1.30000000e-04 adam_lr 5.20000000e-06
+40969 sampled_windows fineweb=3020 wikipedia=869 science=616 books=615
+40969 quick_eval ppl 22.2658 loss 3.103051 tok 5169152 sec 29.34
+40970 train 2.930566 hard 2.916741 distill 7.525160 kd_w 0.0030 gold_topk_frac 0.949631 selected_frac 0.949631 muon_lr 1.36500000e-04 adam_lr 5.46000000e-06
+40971 train 2.937492 hard 2.922917 distill 7.549931 kd_w 0.0031 gold_topk_frac 0.949680 selected_frac 0.949680 muon_lr 1.43000000e-04 adam_lr 5.72000000e-06
+40972 train 3.047067 hard 3.031670 distill 7.697484 kd_w 0.0033 gold_topk_frac 0.945156 selected_frac 0.945156 muon_lr 1.49500000e-04 adam_lr 5.98000000e-06
+40973 train 2.993100 hard 2.977212 distill 7.582726 kd_w 0.0034 gold_topk_frac 0.946899 selected_frac 0.946899 muon_lr 1.56000000e-04 adam_lr 6.24000000e-06
+40974 train 3.078895 hard 3.062148 distill 7.714342 kd_w 0.0036 gold_topk_frac 0.940804 selected_frac 0.940804 muon_lr 1.62500000e-04 adam_lr 6.50000000e-06
+40975 train 2.977627 hard 2.960256 distill 7.592307 kd_w 0.0037 gold_topk_frac 0.946991 selected_frac 0.946991 muon_lr 1.69000000e-04 adam_lr 6.76000000e-06
+40976 train 2.986989 hard 2.968752 distill 7.645055 kd_w 0.0039 gold_topk_frac 0.948597 selected_frac 0.948597 muon_lr 1.75500000e-04 adam_lr 7.02000000e-06
+40977 train 3.014582 hard 2.995687 distill 7.661117 kd_w 0.0040 gold_topk_frac 0.942505 selected_frac 0.942505 muon_lr 1.82000000e-04 adam_lr 7.28000000e-06
+40978 train 2.954921 hard 2.935611 distill 7.533369 kd_w 0.0042 gold_topk_frac 0.947197 selected_frac 0.947197 muon_lr 1.88500000e-04 adam_lr 7.54000000e-06
+40979 train 3.050948 hard 3.030668 distill 7.692753 kd_w 0.0043 gold_topk_frac 0.942467 selected_frac 0.942467 muon_lr 1.95000000e-04 adam_lr 7.80000000e-06
+40980 train 3.046194 hard 3.025210 distill 7.688411 kd_w 0.0045 gold_topk_frac 0.943287 selected_frac 0.943287 muon_lr 2.01500000e-04 adam_lr 8.06000000e-06
+40981 train 2.874044 hard 2.853185 distill 7.338885 kd_w 0.0046 gold_topk_frac 0.947033 selected_frac 0.947033 muon_lr 2.08000000e-04 adam_lr 8.32000000e-06
+40982 train 2.968562 hard 2.946824 distill 7.475636 kd_w 0.0048 gold_topk_frac 0.945763 selected_frac 0.945763 muon_lr 2.14500000e-04 adam_lr 8.58000000e-06
+40983 train 3.043688 hard 3.020828 distill 7.638748 kd_w 0.0050 gold_topk_frac 0.941372 selected_frac 0.941372 muon_lr 2.21000000e-04 adam_lr 8.84000000e-06
+40984 train 2.961435 hard 2.938483 distill 7.438964 kd_w 0.0051 gold_topk_frac 0.942673 selected_frac 0.942673 muon_lr 2.27500000e-04 adam_lr 9.10000000e-06
+40985 train 3.015550 hard 2.991265 distill 7.616952 kd_w 0.0052 gold_topk_frac 0.943985 selected_frac 0.943985 muon_lr 2.34000000e-04 adam_lr 9.36000000e-06
+40986 train 2.992834 hard 2.967584 distill 7.643625 kd_w 0.0054 gold_topk_frac 0.947201 selected_frac 0.947201 muon_lr 2.40500000e-04 adam_lr 9.62000000e-06
+40987 train 3.001216 hard 2.975980 distill 7.523016 kd_w 0.0055 gold_topk_frac 0.950260 selected_frac 0.950260 muon_lr 2.47000000e-04 adam_lr 9.88000000e-06
+40988 train 3.056494 hard 3.029713 distill 7.728179 kd_w 0.0057 gold_topk_frac 0.944256 selected_frac 0.944256 muon_lr 2.53500000e-04 adam_lr 1.01400000e-05
+40989 train 3.126463 hard 3.099388 distill 7.727617 kd_w 0.0059 gold_topk_frac 0.939865 selected_frac 0.939865 muon_lr 2.60000000e-04 adam_lr 1.04000000e-05
+40989 sampled_windows fineweb=3024 wikipedia=873 science=609 books=614
+40989 quick_eval ppl 22.2339 loss 3.101617 tok 5169152 sec 30.02
+40990 train 2.997517 hard 2.969944 distill 7.565461 kd_w 0.0060 gold_topk_frac 0.946991 selected_frac 0.946991 muon_lr 2.66500000e-04 adam_lr 1.06600000e-05
+40991 train 3.081033 hard 3.052363 distill 7.714125 kd_w 0.0061 gold_topk_frac 0.944767 selected_frac 0.944767 muon_lr 2.73000000e-04 adam_lr 1.09200000e-05
+40992 train 2.975810 hard 2.946616 distill 7.580549 kd_w 0.0063 gold_topk_frac 0.948563 selected_frac 0.948563 muon_lr 2.79500000e-04 adam_lr 1.11800000e-05
+40993 train 3.044624 hard 3.014559 distill 7.675813 kd_w 0.0065 gold_topk_frac 0.946087 selected_frac 0.946087 muon_lr 2.86000000e-04 adam_lr 1.14400000e-05
+40994 train 2.967386 hard 2.936705 distill 7.585289 kd_w 0.0066 gold_topk_frac 0.944530 selected_frac 0.944530 muon_lr 2.92500000e-04 adam_lr 1.17000000e-05
+40995 train 3.022285 hard 2.990912 distill 7.638798 kd_w 0.0067 gold_topk_frac 0.943615 selected_frac 0.943615 muon_lr 2.99000000e-04 adam_lr 1.19600000e-05
+40996 train 2.966779 hard 2.935802 distill 7.425227 kd_w 0.0069 gold_topk_frac 0.941811 selected_frac 0.941811 muon_lr 3.05500000e-04 adam_lr 1.22200000e-05
+40997 train 2.959069 hard 2.926779 distill 7.507014 kd_w 0.0070 gold_topk_frac 0.942085 selected_frac 0.942085 muon_lr 3.12000000e-04 adam_lr 1.24800000e-05
+40998 train 3.004576 hard 2.971488 distill 7.566957 kd_w 0.0072 gold_topk_frac 0.940517 selected_frac 0.940517 muon_lr 3.18500000e-04 adam_lr 1.27400000e-05
+40999 train 3.025879 hard 2.992379 distill 7.550219 kd_w 0.0073 gold_topk_frac 0.939899 selected_frac 0.939899 muon_lr 3.25000000e-04 adam_lr 1.30000000e-05
+41000 train 3.150767 hard 3.115672 distill 7.794881 kd_w 0.0075 gold_topk_frac 0.935383 selected_frac 0.935383 muon_lr 3.31500000e-04 adam_lr 1.32600000e-05
+41001 train 3.068547 hard 3.032740 distill 7.713415 kd_w 0.0076 gold_topk_frac 0.939068 selected_frac 0.939068 muon_lr 3.38000000e-04 adam_lr 1.35200000e-05
+41002 train 3.080959 hard 3.043796 distill 7.808236 kd_w 0.0078 gold_topk_frac 0.938477 selected_frac 0.938477 muon_lr 3.44500000e-04 adam_lr 1.37800000e-05
+41003 train 3.129770 hard 3.092551 distill 7.774291 kd_w 0.0080 gold_topk_frac 0.939209 selected_frac 0.939209 muon_lr 3.51000000e-04 adam_lr 1.40400000e-05
+41004 train 3.064995 hard 3.027761 distill 7.624463 kd_w 0.0081 gold_topk_frac 0.938282 selected_frac 0.938282 muon_lr 3.57500000e-04 adam_lr 1.43000000e-05
+41005 train 3.168706 hard 3.130035 distill 7.817388 kd_w 0.0083 gold_topk_frac 0.936539 selected_frac 0.936539 muon_lr 3.64000000e-04 adam_lr 1.45600000e-05
+41006 train 3.153339 hard 3.114608 distill 7.725482 kd_w 0.0084 gold_topk_frac 0.933338 selected_frac 0.933338 muon_lr 3.70500000e-04 adam_lr 1.48200000e-05
+41007 train 3.071556 hard 3.031267 distill 7.743394 kd_w 0.0085 gold_topk_frac 0.940781 selected_frac 0.940781 muon_lr 3.77000000e-04 adam_lr 1.50800000e-05
+41008 train 3.078542 hard 3.038194 distill 7.675893 kd_w 0.0087 gold_topk_frac 0.936848 selected_frac 0.936848 muon_lr 3.83500000e-04 adam_lr 1.53400000e-05
+41009 train 3.111270 hard 3.071200 distill 7.598883 kd_w 0.0088 gold_topk_frac 0.932446 selected_frac 0.932446 muon_lr 3.90000000e-04 adam_lr 1.56000000e-05
+41009 sampled_windows fineweb=3017 wikipedia=871 science=618 books=614
+41009 quick_eval ppl 22.2150 loss 3.100769 tok 5169152 sec 30.27
+41010 train 2.947516 hard 2.905631 distill 7.559513 kd_w 0.0090 gold_topk_frac 0.944626 selected_frac 0.944626 muon_lr 3.96500000e-04 adam_lr 1.58600000e-05
+41011 train 3.062015 hard 3.019409 distill 7.675821 kd_w 0.0092 gold_topk_frac 0.937420 selected_frac 0.937420 muon_lr 4.03000000e-04 adam_lr 1.61200000e-05
+41012 train 3.009755 hard 2.966842 distill 7.581056 kd_w 0.0093 gold_topk_frac 0.942898 selected_frac 0.942898 muon_lr 4.09500000e-04 adam_lr 1.63800000e-05
+41013 train 3.029694 hard 2.985664 distill 7.644856 kd_w 0.0095 gold_topk_frac 0.944611 selected_frac 0.944611 muon_lr 4.16000000e-04 adam_lr 1.66400000e-05
+41014 train 3.091288 hard 3.046460 distill 7.716074 kd_w 0.0096 gold_topk_frac 0.941681 selected_frac 0.941681 muon_lr 4.22500000e-04 adam_lr 1.69000000e-05
+41015 train 2.982285 hard 2.937411 distill 7.539972 kd_w 0.0097 gold_topk_frac 0.947186 selected_frac 0.947186 muon_lr 4.29000000e-04 adam_lr 1.71600000e-05
+41016 train 2.964067 hard 2.917868 distill 7.584299 kd_w 0.0099 gold_topk_frac 0.945831 selected_frac 0.945831 muon_lr 4.35500000e-04 adam_lr 1.74200000e-05
+41017 train 2.940000 hard 2.894101 distill 7.461071 kd_w 0.0100 gold_topk_frac 0.943165 selected_frac 0.943165 muon_lr 4.42000000e-04 adam_lr 1.76800000e-05
+41018 train 2.974192 hard 2.926816 distill 7.571548 kd_w 0.0102 gold_topk_frac 0.945095 selected_frac 0.945095 muon_lr 4.48500000e-04 adam_lr 1.79400000e-05
+41019 train 2.909804 hard 2.861384 distill 7.539587 kd_w 0.0103 gold_topk_frac 0.947231 selected_frac 0.947231 muon_lr 4.55000000e-04 adam_lr 1.82000000e-05
+41020 train 3.071711 hard 3.022726 distill 7.687971 kd_w 0.0105 gold_topk_frac 0.937595 selected_frac 0.937595 muon_lr 4.61500000e-04 adam_lr 1.84600000e-05
+41021 train 3.068106 hard 3.018813 distill 7.647238 kd_w 0.0106 gold_topk_frac 0.939873 selected_frac 0.939873 muon_lr 4.68000000e-04 adam_lr 1.87200000e-05
+41022 train 3.010703 hard 2.961519 distill 7.515538 kd_w 0.0108 gold_topk_frac 0.940842 selected_frac 0.940842 muon_lr 4.74500000e-04 adam_lr 1.89800000e-05
+41023 train 3.060837 hard 3.009400 distill 7.706844 kd_w 0.0109 gold_topk_frac 0.940498 selected_frac 0.940498 muon_lr 4.81000000e-04 adam_lr 1.92400000e-05
+41024 train 3.048654 hard 2.999130 distill 7.460725 kd_w 0.0111 gold_topk_frac 0.935322 selected_frac 0.935322 muon_lr 4.87500000e-04 adam_lr 1.95000000e-05
+41025 train 2.959554 hard 2.907659 distill 7.520549 kd_w 0.0112 gold_topk_frac 0.944294 selected_frac 0.944294 muon_lr 4.94000000e-04 adam_lr 1.97600000e-05
+41026 train 2.932307 hard 2.879735 distill 7.491277 kd_w 0.0114 gold_topk_frac 0.947659 selected_frac 0.947659 muon_lr 5.00500000e-04 adam_lr 2.00200000e-05
+41027 train 3.038032 hard 2.984753 distill 7.597682 kd_w 0.0115 gold_topk_frac 0.944386 selected_frac 0.944386 muon_lr 5.07000000e-04 adam_lr 2.02800000e-05
+41028 train 3.090904 hard 3.035689 distill 7.754932 kd_w 0.0117 gold_topk_frac 0.942459 selected_frac 0.942459 muon_lr 5.13500000e-04 adam_lr 2.05400000e-05
+41029 train 3.066878 hard 3.011754 distill 7.663600 kd_w 0.0118 gold_topk_frac 0.941856 selected_frac 0.941856 muon_lr 5.20000000e-04 adam_lr 2.08000000e-05
+41029 sampled_windows fineweb=3023 wikipedia=868 science=616 books=613
+41029 quick_eval ppl 22.2407 loss 3.101925 tok 5169152 sec 30.44
+41030 train 3.072319 hard 3.016117 distill 7.699643 kd_w 0.0120 gold_topk_frac 0.940308 selected_frac 0.940308 muon_lr 5.26500000e-04 adam_lr 2.10600000e-05
+41031 train 3.035569 hard 2.979310 distill 7.609587 kd_w 0.0122 gold_topk_frac 0.945492 selected_frac 0.945492 muon_lr 5.33000000e-04 adam_lr 2.13200000e-05
+41032 train 3.017355 hard 2.959827 distill 7.636879 kd_w 0.0123 gold_topk_frac 0.944355 selected_frac 0.944355 muon_lr 5.39500000e-04 adam_lr 2.15800000e-05
+41033 train 3.089444 hard 3.031037 distill 7.722299 kd_w 0.0124 gold_topk_frac 0.941734 selected_frac 0.941734 muon_lr 5.46000000e-04 adam_lr 2.18400000e-05
+41034 train 3.041302 hard 2.982929 distill 7.615741 kd_w 0.0126 gold_topk_frac 0.945930 selected_frac 0.945930 muon_lr 5.52500000e-04 adam_lr 2.21000000e-05
+41035 train 3.098524 hard 3.038061 distill 7.780269 kd_w 0.0127 gold_topk_frac 0.942612 selected_frac 0.942612 muon_lr 5.59000000e-04 adam_lr 2.23600000e-05
+41036 train 3.066945 hard 3.006001 distill 7.730299 kd_w 0.0129 gold_topk_frac 0.943451 selected_frac 0.943451 muon_lr 5.65500000e-04 adam_lr 2.26200000e-05
+41037 train 3.083371 hard 3.023063 distill 7.644361 kd_w 0.0130 gold_topk_frac 0.938110 selected_frac 0.938110 muon_lr 5.72000000e-04 adam_lr 2.28800000e-05
+41038 train 3.101461 hard 3.040233 distill 7.678709 kd_w 0.0132 gold_topk_frac 0.939167 selected_frac 0.939167 muon_lr 5.78500000e-04 adam_lr 2.31400000e-05
+41039 train 3.373460 hard 3.312223 distill 7.899292 kd_w 0.0133 gold_topk_frac 0.926296 selected_frac 0.926296 muon_lr 5.85000000e-04 adam_lr 2.34000000e-05
+41040 train 3.154615 hard 3.093640 distill 7.610340 kd_w 0.0135 gold_topk_frac 0.934467 selected_frac 0.934467 muon_lr 5.91500000e-04 adam_lr 2.36600000e-05
+41041 train 3.276624 hard 3.214137 distill 7.791937 kd_w 0.0137 gold_topk_frac 0.929432 selected_frac 0.929432 muon_lr 5.98000000e-04 adam_lr 2.39200000e-05
+41042 train 3.185019 hard 3.122385 distill 7.661108 kd_w 0.0138 gold_topk_frac 0.934628 selected_frac 0.934628 muon_lr 6.04500000e-04 adam_lr 2.41800000e-05
+41043 train 3.262251 hard 3.197547 distill 7.835875 kd_w 0.0140 gold_topk_frac 0.930645 selected_frac 0.930645 muon_lr 6.11000000e-04 adam_lr 2.44400000e-05
+41044 train 3.048865 hard 2.985182 distill 7.501666 kd_w 0.0141 gold_topk_frac 0.940300 selected_frac 0.940300 muon_lr 6.17500000e-04 adam_lr 2.47000000e-05
+41045 train 3.069343 hard 3.005410 distill 7.491890 kd_w 0.0142 gold_topk_frac 0.940495 selected_frac 0.940495 muon_lr 6.24000000e-04 adam_lr 2.49600000e-05
+41046 train 3.094906 hard 3.029591 distill 7.565366 kd_w 0.0144 gold_topk_frac 0.938683 selected_frac 0.938683 muon_lr 6.30500000e-04 adam_lr 2.52200000e-05
+41047 train 3.185544 hard 3.118868 distill 7.701365 kd_w 0.0145 gold_topk_frac 0.934753 selected_frac 0.934753 muon_lr 6.37000000e-04 adam_lr 2.54800000e-05
+41048 train 3.188320 hard 3.119971 distill 7.769598 kd_w 0.0147 gold_topk_frac 0.933262 selected_frac 0.933262 muon_lr 6.43500000e-04 adam_lr 2.57400000e-05
+41049 train 3.108082 hard 3.039392 distill 7.664993 kd_w 0.0148 gold_topk_frac 0.940800 selected_frac 0.940800 muon_lr 6.50000000e-04 adam_lr 2.60000000e-05
+41049 sampled_windows fineweb=3020 wikipedia=871 science=613 books=616
+41049 quick_eval ppl 22.4200 loss 3.109952 tok 5169152 sec 30.36
+41050 train 3.025192 hard 2.957516 distill 7.469248 kd_w 0.0150 gold_topk_frac 0.939823 selected_frac 0.939823 muon_lr 6.50000000e-04 adam_lr 2.60000000e-05
+41051 train 3.006563 hard 2.936715 distill 7.593294 kd_w 0.0150 gold_topk_frac 0.941158 selected_frac 0.941158 muon_lr 6.49999997e-04 adam_lr 2.59999999e-05
+41052 train 2.998000 hard 2.932970 distill 7.268299 kd_w 0.0150 gold_topk_frac 0.937389 selected_frac 0.937389 muon_lr 6.49999987e-04 adam_lr 2.59999995e-05
+41053 train 3.185416 hard 3.116076 distill 7.738751 kd_w 0.0150 gold_topk_frac 0.936047 selected_frac 0.936047 muon_lr 6.49999971e-04 adam_lr 2.59999988e-05
+41054 train 3.186521 hard 3.117495 distill 7.719222 kd_w 0.0150 gold_topk_frac 0.932568 selected_frac 0.932568 muon_lr 6.49999948e-04 adam_lr 2.59999979e-05
+41055 train 3.153098 hard 3.085381 distill 7.599853 kd_w 0.0150 gold_topk_frac 0.931938 selected_frac 0.931938 muon_lr 6.49999919e-04 adam_lr 2.59999968e-05

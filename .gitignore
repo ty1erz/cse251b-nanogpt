@@ -213,3 +213,7 @@ build-nanogpt/tokenized_sources/
 build-nanogpt/log/v*/submission*/ckpt
 build-nanogpt/log/v*/submission*/ckpt/
 build-nanogpt/log/v*/submission*/checkpoint*.pt
+build-nanogpt/log/**/submission*/ckpt
+build-nanogpt/log/**/submission*/ckpt/
+build-nanogpt/log/**/submission*/checkpoint*.pt
+build-nanogpt/log/**/train_ckpt*.pt
