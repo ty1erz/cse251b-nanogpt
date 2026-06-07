@@ -1,7 +1,7 @@
 # Final Experiment Bundles
 
-This directory contains cleaned, renamed copies of the three final experiment
-families. Checkpoints and large token shards are intentionally not duplicated.
+This directory contains cleaned copies of the four final experiment families.
+Checkpoints and large token shards are intentionally not duplicated.
 
 ## Data layout
 
@@ -90,6 +90,25 @@ Directory: `baseline_mix_50_20_15_15/`
 ```bash
 python baseline_mix_50_20_15_15/train_baseline_mix_50_20_15_15.py
 ```
+
+## 4. Model 2: two-epoch run
+
+Directory: `model2_two_epoch_run/`
+
+This bundle is merged from the `alvin_clean` branch and retains that branch in
+the Git history.
+
+- 16 layers, hidden size 640
+- 10 query heads and 5 KV heads
+- RoPE, RMSNorm, SwiGLU, and GQA
+- 99.03M parameters
+- Data mix: 50/20/15/15
+- First epoch: 38,000 steps
+- Second epoch: low-LR continuation to step 71,800
+- Best recorded validation perplexity: 18.7681 at step 69,700
+
+See `model2_two_epoch_run/README.md` for the exact staged learning rates,
+environment variables, launch commands, and evaluation instructions.
 
 ## Shared files
 
