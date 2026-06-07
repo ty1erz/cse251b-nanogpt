@@ -1,23 +1,11 @@
 """
-Phase 3 (lite) trainer (v4) for the CSE 251B NanoGPT competition.
+Model 3 depth ablation: one 38k-step epoch with a deeper/thinner GQA model.
 
-  Differences vs train_v3.py:
-    * Architecture scaled: 12 layers → 13 layers (≈91M → ≈96M params).
-    * Logit softcap (cap=30, Gemma-2 style) applied inside the model.
-    * Z-loss regularizer (weight 1e-4, PaLM/DeepSeek-V3 style).
-    * Multi-token prediction (MTP) auxiliary loss at offset +2 (shared head,
-      0 extra params). Weight 0.3 (DeepSeek-V3).
-    * `torch.compile(model)` for ~1.5× wall-clock speedup.
-    * Same Muon + AdamW optimizer split as v3.
-    * Same 59/17/12/12 mix as v3 (kept fixed for clean v3 vs v4 comparison).
-    * Same 5100 steps, 1700-step ckpt cadence (3 saves).
-
-  Architecture: imported from model_v2 with overrides
-    GPTConfigV2(n_layer=13, logit_softcap=30.0)
-  Re-uses model_v2.GPT — no model_v4.py needed.
-
-Launch:
-    python train_v4.py --run_name v4_full_5100
+Architecture: 20 layers, 576 hidden size, 9 query heads, 3 KV heads,
+SwiGLU hidden size 1536, RoPE, RMSNorm, QK-Norm, and about 99.78M parameters.
+Data mix: FineWeb/Wikipedia/science/books = 50/20/15/15.
+This experiment tests whether reallocating capacity from width to depth and GQA
+improves validation perplexity under the same sub-100M parameter budget.
 """
 
 import argparse
@@ -35,8 +23,11 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+EXPERIMENT_ROOT = os.path.dirname(HERE)
+PROJECT_ROOT = os.path.dirname(EXPERIMENT_ROOT)
 sys.path.insert(0, HERE)
-from model_v4 import GPT, GPTConfigV2, num_params  # noqa: E402
+sys.path.insert(0, os.path.join(EXPERIMENT_ROOT, "common"))
+from model import GPT, GPTConfigV5, num_params  # noqa: E402
 from mix_loader import MixedDataLoader  # noqa: E402
 from muon import Muon, split_params_for_muon  # noqa: E402
 
@@ -44,45 +35,40 @@ from muon import Muon, split_params_for_muon  # noqa: E402
 # ---------------------------------------------------------------------------
 # Config
 
-V4_MIX = {
-    "fineweb": 0.509,
-    "wikipedia": 0.197,
-    "science": 0.147,
-    "books": 0.147,
+V5_MIX = {
+    "fineweb": 0.50,
+    "wikipedia": 0.20,
+    "science": 0.15,
+    "books": 0.15,
 }
 
 DEFAULTS = dict(
     run_name=None,
-    log_root=os.path.join(HERE, "log_v4"),
-    resume=None,                  # path to a v4 checkpoint to resume from
+    log_root=os.path.join(HERE, "logs"),
+    resume=None,
     # data
     total_batch_size=524288,
     micro_batch=16,
     seq_len=1024,
-    # schedule
-    max_steps=5100,
+    # schedule — one full epoch over ~20 B mixed corpus
+    max_steps=38000,
     warmup_steps=200,
-    ckpt_every=1700,
+    ckpt_every=2000,
     eval_every=250,
     eval_iters=20,
-    # arch overrides
-    n_layer=13,
-    logit_softcap=30.0,
-    # phase 3 loss weights
-    mtp_weight=0.3,         # weight on MTP +2 auxiliary loss
-    z_loss_weight=1e-4,     # weight on (logsumexp(logits))² regularizer
-    # optim
-    muon_lr=2e-2,
+    # optim — peak LRs scaled for the long schedule
+    muon_lr=1.3e-2,
     muon_momentum=0.95,
-    adam_lr=8e-4,
+    adam_lr=5.2e-4,
     min_lr_ratio=0.1,
     weight_decay=0.1,
     grad_clip=1.0,
-    # speedup
-    use_compile=True,
+    # Model 3 defaults.
+    n_layer=20,
+    mlp_hidden=1536,
     # bookkeeping
     seed=1337,
-    val_bin_path=os.path.abspath(os.path.join(HERE, "..", "cse251b-nanogpt", "val.bin")),
+    val_bin_path=os.environ.get("VAL_BIN", os.path.join(EXPERIMENT_ROOT, "val.bin")),
 )
 
 
@@ -117,8 +103,7 @@ def perplexity_on_valbin(model, val_path, device, block_size=1024, batch_size=8)
         x = torch.stack([data[j*block_size : j*block_size+block_size] for j in range(i, i+batch_size)]).to(device)
         y = torch.stack([data[j*block_size+1 : j*block_size+block_size+1] for j in range(i, i+batch_size)]).to(device)
         with torch.autocast(device_type="cuda" if device.startswith("cuda") else "cpu", dtype=torch.bfloat16):
-            out = model(x)
-            logits = out[0]
+            logits, _ = model(x)
         logits = logits[:, :, :50257]
         loss = F.cross_entropy(logits.reshape(-1, logits.size(-1)), y.reshape(-1), reduction="sum")
         total_loss += loss.item()
@@ -128,7 +113,7 @@ def perplexity_on_valbin(model, val_path, device, block_size=1024, batch_size=8)
 
 
 # ---------------------------------------------------------------------------
-# Model card writer
+# Model card
 
 def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
                      final_step, final_val_loss, valbin_result, mix,
@@ -138,30 +123,22 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 
 **Generated:** {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 
-## Architecture (Phase 1 + Phase 3 softcap)
-- Class: `model_v2.GPT` ([model_v2.py](../../model_v2.py))
-- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_embd={cfg.n_embd}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
+## Architecture
+- Class: `model.GPT` ([model.py](../../model.py))
+- Config: `n_layer={cfg.n_layer}`, `n_head={cfg.n_head}`, `n_kv_head={cfg.n_kv_head}`, `n_embd={cfg.n_embd}`, `mlp_hidden={cfg.mlp_hidden}`, `block_size={cfg.block_size}`, `vocab_size={cfg.vocab_size}`
 - **Parameters:** {n_params:,}  ({n_params/1e6:.2f} M)
-- Modern components: RoPE, RMSNorm, ReLU² MLP, QK-Norm, tied embeddings, bias-free linears
-- **Logit softcap:** cap = {cfg.logit_softcap}  (Gemma-2 style: `cap * tanh(logits/cap)`)
+- Components: RoPE, RMSNorm, **SwiGLU MLP + grouped-query attention**, QK-Norm, tied embeddings, bias-free linears
 
-## Training data (v4 mix — same as v3)
+## Training data (v5 mix)
 - Mix: {", ".join(f"{k}={v:.0%}" for k, v in mix.items())}
+- Loader: `MixedDataLoader` ([mix_loader.py](../../../common/mix_loader.py))
 
-## Optimizer (Phase 2 — Muon + AdamW split)
+## Optimizer
 - **Muon** for {n_muon_params:,} 2-D hidden parameters
   - lr={args.muon_lr}, momentum={args.muon_momentum}, ns_steps=5, nesterov=True, wd={args.weight_decay}
 - **AdamW** for {n_adam_params:,} embedding + 1-D parameters
   - lr={args.adam_lr}, betas=(0.9, 0.95), wd_embed=0, wd_norm=0
 - Both schedulers: warmup {args.warmup_steps} → cosine to {args.min_lr_ratio}× peak
-
-## Auxiliary losses (Phase 3)
-- **MTP +2** (shared head, no extra params): weight = {args.mtp_weight}
-- **Z-loss** (`(logsumexp(logits))²` regularizer): weight = {args.z_loss_weight}
-- **Logit softcap** (in-model): cap = {cfg.logit_softcap}
-
-## Speedup
-- `torch.compile`: {"enabled" if args.use_compile else "disabled"}
 
 ## Hyperparameters
 - micro_batch={args.micro_batch}, seq_len={args.seq_len}, total_batch_size={args.total_batch_size}
@@ -171,7 +148,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 
 ## Results
 - Final step: {final_step}
-- **Final val loss (FineWeb-Edu val shard):** {final_val_loss:.4f}
+- **Final val loss (mix val shard):** {final_val_loss:.4f}
 """
     if valbin_result is not None:
         card += (
@@ -188,7 +165,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 - Ended:   {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 - Wall-clock: {elapsed_h:.2f} h
 - Seed: {args.seed}
-- Run script: `train_v4.py --run_name {args.run_name} --max_steps {args.max_steps}`
+- Run script: `train_model3_depth_ablation_one_epoch.py --run_name {args.run_name} --max_steps {args.max_steps}`
 
 Checkpoints in this directory: every {args.ckpt_every} steps + final.
 """
@@ -202,7 +179,7 @@ Checkpoints in this directory: every {args.ckpt_every} steps + final.
 def main():
     args = parse_args()
     if args.run_name is None:
-        args.run_name = f"v4_full_{args.max_steps}st_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
+        args.run_name = f"model3_depth_20L_one_epoch_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
     out_dir = os.path.join(args.log_root, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
@@ -244,27 +221,27 @@ def main():
         print(f"total_batch_size = {args.total_batch_size}")
         print(f"grad_accum_steps = {grad_accum_steps}")
 
-    # Data — v4 mix (same as v3)
+    # Data
     train_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="train", master_process=master, mix=V4_MIX,
+        split="train", master_process=master, mix=V5_MIX,
     )
     val_loader = MixedDataLoader(
         B=B, T=T, process_rank=ddp_rank, num_processes=ddp_world_size,
-        split="val", master_process=master, mix=V4_MIX,
+        split="val", master_process=master, mix=V5_MIX,
     )
 
     torch.set_float32_matmul_precision("high")
 
-    # Model — Phase 1 arch + 13 layers + softcap
-    cfg = GPTConfigV2(n_layer=args.n_layer, logit_softcap=args.logit_softcap)
-    raw_model = GPT(cfg).to(device)   # the unwrapped GPT instance — used for ckpt save/load
+    # Model 3: SwiGLU + GQA, 20 layers.
+    cfg = GPTConfigV5(n_layer=args.n_layer, mlp_hidden=args.mlp_hidden)
+    raw_model = GPT(cfg).to(device)
     n_params = num_params(raw_model)
     if master:
         print(f"params: {n_params:,}  ({n_params/1e6:.2f} M)")
         assert n_params < 100_000_000, "OVER 100M PARAM CAP"
 
-    # Optimizer split (must happen BEFORE compile/DDP wrap so we get raw params)
+    # Optimizer split: Muon hidden + AdamW embed/norms
     muon_params, adam_decay, adam_nodecay = split_params_for_muon(raw_model)
     n_muon = sum(p.numel() for p in muon_params)
     n_adam = sum(p.numel() for p in adam_decay) + sum(p.numel() for p in adam_nodecay)
@@ -286,26 +263,27 @@ def main():
         fused=(device_type == "cuda"),
     )
 
-    # ---- Optional resume (load BEFORE compile/DDP wrapping) ----
+    # Optional resume
     start_step = 0
     if args.resume is not None:
         if master:
             print(f"resuming from {args.resume}")
         rckpt = torch.load(args.resume, map_location=device, weights_only=False)
-        # model weights — raw_model has clean (unwrapped) keys
         raw_model.load_state_dict(rckpt["model"])
-        # optimizer state (Muon momenta + AdamW m/v)
         if "muon_optim" in rckpt:
             muon_optim.load_state_dict(rckpt["muon_optim"])
+        elif master:
+            print("  (no muon_optim in old ckpt — Muon momenta start fresh)")
         if "adam_optim" in rckpt:
             adam_optim.load_state_dict(rckpt["adam_optim"])
-        # data loader positions + RNG state
+        elif master:
+            print("  (no adam_optim in old ckpt — AdamW m/v start fresh)")
         if "train_loader" in rckpt:
             train_loader.load_state(rckpt["train_loader"])
+        elif master:
+            print("  (no train_loader state — restarting source walks from 0)")
         if "val_loader" in rckpt:
             val_loader.load_state(rckpt["val_loader"])
-        # CUDA + Python RNG. torch.load(map_location=device) may have pushed
-        # these tensors to GPU; the RNG setters require CPU ByteTensors.
         def _to_cpu_byte(t):
             if t is None:
                 return None
@@ -321,12 +299,7 @@ def main():
             print(f"  → continuing at step {start_step} (was at step {rckpt['step']})")
             print(f"  → val_loss at resume: {rckpt.get('val_loss', float('nan')):.4f}")
 
-    # Compile after optimizer + resume; compile wraps forward, backward is auto.
     model = raw_model
-    if args.use_compile:
-        if master:
-            print("torch.compile(model) — first step will be slow (warmup ~30-60s)")
-        model = torch.compile(model)
     if ddp:
         model = DDP(model, device_ids=[ddp_local_rank])
 
@@ -342,25 +315,22 @@ def main():
         coeff = 0.5 * (1.0 + math.cos(math.pi * progress))
         return floor + coeff * (peak - floor)
 
-    # ----- Phase 3 composite loss -----
-    # Moved into model.forward() for VRAM savings!
-
-    # Logging
     log_path = os.path.join(out_dir, "train_log.txt")
-    with open(log_path, "w") as f:
-        f.write(f"# {args.run_name}\n# started {datetime.datetime.now().isoformat()}\n")
+    log_mode = "a" if args.resume else "w"
+    with open(log_path, log_mode) as f:
+        if args.resume:
+            f.write(f"\n# resumed at {datetime.datetime.now().isoformat()} from step {start_step}\n")
+        else:
+            f.write(f"# {args.run_name}\n# started {datetime.datetime.now().isoformat()}\n")
 
     final_val_loss = float("inf")
     started_at = time.time()
 
-    # Note on `model` vs `raw_model`:
-    #   - `model` is what we forward through (compiled/DDP-wrapped)
-    #   - `raw_model` exposes .config / .state_dict() for checkpointing
     for step in range(start_step, args.max_steps):
         t0 = time.time()
         last_step = (step == args.max_steps - 1)
 
-        # ---- val pass (use plain CE only) ----
+        # val pass
         if step % args.eval_every == 0 or last_step:
             model.eval()
             val_loader.reset()
@@ -370,7 +340,7 @@ def main():
                     x, y = val_loader.next_batch()
                     x, y = x.to(device), y.to(device)
                     with torch.autocast(device_type=device_type, dtype=torch.bfloat16):
-                        _, loss, _ = model(x, y)   # standard CE inside model
+                        _, loss = model(x, y)
                     vacc += loss.detach() / args.eval_iters
             if ddp:
                 dist.all_reduce(vacc, op=dist.ReduceOp.AVG)
@@ -380,7 +350,7 @@ def main():
                 with open(log_path, "a") as f:
                     f.write(f"{step} val {final_val_loss:.6f}\n")
 
-        # ---- checkpoint (full resume state) ----
+        # checkpoint
         if master and step > 0 and (step % args.ckpt_every == 0 or last_step):
             ckpt = {
                 "model": raw_model.state_dict(),
@@ -398,26 +368,21 @@ def main():
             }
             torch.save(ckpt, os.path.join(out_dir, f"model_{step:06d}.pt"))
 
-        # ---- train step (composite loss) ----
+        # train step
         model.train()
         muon_optim.zero_grad()
         adam_optim.zero_grad()
-        loss_acc = main_acc = mtp_acc = z_acc = 0.0
+        loss_acc = 0.0
         for micro in range(grad_accum_steps):
             x, y = train_loader.next_batch()
             x, y = x.to(device), y.to(device)
             if ddp:
                 model.require_backward_grad_sync = (micro == grad_accum_steps - 1)
             with torch.autocast(device_type=device_type, dtype=torch.bfloat16):
-                _, total, (m_d, mtp_d, z_d) = model(
-                    x, y, args.mtp_weight, args.z_loss_weight,
-                )
-            total = total / grad_accum_steps
-            loss_acc += total.detach()
-            main_acc += m_d / grad_accum_steps
-            mtp_acc  += mtp_d / grad_accum_steps
-            z_acc    += z_d / grad_accum_steps
-            total.backward()
+                _, loss = model(x, y)
+            loss = loss / grad_accum_steps
+            loss_acc += loss.detach()
+            loss.backward()
         if ddp:
             dist.all_reduce(loss_acc, op=dist.ReduceOp.AVG)
         norm = torch.nn.utils.clip_grad_norm_(model.parameters(), args.grad_clip)
@@ -439,20 +404,15 @@ def main():
         toks = B * T * grad_accum_steps * ddp_world_size
         if master:
             print(
-                f"step {step:5d} | loss {loss_acc.item():.4f} "
-                f"(main {main_acc.item():.4f} mtp {mtp_acc.item():.4f} z {z_acc.item():.4f}) | "
+                f"step {step:5d} | train {loss_acc.item():.4f} | "
                 f"muon {muon_lr_now:.3e} adam {adam_lr_now:.3e} | "
                 f"norm {norm:.3f} | dt {dt*1000:.0f}ms | tok/s {toks/dt:,.0f}"
             )
             with open(log_path, "a") as f:
-                f.write(
-                    f"{step} train {loss_acc.item():.6f} main {main_acc.item():.6f} "
-                    f"mtp {mtp_acc.item():.6f} z {z_acc.item():.6f}\n"
-                )
+                f.write(f"{step} train {loss_acc.item():.6f}\n")
 
     ended_at = time.time()
 
-    # ---- val.bin perplexity ----
     valbin_result = None
     if master:
         print("\nrunning val.bin perplexity...")
@@ -462,7 +422,6 @@ def main():
         else:
             print("val.bin not found, skipping")
 
-    # ---- model card ----
     if master:
         write_model_card(
             out_dir, args, cfg, n_params,

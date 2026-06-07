@@ -1,56 +1,120 @@
-# build nanoGPT
+# Final Experiment Bundles
 
-This repo holds the from-scratch reproduction of [nanoGPT](https://github.com/karpathy/nanoGPT/tree/master). The git commits were specifically kept step by step and clean so that one can easily walk through the git commit history to see it built slowly. Additionally, there is an accompanying [video lecture on YouTube](https://youtu.be/l8pRSuU81PU) where you can see me introduce each commit and explain the pieces along the way.
+This directory contains cleaned copies of the four final experiment families.
+Checkpoints and large token shards are intentionally not duplicated.
 
-We basically start from an empty file and work our way to a reproduction of the [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) (124M) model. If you have more patience or money, the code can also reproduce the [GPT-3](https://arxiv.org/pdf/2005.14165) models. While the GPT-2 (124M) model probably trained for quite some time back in the day (2019, ~5 years ago), today, reproducing it is a matter of ~1hr and ~$10. You'll need a cloud GPU box if you don't have enough, for that I recommend [Lambda](https://lambdalabs.com).
+## Data layout
 
-Note that GPT-2 and GPT-3 and both simple language models, trained on internet documents, and all they do is "dream" internet documents. So this repo/video this does not cover Chat finetuning, and you can't talk to it like you can talk to ChatGPT. The finetuning process (while quite simple conceptually - SFT is just about swapping out the dataset and continuing the training) comes after this part and will be covered at a later time. For now this is the kind of stuff that the 124M model says if you prompt it with "Hello, I'm a language model," after 10B tokens of training:
+By default, the shared loader expects:
 
-```
-Hello, I'm a language model, and my goal is to make English as easy and fun as possible for everyone, and to find out the different grammar rules
-Hello, I'm a language model, so the next time I go, I'll just say, I like this stuff.
-Hello, I'm a language model, and the question is, what should I do if I want to be a teacher?
-Hello, I'm a language model, and I'm an English person. In languages, "speak" is really speaking. Because for most people, there's
-```
-
-And after 40B tokens of training:
-
-```
-Hello, I'm a language model, a model of computer science, and it's a way (in mathematics) to program computer programs to do things like write
-Hello, I'm a language model, not a human. This means that I believe in my language model, as I have no experience with it yet.
-Hello, I'm a language model, but I'm talking about data. You've got to create an array of data: you've got to create that.
-Hello, I'm a language model, and all of this is about modeling and learning Python. I'm very good in syntax, however I struggle with Python due
+```text
+<project-root>/edu_fineweb10B/
+<project-root>/data/wikipedia/
+<project-root>/data/science/
+<project-root>/data/books/
 ```
 
-Lol. Anyway, once the video comes out, this will also be a place for FAQ, and a place for fixes and errata, of which I am sure there will be a number :)
+For RunPod or another machine, point to the directory containing those paths:
 
-For discussions and questions, please use [Discussions tab](https://github.com/karpathy/build-nanogpt/discussions), and for faster communication, have a look at my [Zero To Hero Discord](https://discord.gg/3zy8kqD9Cp), channel **#nanoGPT**:
+```bash
+export NANOGPT_DATA_ROOT=/workspace/build-nanogpt
+```
 
-[![](https://dcbadge.vercel.app/api/server/3zy8kqD9Cp?compact=true&style=flat)](https://discord.gg/3zy8kqD9Cp)
+The public validation file defaults to `<repository-root>/val.bin`. It is not
+tracked because the competition data is large. Set `VAL_BIN=/path/to/val.bin`
+or pass `--val_bin_path /path/to/val.bin` when necessary.
 
-## Video
+## 1. Model 1: main run and low-LR fine-tuning
 
-[Let's reproduce GPT-2 (124M) YouTube lecture](https://youtu.be/l8pRSuU81PU)
+Directory: `model1_main_plus_low_lr_finetune/`
 
-## Errata
+- 13 layers, hidden size 640, 10 attention heads
+- RoPE, RMSNorm, QK-Norm, SwiGLU
+- 96.64M parameters
+- Data mix: 56/18/13/13
+- Main stage: 38,000 steps, approximately 19.9B tokens
+- Second stage: resume from checkpoints with progressively lower learning rates
 
-Minor cleanup, we forgot to delete `register_buffer` of the bias once we switched to flash attention, fixed with a recent PR.
+Main run:
 
-Earlier version of PyTorch may have difficulty converting from uint16 to long. Inside `load_tokens`, we added `npt = npt.astype(np.int32)` to use numpy to convert uint16 to int32 before converting to torch tensor and then converting to long.
+```bash
+python model1_main_plus_low_lr_finetune/train_model1_main_plus_low_lr_finetune.py \
+  --run_name model1_main_38k
+```
 
-The `torch.autocast` function takes an arg `device_type`, to which I tried to stubbornly just pass `device` hoping it works ok, but PyTorch actually really wants just the type and creates errors in some version of PyTorch. So we want e.g. the device `cuda:3` to get stripped to `cuda`. Currently, device `mps` (Apple Silicon) would become `device_type` CPU, I'm not 100% sure this is the intended PyTorch way.
+First continuation stage:
 
-Confusingly, `model.require_backward_grad_sync` is actually used by both the forward and backward pass. Moved up the line so that it also gets applied to the forward pass. 
+```bash
+python model1_main_plus_low_lr_finetune/train_model1_main_plus_low_lr_finetune.py \
+  --run_name model1_low_lr_to_42k \
+  --resume model1_main_plus_low_lr_finetune/logs/model1_main_38k/model_037999.pt \
+  --max_steps 42000 \
+  --muon_lr 6e-3 \
+  --adam_lr 2.4e-4 \
+  --min_lr_ratio 0.1 \
+  --ckpt_every 500
+```
 
-## Prod
+Continue the same pattern from the selected checkpoint, reducing the Muon and
+AdamW learning rates. The original sequence used approximate peak LR pairs:
+`(6e-3, 2.4e-4)`, `(4e-3, 1.8e-4)`, `(3e-3, 1.35e-4)`,
+`(1.5e-3, 8e-5)`, `(1.2e-3, 6.4e-5)`, `(9e-4, 5e-5)`,
+`(7e-4, 4e-5)`, and `(4e-4, 2.5e-5)`.
 
-For more production-grade runs that are very similar to nanoGPT, I recommend looking at the following repos:
+## 2. Model 3: depth ablation
 
-- [litGPT](https://github.com/Lightning-AI/litgpt)
-- [TinyLlama](https://github.com/jzhang38/TinyLlama)
+Directory: `model3_depth_ablation_one_epoch/`
 
-## FAQ
+- 20 layers, hidden size 576
+- 9 query heads and 3 KV heads
+- RoPE, RMSNorm, QK-Norm, SwiGLU, GQA
+- Approximately 99.78M parameters
+- Data mix: 50/20/15/15
+- One 38,000-step main run only
 
-## License
+```bash
+python model3_depth_ablation_one_epoch/train_model3_depth_ablation_one_epoch.py \
+  --run_name model3_depth_20L_one_epoch
+```
 
-MIT
+## 3. GPT baseline: mixed-data ratio experiment
+
+Directory: `baseline_mix_50_20_15_15/`
+
+- 8 layers, hidden size 512, 8 heads
+- Learned positional embeddings, LayerNorm, GELU MLP
+- AdamW optimizer
+- Data mix fixed to 50/20/15/15
+- 5,000 training steps
+
+```bash
+python baseline_mix_50_20_15_15/train_baseline_mix_50_20_15_15.py
+```
+
+## 4. Model 2: two-epoch run
+
+Directory: `model2_two_epoch_run/`
+
+This bundle is merged from the `alvin_clean` branch and retains that branch in
+the Git history.
+
+- 16 layers, hidden size 640
+- 10 query heads and 5 KV heads
+- RoPE, RMSNorm, SwiGLU, and GQA
+- 99.03M parameters
+- Data mix: 50/20/15/15
+- First epoch: 38,000 steps
+- Second epoch: low-LR continuation to step 71,800
+- Best recorded validation perplexity: 18.7681 at step 69,700
+
+See `model2_two_epoch_run/README.md` for the exact staged learning rates,
+environment variables, launch commands, and evaluation instructions.
+
+## Shared files
+
+- `common/mix_loader.py`: mixed-domain shard loader
+- `common/muon.py`: Muon optimizer and parameter grouping
+- Each experiment includes `config.json`.
+- Model 1 and Model 3 include their training architecture as `model.py`.
+- The baseline includes an evaluator-compatible `model.py`; its trainer retains
+  the original inline architecture definition.

@@ -80,14 +80,17 @@ class _SourceShards:
         self.pos = int(s["pos"])
 
 
-# Default location root. fineweb-edu lives under build-nanogpt/edu_fineweb10B,
-# the new sources under repo-root/data/<source>/.
+# Set NANOGPT_DATA_ROOT when shards are stored outside the project directory.
+# Expected layout:
+#   <root>/edu_fineweb10B
+#   <root>/data/{wikipedia,science,books}
 def _default_source_paths(repo_root: str) -> Dict[str, str]:
+    data_root = os.environ.get("NANOGPT_DATA_ROOT", repo_root)
     return {
-        "fineweb": os.path.join(repo_root, "build-nanogpt", "edu_fineweb10B"),
-        "wikipedia": os.path.join(repo_root, "data", "wikipedia"),
-        "science": os.path.join(repo_root, "data", "science"),
-        "books": os.path.join(repo_root, "data", "books"),
+        "fineweb": os.path.join(data_root, "edu_fineweb10B"),
+        "wikipedia": os.path.join(data_root, "data", "wikipedia"),
+        "science": os.path.join(data_root, "data", "science"),
+        "books": os.path.join(data_root, "data", "books"),
     }
 
 
