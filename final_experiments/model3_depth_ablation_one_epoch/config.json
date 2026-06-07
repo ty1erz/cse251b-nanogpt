@@ -1,0 +1,37 @@
+{
+  "experiment": "model3_depth_ablation_one_epoch",
+  "architecture": {
+    "block_size": 1024,
+    "vocab_size": 50304,
+    "n_layer": 20,
+    "n_head": 9,
+    "n_kv_head": 3,
+    "n_embd": 576,
+    "mlp_hidden": 1536,
+    "position_embedding": "rope",
+    "normalization": "rmsnorm",
+    "mlp": "swiglu",
+    "attention": "grouped_query_attention",
+    "qk_norm": true,
+    "tie_embeddings": true,
+    "parameter_count_approx": 99780000
+  },
+  "data_mix": {
+    "fineweb": 0.5,
+    "wikipedia": 0.2,
+    "science": 0.15,
+    "books": 0.15
+  },
+  "training": {
+    "max_steps": 38000,
+    "total_batch_size_tokens": 524288,
+    "micro_batch": 16,
+    "sequence_length": 1024,
+    "warmup_steps": 200,
+    "muon_lr": 0.013,
+    "adam_lr": 0.00052,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "experiment": "baseline_mix_50_20_15_15",
+  "architecture": {
+    "block_size": 1024,
+    "vocab_size": 50304,
+    "n_layer": 8,
+    "n_head": 8,
+    "n_embd": 512,
+    "position_embedding": "learned_absolute",
+    "normalization": "layernorm",
+    "mlp": "gelu",
+    "tie_embeddings": true
+  },
+  "data_mix": {
+    "fineweb": 0.5,
+    "wikipedia": 0.2,
+    "science": 0.15,
+    "books": 0.15
+  },
+  "training": {
+    "max_steps": 5000,
+    "total_batch_size_tokens": 524288,
+    "micro_batch": 16,
+    "sequence_length": 1024,
+    "warmup_steps": 715,
+    "optimizer": "adamw",
+    "max_lr": 0.0006,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0
+  }
+}
