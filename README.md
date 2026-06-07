@@ -24,7 +24,21 @@ The public validation file defaults to `<repository-root>/val.bin`. It is not
 tracked because the competition data is large. Set `VAL_BIN=/path/to/val.bin`
 or pass `--val_bin_path /path/to/val.bin` when necessary.
 
-## 1. Model 1: main run and low-LR fine-tuning
+## 1. GPT baseline: mixed-data ratio experiment
+
+Directory: `baseline_mix_50_20_15_15/`
+
+- 8 layers, hidden size 512, 8 heads
+- Learned positional embeddings, LayerNorm, GELU MLP
+- AdamW optimizer
+- Data mix fixed to 50/20/15/15
+- 5,000 training steps
+
+```bash
+python baseline_mix_50_20_15_15/train_baseline_mix_50_20_15_15.py
+```
+
+## 2. Model 1: main run and low-LR fine-tuning
 
 Directory: `model1_main_plus_low_lr_finetune/`
 
@@ -65,37 +79,7 @@ AdamW learning rates. The original sequence used approximate peak LR pairs:
 `(1.5e-3, 8e-5)`, `(1.2e-3, 6.4e-5)`, `(9e-4, 5e-5)`,
 `(7e-4, 4e-5)`, and `(4e-4, 2.5e-5)`.
 
-## 2. Model 3: depth ablation
-
-Directory: `model3_depth_ablation_one_epoch/`
-
-- 20 layers, hidden size 576
-- 9 query heads and 3 KV heads
-- RoPE, RMSNorm, QK-Norm, SwiGLU, GQA
-- Approximately 99.78M parameters
-- Data mix: 50/20/15/15
-- One 38,000-step main run only
-
-```bash
-python model3_depth_ablation_one_epoch/train_model3_depth_ablation_one_epoch.py \
-  --run_name model3_depth_20L_one_epoch
-```
-
-## 3. GPT baseline: mixed-data ratio experiment
-
-Directory: `baseline_mix_50_20_15_15/`
-
-- 8 layers, hidden size 512, 8 heads
-- Learned positional embeddings, LayerNorm, GELU MLP
-- AdamW optimizer
-- Data mix fixed to 50/20/15/15
-- 5,000 training steps
-
-```bash
-python baseline_mix_50_20_15_15/train_baseline_mix_50_20_15_15.py
-```
-
-## 4. Model 2: two-epoch run
+## 3. Model 2: two-epoch run
 
 Directory: `model2_two_epoch_run/`
 
@@ -111,8 +95,47 @@ the Git history.
 - Second epoch: low-LR continuation to step 71,800
 - Best recorded validation perplexity: 18.7681 at step 69,700
 
-See `model2_two_epoch_run/README.md` for the exact staged learning rates,
-environment variables, launch commands, and evaluation instructions.
+Main run:
+
+```bash
+torchrun --standalone --nproc_per_node=8 \
+  model2_two_epoch_run/train_first_epoch.py \
+  --target_step 38000
+```
+
+First continuation stage:
+
+```bash
+torchrun --standalone --nproc_per_node=8 \
+  model2_two_epoch_run/train_second_epoch.py \
+  --resume model2_two_epoch_run/log/first_epoch/train_ckpt_38000.pt \
+  --target_step 54000 \
+  --lr_decay_steps 76000 \
+  --muon_lr 4e-4 \
+  --adam_lr 1.6e-5 \
+  --min_lr_ratio 0.5 \
+  --global_lr_schedule \
+  --run_name second_epoch_lr4e4
+```
+
+See `model2_two_epoch_run/README.md` for the remaining continuation stages,
+environment variables, and evaluation instructions.
+
+## 4. Model 3: depth ablation
+
+Directory: `model3_depth_ablation_one_epoch/`
+
+- 20 layers, hidden size 576
+- 9 query heads and 3 KV heads
+- RoPE, RMSNorm, QK-Norm, SwiGLU, GQA
+- Approximately 99.78M parameters
+- Data mix: 50/20/15/15
+- One 38,000-step main run only
+
+```bash
+python model3_depth_ablation_one_epoch/train_model3_depth_ablation_one_epoch.py \
+  --run_name model3_depth_20L_one_epoch
+```
 
 ## Shared files
 
