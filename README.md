@@ -31,23 +31,27 @@ Directory: `model1_main_plus_low_lr_finetune/`
 - 13 layers, hidden size 640, 10 attention heads
 - RoPE, RMSNorm, QK-Norm, SwiGLU
 - 96.64M parameters
-- Data mix: 56/18/13/13
+- Ratio ablations: 50/20/15/15, 53/19/14/14, and 56/18/13/13
 - Main stage: 38,000 steps, approximately 19.9B tokens
-- Second stage: resume from checkpoints with progressively lower learning rates
+- The 56/18/13/13 run was continued with progressively lower learning rates
+
+The 38k validation perplexities were 21.3251 for 50/20/15/15, 21.4597 for
+53/19/14/14, and 21.6089 for 56/18/13/13. See the Model 1 directory README for
+the two one-epoch alternatives.
 
 Main run:
 
 ```bash
-python model1_main_plus_low_lr_finetune/train_model1_main_plus_low_lr_finetune.py \
-  --run_name model1_main_38k
+python model1_main_plus_low_lr_finetune/train_model1_mix56_main_plus_low_lr_finetune.py \
+  --run_name model1_mix56_main_38k
 ```
 
 First continuation stage:
 
 ```bash
-python model1_main_plus_low_lr_finetune/train_model1_main_plus_low_lr_finetune.py \
-  --run_name model1_low_lr_to_42k \
-  --resume model1_main_plus_low_lr_finetune/logs/model1_main_38k/model_037999.pt \
+python model1_main_plus_low_lr_finetune/train_model1_mix56_main_plus_low_lr_finetune.py \
+  --run_name model1_mix56_low_lr_to_42k \
+  --resume model1_main_plus_low_lr_finetune/logs/model1_mix56_main_38k/model_037999.pt \
   --max_steps 42000 \
   --muon_lr 6e-3 \
   --adam_lr 2.4e-4 \
@@ -114,7 +118,9 @@ environment variables, launch commands, and evaluation instructions.
 
 - `common/mix_loader.py`: mixed-domain shard loader
 - `common/muon.py`: Muon optimizer and parameter grouping
-- Each experiment includes `config.json`.
+- Model 1 includes `config_mix50.json`, `config_mix53.json`, and
+  `config_mix56.json`; the other architecture experiments keep their own
+  configuration files.
 - Model 1 and Model 3 include their training architecture as `model.py`.
 - The baseline includes an evaluator-compatible `model.py`; its trainer retains
   the original inline architecture definition.

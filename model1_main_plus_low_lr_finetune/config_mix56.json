@@ -1,5 +1,6 @@
 {
-  "experiment": "model1_main_plus_low_lr_finetune",
+  "experiment": "model1_mix56_main_plus_low_lr_finetune",
+  "reported_38k_validation_perplexity": 21.6089,
   "architecture": {
     "block_size": 1024,
     "vocab_size": 50304,

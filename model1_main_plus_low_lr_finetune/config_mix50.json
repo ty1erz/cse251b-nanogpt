@@ -1,0 +1,36 @@
+{
+  "experiment": "model1_mix50_ratio_ablation",
+  "reported_38k_validation_perplexity": 21.3251,
+  "architecture": {
+    "block_size": 1024,
+    "vocab_size": 50304,
+    "n_layer": 13,
+    "n_head": 10,
+    "n_embd": 640,
+    "mlp_hidden": 1728,
+    "position_embedding": "rope",
+    "normalization": "rmsnorm",
+    "mlp": "swiglu",
+    "qk_norm": true,
+    "tie_embeddings": true,
+    "parameter_count": 96643584
+  },
+  "data_mix": {
+    "fineweb": 0.5,
+    "wikipedia": 0.2,
+    "science": 0.15,
+    "books": 0.15
+  },
+  "main_run": {
+    "max_steps": 38000,
+    "total_batch_size_tokens": 524288,
+    "micro_batch": 16,
+    "sequence_length": 1024,
+    "warmup_steps": 200,
+    "muon_lr": 0.013,
+    "adam_lr": 0.00052,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0
+  }
+}

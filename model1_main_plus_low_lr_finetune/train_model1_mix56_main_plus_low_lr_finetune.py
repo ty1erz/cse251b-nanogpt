@@ -1,5 +1,5 @@
 """
-Model 1 experiment: 38k-step main run followed by low-LR continuation.
+Model 1, 56/18/13/13 mix: 38k-step main run plus low-LR continuation.
 
 Architecture: 13 layers, 640 hidden size, 10 heads, SwiGLU hidden size 1728,
 RoPE, RMSNorm, QK-Norm, and 96.64M parameters.
@@ -166,7 +166,7 @@ def write_model_card(out_dir, args, cfg, n_params, started_at, ended_at,
 - Ended:   {datetime.datetime.fromtimestamp(ended_at).isoformat(timespec="seconds")}
 - Wall-clock: {elapsed_h:.2f} h
 - Seed: {args.seed}
-- Run script: `train_model1_main_plus_low_lr_finetune.py --run_name {args.run_name} --max_steps {args.max_steps}`
+- Run script: `train_model1_mix56_main_plus_low_lr_finetune.py --run_name {args.run_name} --max_steps {args.max_steps}`
 
 Checkpoints in this directory: every {args.ckpt_every} steps + final.
 """
@@ -180,7 +180,7 @@ Checkpoints in this directory: every {args.ckpt_every} steps + final.
 def main():
     args = parse_args()
     if args.run_name is None:
-        args.run_name = f"model1_main_38k_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
+        args.run_name = f"model1_mix56_main_38k_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}"
 
     out_dir = os.path.join(args.log_root, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
