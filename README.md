@@ -9,6 +9,8 @@ By default, the shared loader expects:
 
 ```text
 <project-root>/edu_fineweb10B/
+<project-root>/data/openwebtext/train.bin
+<project-root>/data/openwebtext/val.bin
 <project-root>/data/wikipedia/
 <project-root>/data/science/
 <project-root>/data/books/
@@ -20,22 +22,45 @@ For RunPod or another machine, point to the directory containing those paths:
 export NANOGPT_DATA_ROOT=/workspace/build-nanogpt
 ```
 
+`FINEWEB_DATA_ROOT` and `OPENWEBTEXT_DATA_ROOT` can override the two
+single-source baseline paths independently. FineWeb-Edu should use
+split-tagged uint16 `.npy` shards such as `edufineweb_train_000001.npy`.
+OpenWebText should use GPT-2-tokenized uint16 `train.bin` and `val.bin` files.
+The data-preparation scripts are intentionally not included in this bundle.
+
 The public validation file defaults to `<repository-root>/val.bin`. It is not
 tracked because the competition data is large. Set `VAL_BIN=/path/to/val.bin`
 or pass `--val_bin_path /path/to/val.bin` when necessary.
 
-## 1. GPT baseline: mixed-data ratio experiment
+## 1. GPT baselines
+
+All three baselines use the same 8-layer, 512-hidden, 8-head GPT architecture,
+learned positional embeddings, LayerNorm, GELU MLP, AdamW optimizer, and
+5,000-step schedule. They differ only in training data. See
+`baseline_mix_50_20_15_15/README.md` for the recorded validation scores.
+
+Mixed data, 50/20/15/15 FineWeb/Wikipedia/science/books:
 
 Directory: `baseline_mix_50_20_15_15/`
 
-- 8 layers, hidden size 512, 8 heads
-- Learned positional embeddings, LayerNorm, GELU MLP
-- AdamW optimizer
-- Data mix fixed to 50/20/15/15
-- 5,000 training steps
-
 ```bash
 python baseline_mix_50_20_15_15/train_baseline_mix_50_20_15_15.py
+```
+
+FineWeb-Edu only:
+
+Directory: `baseline_fineweb_only/`
+
+```bash
+python baseline_fineweb_only/train_baseline_fineweb_only.py
+```
+
+OpenWebText only:
+
+Directory: `baseline_openwebtext_only/`
+
+```bash
+python baseline_openwebtext_only/train_baseline_openwebtext_only.py
 ```
 
 ## 2. Model 1: main run and low-LR fine-tuning
@@ -140,10 +165,15 @@ python model3_depth_ablation_one_epoch/train_model3_depth_ablation_one_epoch.py 
 ## Shared files
 
 - `common/mix_loader.py`: mixed-domain shard loader
+- `common/single_source_loader.py`: FineWeb `.npy` and OpenWebText `.bin`
+  loader used by the single-source baselines
+- `common/baseline_training.py`: shared training loop for the single-source
+  baseline ablations
 - `common/muon.py`: Muon optimizer and parameter grouping
 - Model 1 includes `config_mix50.json`, `config_mix53.json`, and
   `config_mix56.json`; the other architecture experiments keep their own
   configuration files.
 - Model 1 and Model 3 include their training architecture as `model.py`.
-- The baseline includes an evaluator-compatible `model.py`; its trainer retains
-  the original inline architecture definition.
+- The mixed-data baseline includes the evaluator-compatible `model.py` shared
+  by all three baseline checkpoints; its trainer retains the original inline
+  architecture definition.
