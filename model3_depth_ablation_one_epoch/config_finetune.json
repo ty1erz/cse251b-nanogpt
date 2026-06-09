@@ -1,0 +1,30 @@
+{
+  "experiment": "model3_low_lr_finetune",
+  "description": "Step-wise low-learning-rate continuation of the Model 3 38k main run, with val.bin-driven checkpoint selection. Each stage trains at a constant LR; the next stage resumes from the previous stage's best.pt (lowest public-validation perplexity) at a lower LR.",
+  "architecture_ref": "config.json",
+  "data_mix": {
+    "fineweb": 0.5,
+    "wikipedia": 0.2,
+    "science": 0.15,
+    "books": 0.15
+  },
+  "common": {
+    "total_batch_size_tokens": 524288,
+    "micro_batch": 16,
+    "sequence_length": 1024,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "within_stage_lr_schedule": "constant",
+    "selection_metric": "public val.bin perplexity",
+    "eval_every": 250,
+    "ckpt_every": 500,
+    "seed": 1337
+  },
+  "staircase": [
+    {"stage": 1, "resume_from": "main_run/model_037999.pt", "max_steps": 39000, "muon_lr": 8e-4,  "adam_lr": 3.2e-5},
+    {"stage": 2, "resume_from": "model3_ft_s1/best.pt",     "max_steps": 40000, "muon_lr": 4e-4,  "adam_lr": 1.6e-5},
+    {"stage": 3, "resume_from": "model3_ft_s2/best.pt",     "max_steps": 41000, "muon_lr": 2e-4,  "adam_lr": 8e-6},
+    {"stage": 4, "resume_from": "model3_ft_s3/best.pt",     "max_steps": 42000, "muon_lr": 1e-4,  "adam_lr": 4e-6},
+    {"stage": 5, "resume_from": "model3_ft_s4/best.pt",     "max_steps": 43000, "muon_lr": 4e-5,  "adam_lr": 2.5e-6}
+  ]
+}

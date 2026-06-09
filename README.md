@@ -146,7 +146,7 @@ torchrun --standalone --nproc_per_node=8 \
 See `model2_two_epoch_run/README.md` for the remaining continuation stages,
 environment variables, and evaluation instructions.
 
-## 4. Model 3: depth ablation
+## 4. Model 3: depth ablation and low-LR continuation
 
 Directory: `model3_depth_ablation_one_epoch/`
 
@@ -155,12 +155,38 @@ Directory: `model3_depth_ablation_one_epoch/`
 - RoPE, RMSNorm, QK-Norm, SwiGLU, GQA
 - Approximately 99.78M parameters
 - Data mix: 50/20/15/15
-- One 38,000-step main run only
+- 38,000-step main run, followed by a low-LR continuation
+
+Model 3 is the strongest architecture at the matched 38k budget (20.918
+public-validation PPL, ahead of Model 2 by 0.245 and Model 1 by 0.407). The
+original report continued only Models 1 and 2; this bundle adds the same
+low-learning-rate continuation and val.bin checkpoint selection to Model 3.
+
+Main run:
 
 ```bash
 python model3_depth_ablation_one_epoch/train_model3_depth_ablation_one_epoch.py \
   --run_name model3_depth_20L_one_epoch
 ```
+
+Low-LR continuation. `train_model3_low_lr_finetune.py` runs a learning-rate
+staircase: each stage trains at a constant LR, evaluates `val.bin` every 250
+steps, and saves the lowest-perplexity checkpoint to `best.pt`. The next stage
+resumes from that `best.pt` at a lower LR.
+
+```bash
+python model3_depth_ablation_one_epoch/train_model3_low_lr_finetune.py \
+  --run_name model3_ft_s1 \
+  --resume model3_depth_ablation_one_epoch/logs/model3_depth_20L_one_epoch/model_037999.pt \
+  --max_steps 39000 --muon_lr 8e-4 --adam_lr 3.2e-5
+```
+
+The configured stages use the Muon and AdamW peak pairs `(8e-4, 3.2e-5)`,
+`(4e-4, 1.6e-5)`, `(2e-4, 8e-6)`, `(1e-4, 4e-6)`, and `(4e-5, 2.5e-6)`, each
+resuming from the previous stage's `best.pt`. The first stages reduce val.bin
+perplexity from 20.918 to 19.271 by step 40k. See
+`model3_depth_ablation_one_epoch/README.md` for the full staircase, observed
+perplexities, and evaluation instructions.
 
 ## Shared files
 

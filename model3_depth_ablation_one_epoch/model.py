@@ -221,6 +221,65 @@ def num_params(model: GPT) -> int:
     return total
 
 
+# ---------------------------------------------------------------------------
+# Evaluator-facing wrapper
+
+class EvalGPT(nn.Module):
+    """Adapts GPT to the evaluator's contract: forward(input_ids) -> logits[..., :50257]."""
+
+    def __init__(self, gpt: GPT):
+        super().__init__()
+        self.gpt = gpt
+
+    def forward(self, input_ids):
+        logits, _ = self.gpt(input_ids)
+        return logits[:, :, :50257]
+
+
+# ---------------------------------------------------------------------------
+# Required entrypoint for evaluate.py
+
+def load_model(checkpoint_path: str, device: str = "cuda") -> nn.Module:
+    """Rebuild Model 3 from a training checkpoint and return an evaluator-ready module.
+
+    Training checkpoints are pickled with the config dataclass qualified by the
+    training module's name (`model` here, or `model_v5` for checkpoints produced
+    by the original build-nanogpt trainer). We inject lightweight aliases so the
+    unpickler can resolve either name, then rebuild the config from its fields so
+    the load is immune to attribute drift in the pickled class.
+    """
+    import sys
+    import types
+
+    for alias in ("model_v5", "model"):
+        mod = sys.modules.get(alias)
+        if mod is None:
+            mod = types.ModuleType(alias)
+            sys.modules[alias] = mod
+        mod.GPTConfigV5 = GPTConfigV5
+    sys.modules["__main__"].GPTConfigV5 = GPTConfigV5
+
+    ckpt = torch.load(checkpoint_path, map_location=device, weights_only=False)
+    src_cfg = ckpt["config"]
+    config = GPTConfigV5(
+        block_size=src_cfg.block_size,
+        vocab_size=src_cfg.vocab_size,
+        n_layer=src_cfg.n_layer,
+        n_head=src_cfg.n_head,
+        n_kv_head=getattr(src_cfg, "n_kv_head", src_cfg.n_head),
+        n_embd=src_cfg.n_embd,
+        rope_base=getattr(src_cfg, "rope_base", 10000.0),
+        use_qk_norm=getattr(src_cfg, "use_qk_norm", True),
+        logit_softcap=getattr(src_cfg, "logit_softcap", 0.0),
+        mlp_hidden=getattr(src_cfg, "mlp_hidden", 1536),
+    )
+    gpt = GPT(config)
+    gpt.load_state_dict(ckpt["model"])
+    model = EvalGPT(gpt).to(device)
+    model.eval()
+    return model
+
+
 if __name__ == "__main__":
     cfg = GPTConfigV5()
     m = GPT(cfg)
